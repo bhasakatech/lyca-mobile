@@ -6,6 +6,7 @@ footer {
 footer .footer > div {
   margin: auto;
   max-width: 1200px;
+  display: flex;
   padding: 40px 24px 24px;
 }
 
@@ -16,5 +17,124 @@ footer .footer p {
 @media (width >= 900px) {
   footer .footer > div {
     padding: 40px 32px 24px;
+    display: flex;
   }
+}
+.footer-wrapper .footer .block{
+  display: flex;
+  background-color: red;
+}
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Footer styles */
+.footer-wrapper {
+    background-color: #1a2a44; /* Dark blue from Figma */
+    padding: 20px 0;
+    color: white;
+}
+
+.footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex; /* Arrange sections side by side */
+    gap: 20px; /* Space between sections */
+}
+
+/* Section styles */
+.section {
+    flex: 1; /* Allow sections to share space */
+    min-width: 200px; /* Minimum width for each section */
+}
+
+/* Link container styles */
+.footer > div > div:first-child > div {
+    display: block; /* Stack links vertically */
+}
+
+.footer > div > div:first-child > div > div {
+    margin-bottom: 20px; /* Space between link groups */
+}
+
+/* Section headers */
+.footer > div > div:first-child > div > div > div:first-child {
+    font-weight: bold;
+    color: white; /* White for contrast on dark background */
+    margin-bottom: 15px;
+    font-size: 18px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid white; /* White border to match Figma */
+}
+
+/* Button/link styles */
+.button-container {
+    margin-bottom: 10px;
+}
+
+.button {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #007bff; /* Blue for links */
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #f0f0f0;
+    color: #003366;
+}
+
+/* Image styles */
+.footer picture {
+    display: block;
+    margin: 15px 0;
+}
+
+.footer img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Lyca on the go images */
+.footer > div > div:first-child > div:last-child div img {
+    width: 100px; /* Match Figma app icon size */
+    height: auto;
+    margin: 5px 0;
+}
+
+/* Copyright section */
+.default-content-wrapper {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+    width: 100%; /* Ensure it spans full width */
+}
+
+.default-content-wrapper p {
+    margin-bottom: 15px;
+    color: #b0b7c3; /* Light gray for contrast */
+    font-size: 14px;
+}
+
+/* Social icons */
+.default-content-wrapper picture {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.default-content-wrapper img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
 }

@@ -1,0 +1,1096 @@
+/* Header Wrapper Styles */
+/* Navigation Bar Styles */
+.nav-wrapper {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 100%;
+}
+
+nav#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 80px;
+}
+
+/* Brand/Logo Section */
+.section.nav-brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav-brand .default-content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-brand .default-content-wrapper p:first-child {
+  margin: 0;
+}
+
+.nav-brand .default-content-wrapper p:first-child a {
+  display: block;
+}
+
+.nav-brand .default-content-wrapper picture {
+  display: block;
+}
+
+.nav-brand .default-content-wrapper img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.nav-brand .default-content-wrapper p:nth-child(2) {
+  display: none; /* Hide the separator --- */
+}
+
+.nav-brand .default-content-wrapper ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.nav-brand .default-content-wrapper ul li {
+  margin: 0;
+}
+
+.nav-brand .default-content-wrapper ul li a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 500;
+  font-size: 1.7rem;
+  transition: color 0.3s ease;
+}
+
+.nav-brand .default-content-wrapper ul li a:hover {
+  color: #3498db;
+}
+
+/* Navigation Sections (Quick Recharge Button) */
+.section.nav-sections {
+  display: flex;
+  align-items: center;
+}
+
+.nav-sections .default-content-wrapper {
+  margin: 0;
+}
+
+.nav-sections .button-container {
+  margin: 0;
+}
+
+.nav-sections .button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.nav-sections .button:hover {
+  background-color: #2980b9;
+}
+
+/* Hamburger Menu (Mobile) */
+.nav-hamburger {
+  display: none;
+}
+
+.nav-hamburger button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.nav-hamburger-icon {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #2c3e50;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-hamburger-icon::before,
+.nav-hamburger-icon::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: #2c3e50;
+  transition: all 0.3s ease;
+}
+
+.nav-hamburger-icon::before {
+  transform: translateY(-8px);
+}
+
+.nav-hamburger-icon::after {
+  transform: translateY(8px);
+}
+
+/* Mobile devices (up to 900px) */
+@media (max-width: 900px) {
+  nav#nav {
+    height: 70px;
+    padding: 0 15px;
+  }
+  
+  .nav-hamburger {
+    display: block;
+    order: 1;
+  }
+  
+  .section.nav-brand {
+    order: 2;
+    flex: 1;
+    justify-content: center;
+  }
+  
+  .section.nav-sections {
+    order: 3;
+  }
+  
+  .nav-brand .default-content-wrapper {
+    justify-content: center;
+  }
+  
+  .nav-brand .default-content-wrapper ul {
+    display: none; /* Hide nav links on mobile */
+  }
+  
+  .nav-brand .default-content-wrapper img {
+    height: 35px;
+  }
+  
+  .nav-sections .button {
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+}
+
+/* Tablet devices (901px to 1024px) */
+@media (min-width: 901px) and (max-width: 1024px) {
+  .nav-brand .default-content-wrapper {
+    gap: 25px;
+  }
+  
+  .nav-brand .default-content-wrapper ul {
+    gap: 20px;
+  }
+  
+  .nav-brand .default-content-wrapper ul li a {
+    font-size: 14px;
+  }
+  
+  .nav-sections .button {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+}
+
+/* Mobile menu expanded state */
+nav#nav[aria-expanded="true"] .nav-hamburger-icon {
+  background-color: transparent;
+}
+
+nav#nav[aria-expanded="true"] .nav-hamburger-icon::before {
+  transform: rotate(45deg);
+}
+
+nav#nav[aria-expanded="true"] .nav-hamburger-icon::after {
+  transform: rotate(-45deg);
+}
+
+/* Language selector styling (if added later) */
+.nav-language {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.nav-language select {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 14px;
+}
+/* header end */
+-------------------------------------------
+
+
+
+/* Join Lyca Today Section - Specific Styles */
+
+.joinlyca-container {
+  font-family: 'Arial', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  /* background-color: rgb(194, 16, 16) !important; */
+}
+
+.joinlyca-container .default-content-wrapper h1#join-lyca-today {
+    font-size: 4rem;
+    line-height: 3.48rem;
+    color: #fff;
+    margin-bottom: .25rem;
+    font-family: GTEestiLCDisplayBold;
+}
+.joinlyca-container .default-content-wrapper p#join-lyca-today {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center !important;
+  color: hwb(0 100% 0%) !important;
+}
+
+
+.joinlyca-container .default-content-wrapper p {
+  font-size: 25px !important;
+  /* margin-top: 200px; */
+  color: #fcfdfd !important;
+  margin-bottom: 40px;
+  line-height: 1.6;
+ text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.joinlyca-wrapper {
+  width: 100%;
+}
+
+.joinlyca-wrapper .lyca-cards {
+  display: grid;
+  /* gap: 25px; */
+  justify-content: center;
+}
+
+.joinlyca-wrapper .lyca-card {
+  /* background: white; */
+  border-radius: 12px;
+  padding: 30px 0px;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.joinlyca-wrapper .lyca-card img {
+  width: 24%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.joinlyca-wrapper .lyca-card p {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #ffffff !important;
+  margin: 0;
+}
+
+/* Mobile devices (up to 600px) */
+@media (max-width: 600px) {
+  .joinlyca-container {
+    padding: 30px 15px !important;
+  }
+  
+  .joinlyca-container .default-content-wrapper h1#join-lyca-today {
+    font-size: 2rem !important;
+    margin-bottom: 30px !important;
+  }
+  
+  .joinlyca-container .default-content-wrapper p {
+    font-size: 1.1rem !important;
+    margin-bottom: 30px !important;
+  }
+  
+  .joinlyca-wrapper .lyca-cards {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .joinlyca-wrapper .lyca-card {
+    padding: 25px 20px !important;
+  }
+}
+
+/* Tablet devices (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .joinlyca-wrapper .lyca-cards {
+       display: flex;
+  }
+
+  /* Adjust for odd number of cards */
+  .joinlyca-wrapper .lyca-cards .lyca-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1 !important;
+    justify-self: center !important;
+    max-width: 300px !important;
+  }
+}
+
+/* Laptop/Desktop devices (901px and up) */
+@media (min-width: 901px) {
+  .joinlyca-wrapper .lyca-cards {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+/* join lyca end */
+
+/* prepaid plans start */
+
+ .chooseaprepaid.cards.block {     /* to show column 2 image */
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;  
+}
+
+
+
+.chooseaprepaid.cards.block > div:first-child {
+   border-radius: 12px;
+    border: 2px solid #e30045;
+    grid-row: 1 / span 2;   /* image 1 will take row 2 hight full  */
+    position: relative;
+  position: relative;
+}
+
+
+.chooseaprepaid.cards.block > div:first-child p:first-child {
+    font-size: 50px;
+    font-weight: bold;
+    top: 23px;
+    color: #ffffff;
+    position: absolute;
+    left: 10px;
+}
+.chooseaprepaid.cards.block > div:first-child p:last-child {
+    font-size: 30px;
+    top: 130px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 10px;
+}
+
+.chooseaprepaid.cards.block > div:nth-of-type(2) {
+   border-radius: 12px;
+  position: relative;   
+}
+.chooseaprepaid.cards.block > div:nth-of-type(2) p:nth-of-type(1){
+     font-size: 50px;
+    font-weight: bold;
+    top: 23px;
+    color: #ffffff;
+    position: absolute;
+    left: 10px;   
+}
+
+.chooseaprepaid.cards.block > div:nth-of-type(2) p:nth-of-type(2){
+   font-size: 30px;
+    top: 130px;
+    color: #ffffff;
+    position: absolute;
+    left: 10px;   
+}
+
+.chooseaprepaid.cards.block > div:last-child {
+   border-radius: 12px;
+  position: relative;
+}
+.chooseaprepaid.cards.block > div:last-child p:first-child {
+   font-size: 50px;
+    font-weight: bold;
+    top: 23px;
+    color: #ffffff;
+    position: absolute;
+    left: 10px;   
+}
+
+.chooseaprepaid.cards.block > div:last-child p:last-child {
+   font-size: 30px;
+    top: 130px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 10px;
+   
+}
+.section.chooseaprepaid-container .default-content-wrapper h1 {
+    color: rgb(44, 45, 54);
+    margin-top: 0;
+    font-family: GTEestiLCDisplayBold;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #384c72;
+    /* margin-bottom: 0; */
+}
+.chooseaprepaid-container .default-content-wrapper p {
+     margin: 0;
+    font-family: GTEestiLCDisplayLight;
+    font-size: 22px;
+    color: #667085;
+    line-height: 32.56px;
+        text-align: center;
+}
+
+
+/* choose prepaid end */
+
+
+
+/* view rates start */
+.viewrates-wrapper {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.viewrates {
+ background-color: #395ed8;
+    text-align: center;
+    color: white;
+}
+
+.viewrates > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.viewrates picture {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.viewrates img {
+  width: 60%;
+  height: auto;
+}
+
+.viewrates p {
+  margin: 0;  
+  font-weight: 600;
+  line-height: 1.4;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .viewrates > div {
+    flex-direction: row;
+    justify-content: center;
+      }
+  
+  .viewrates picture {   
+    flex-shrink: 0;
+  }
+  
+ 
+}
+
+/* view rates end */
+
+
+/* app download start */
+
+.downloadapp-wrapper {
+  font-family: 'Arial', sans-serif;
+  padding: 80px 20px;
+  box-sizing: border-box;
+  /* background-color: #8e5656 !important; */
+}
+
+.downloadapp.block > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  margin-left: 125px;
+}
+
+.downloadapp.block > div > div:first-child {
+  flex: 1;
+}
+
+.downloadapp.block > div > div:last-child {
+  flex: 1;
+}
+
+
+.downloadapp.block img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.downloadapp.block h2 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.downloadapp.block h2#download-iosandroid {
+  font-size: 41px;
+  font-weight: 600;
+  font-family: GTEestiLCDisplayRegular;
+  color: #666666;
+  margin-bottom: 8px;
+  margin-left: 40px;
+  letter-spacing: 1px;
+}
+
+.downloadapp.block h2#my-lyca-mobile-app {
+  font-size: 36px;
+  font-weight: 700;
+  color: #666666;
+  margin-bottom: 30px;
+  font-family: GTEestiLCDisplayRegular;
+  margin-left: 40px;
+}
+
+
+.downloadapp.block ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 26px;
+  line-height: 1.5;
+  font-family: GTEestiLCDisplayRegular;
+  color: #344054;
+width: 420px;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.downloadapp.block ul li picture {
+  display: inline-block;
+  width: auto;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.downloadapp.block ul li img {
+  width: 34px;
+    height: auto;
+    display: block;
+}
+
+.downloadapp.block > div > div:last-child > p {
+  margin: 0;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.downloadapp.block > div > div:last-child > p:nth-of-type(1),
+.downloadapp.block > div > div:last-child > p:nth-of-type(2) {
+  display: block;
+  margin-top: 20px;
+}
+
+.downloadapp.block > div > div:last-child > p:nth-of-type(1) img,
+.downloadapp.block > div > div:last-child > p:nth-of-type(2) img {
+  height: 80px;
+  width: auto;
+  margin-left: 31px;
+}
+
+/* Mobile devices (up to 600px) */
+@media (max-width: 600px) {
+  .downloadapp-wrapper {
+    padding: 50px 15px;
+  }
+  
+  .downloadapp.block > div {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .downloadapp.block h2#download-iosandroid {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .downloadapp.block h2#my-lyca-mobile-app {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .downloadapp.block ul li {
+    font-size: 16px;
+  }
+  
+  .downloadapp.block ul li img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .downloadapp.block > div > div:last-child > p {
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+  }
+  
+  .downloadapp.block > div > div:last-child > p:nth-of-type(1) img,
+  .downloadapp.block > div > div:last-child > p:nth-of-type(2) img {
+    height: 45px;
+  }
+}
+
+/* Tablet devices (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .downloadapp-wrapper {
+    padding: 60px 30px;
+  }
+  
+  .downloadapp.block > div {
+    gap: 40px;
+  }
+  
+  .downloadapp.block h2#my-lyca-mobile-app {
+    font-size: 32px;
+  }
+  
+  .downloadapp.block ul li {
+    font-size: 17px;
+  }
+}
+
+/* App Store badges alignment */
+.downloadapp.block > div > div:last-child > p:nth-of-type(1),
+.downloadapp.block > div > div:last-child > p:nth-of-type(2) {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+}
+/* app downlaod end */
+
+/* helpto you */
+.plantypes-container {
+       background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);    
+    margin: 40px auto;
+    border-radius: 20px;
+}
+
+
+
+.plantypes-container .default-content-wrapper p {
+  text-align: center;
+    font-size: 4rem;
+    line-height: 1.6;
+    color: #3a3353;
+    font-weight: bold;
+}
+
+.plantypes-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.plantypes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+    width: 100%;
+    max-width: 1000px;
+}
+
+.plantypes > div {
+    
+    border-radius: 16px;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* .plantypes > div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+} */
+
+.plantypes picture {
+    display: block;
+    width: 100%;
+   }
+
+.plantypes img {
+    width: 70%;
+    height: auto;
+    border-radius: 12px;
+}
+
+
+
+.plantypes p:first-child {
+    font-size: 25px;
+    font-weight: 700;
+    color: #2c3e50;
+   
+}
+
+.plantypes p:last-child {
+       font-size: 22px;
+    font-weight: 800;
+   color: #3c4242;
+    margin: 0;
+}
+
+/* Animation for subtle entrance effect */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.plantypes > div {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.plantypes > div:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.plantypes > div:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.plantypes > div:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.plantypes > div:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+/* Media query to ensure this only applies to laptop/desktop sizes */
+@media (min-width: 992px) {
+    .plantypes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .plantypes {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .plantypes > div {
+        padding: 30px 25px;
+    }
+}
+
+
+/* countries */
+.countries-wrapper {
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin: 20px auto;
+    /* max-width: 1000px; */
+}
+
+.countries-container  .default-content-wrapper p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+        line-height: 1.6;
+    color: #423e3e;
+    font-weight: bold;
+    font-family: GTEestiLCDisplayBold;
+    font-size: 4rem;
+    font-weight: 700;    
+    text-align: center;    
+    color: #344054;
+}
+
+.countries {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.countries > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 120px;
+    padding: 15px 10px;
+    border-radius: 8px;
+    
+}
+
+.countries > div:first-child,
+.countries > div:last-child {
+    width: 60px;
+    background: transparent;
+    box-shadow: none;
+    font-size: 24px;
+    color: #6c757d;
+}
+
+.countries picture {
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.countries img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #dee2e6;
+}
+
+.countries p {
+    margin: 0;
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+.countries > div:first-child p,
+.countries > div:last-child p {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .countries {
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .countries > div {
+        width: 100px;
+        padding: 12px 8px;
+    }
+    
+    .countries picture {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .countries p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .countries {
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 10px;
+    }
+    
+    .countries > div {
+        width: 90px;
+        flex: 0 0 auto;
+    }
+}
+
+/* testimonials */
+.rescentblogs-wrapper {
+    padding: 40px 30px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    margin: 40px auto;
+    /* max-width: 1200px; */
+}
+.rescentblogs-container .default-content-wrapper p {
+  text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 4rem;
+    line-height: 1.6;
+    color: #423e3e;
+    font-weight: bold;
+}
+
+.rescentblogs {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.rescentblogs > div {
+    flex: 1;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.rescentblogs picture {
+    display: block;
+    width: 100%;
+}
+
+.rescentblogs img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.rescentblogs > div > div:last-child {
+    padding: 25px;
+}
+
+.rescentblogs p:first-child {
+    font-weight: 700;
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    min-height: 85px;
+}
+
+.rescentblogs p:last-child {
+    font-size: 14px;
+    color: #6c757d;
+    margin: 0;
+}
+
+/* Consistent card heights */
+.rescentblogs > div {
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+}
+
+.rescentblogs > div > div:first-child {
+    flex: 0 0 auto;
+}
+
+.rescentblogs > div > div:last-child {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* become retailer */
+.phone-container {
+    
+    background: #2a38cd;
+}
+
+.phone-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 600px;
+}
+
+.phone > div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.phone picture {
+    display: block;
+}
+
+.phone img {
+    width: 100px;
+    height: auto;
+}
+
+.phone p {
+    font-size: 20px;
+    font-weight: 600;
+    color: hwb(0 100% 0%);
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .phone > div {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .phone img {
+        width: 120px;
+    }
+    
+    .phone p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .phone-container {
+        padding: 30px 15px;
+    }
+    
+    .phone img {
+        width: 100px;
+    }
+    
+    .phone p {
+        font-size: 16px;
+    }
+}
+
+.section.joinlyca-container {
+    background-color: rgb(24, 17, 59);
+    padding: 10px;
+    margin-top: 100px;
+}
+
+
+/* Footer Wrapper and General Styles */

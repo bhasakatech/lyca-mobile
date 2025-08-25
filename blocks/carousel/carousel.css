@@ -1,0 +1,49 @@
+.carousel {
+  position: relative;
+  overflow: hidden; /* important to hide the extra slides */
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.carousel-track {
+  display: flex;                /* slides side by side */
+  transition: transform 0.6s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;               /* each slide takes full width */
+  text-align: center;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.slide-text {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 5;
+}
+
+.btn-prev {
+  left: 15px;
+}
+
+.btn-next {
+  right: 15px;
+}
