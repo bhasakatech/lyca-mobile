@@ -122,9 +122,8 @@
   left: 389px;
 }
 
-/* Tablet styles */
-
-@media (width >= 768px) {    
+/* Tablet styles (max-width: 768px) */
+@media screen and (width <= 768px){
   /* heading + description */
   .section.chooseaprepaid-container .default-content-wrapper h1 {
     margin: 0;
@@ -228,7 +227,7 @@
     top: 50px;
     color: #fff;
     position: absolute;
-    left: 13px;
+    left: 200px;
   }
 
   .chooseaprepaid.cards.block > div:nth-of-type(2) div:last-child p:last-child {
@@ -250,8 +249,8 @@
   }
 }
 
-/* Mobile styles */
-@media (768px <= width <= 1200px) {
+/* Mobile styles (max-width: 480px) */
+@media screen and (width <= 480px) {
   /* heading + description */
   .section.chooseaprepaid-container .default-content-wrapper h1 {
     margin: 0;
