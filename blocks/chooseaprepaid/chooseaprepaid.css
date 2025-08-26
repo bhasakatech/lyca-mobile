@@ -123,7 +123,9 @@
 }
 
 /* Tablet styles */
+
 @media screen and (max-width: 768px) {
+    
   /* heading + description */
   .section.chooseaprepaid-container .default-content-wrapper h1 {
     margin: 0;
