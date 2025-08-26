@@ -1,4 +1,3 @@
-/* Header Wrapper Styles */
 /* Navigation Bar Styles */
 .nav-wrapper {
   font-family: 'Arial', sans-serif;
@@ -9,13 +8,16 @@
 }
 
 nav#nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  height: 80px;
+  background-color: aliceblue;
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 100px;
+    height: 80px;
 }
 
 /* Brand/Logo Section */
@@ -68,7 +70,7 @@ nav#nav {
   text-decoration: none;
   color: #2c3e50;
   font-weight: 500;
-  font-size: 1.7rem;
+ font-size: 21px;
   transition: color 0.3s ease;
 }
 
@@ -257,7 +259,7 @@ nav#nav[aria-expanded="true"] .nav-hamburger-icon::after {
 
 .joinlyca-container .default-content-wrapper h1#join-lyca-today {
     font-size: 4rem;
-    line-height: 3.48rem;
+    line-height: 3rem;
     color: #fff;
     margin-bottom: .25rem;
     font-family: GTEestiLCDisplayBold;
@@ -369,10 +371,10 @@ nav#nav[aria-expanded="true"] .nav-hamburger-icon::after {
 /* prepaid plans start */
 
  .chooseaprepaid.cards.block {     /* to show column 2 image */
-    padding: 10px;
+    padding: 20px 130px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 18px;  
+    gap: 18px;
 }
 
 
@@ -387,19 +389,19 @@ nav#nav[aria-expanded="true"] .nav-hamburger-icon::after {
 
 
 .chooseaprepaid.cards.block > div:first-child p:first-child {
-    font-size: 50px;
+    font-size: 34px;
     font-weight: bold;
     top: 23px;
     color: #ffffff;
     position: absolute;
-    left: 10px;
+    left: 45px;
 }
 .chooseaprepaid.cards.block > div:first-child p:last-child {
-    font-size: 30px;
-    top: 130px;
+    font-size: 22px;
+    top: 86px;
     color: rgb(255, 255, 255);
     position: absolute;
-    left: 10px;
+    left: 44px;
 }
 
 .chooseaprepaid.cards.block > div:nth-of-type(2) {
@@ -407,20 +409,20 @@ nav#nav[aria-expanded="true"] .nav-hamburger-icon::after {
   position: relative;   
 }
 .chooseaprepaid.cards.block > div:nth-of-type(2) p:nth-of-type(1){
-     font-size: 50px;
+    font-size: 31px;
     font-weight: bold;
-    top: 23px;
-    color: #ffffff;
+    top: 30px;
+    color: rgb(255, 255, 255);
     position: absolute;
-    left: 10px;   
+    left: 44px; 
 }
 
 .chooseaprepaid.cards.block > div:nth-of-type(2) p:nth-of-type(2){
-   font-size: 30px;
-    top: 130px;
+       font-size: 24px;
+    top: 84px;
     color: #ffffff;
     position: absolute;
-    left: 10px;   
+    left: 45px;  
 }
 
 .chooseaprepaid.cards.block > div:last-child {
@@ -428,27 +430,26 @@ nav#nav[aria-expanded="true"] .nav-hamburger-icon::after {
   position: relative;
 }
 .chooseaprepaid.cards.block > div:last-child p:first-child {
-   font-size: 50px;
+  font-size: 32px;
     font-weight: bold;
-    top: 23px;
+    top: 12px;
     color: #ffffff;
     position: absolute;
-    left: 10px;   
+    left: 43px;  
 }
 
 .chooseaprepaid.cards.block > div:last-child p:last-child {
-   font-size: 30px;
-    top: 130px;
+   font-size: 23px;
+    top: 68px;
     color: rgb(255, 255, 255);
     position: absolute;
-    left: 10px;
-   
+    left: 42px;
 }
 .section.chooseaprepaid-container .default-content-wrapper h1 {
     color: rgb(44, 45, 54);
     margin-top: 0;
     font-family: GTEestiLCDisplayBold;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 56px;
     letter-spacing: 0;
@@ -710,7 +711,7 @@ width: 420px;
 
 .plantypes-container .default-content-wrapper p {
   text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1.6;
     color: #3a3353;
     font-weight: bold;
@@ -837,7 +838,7 @@ width: 420px;
     color: #423e3e;
     font-weight: bold;
     font-family: GTEestiLCDisplayBold;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;    
     text-align: center;    
     color: #344054;
@@ -946,7 +947,7 @@ width: 420px;
   text-align: center;
     margin-top: 20px;
     margin-bottom: 40px;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1.6;
     color: #423e3e;
     font-weight: bold;
