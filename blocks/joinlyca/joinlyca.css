@@ -1,0 +1,79 @@
+/* Container background */
+.section.joinlyca-container {
+  background: #1a2253; /* dark blue */
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+/* Heading */
+.section.joinlyca-container h1 {
+  font-size: 3rem;
+    line-height: 3.48rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: .25rem;
+    font-family: GTEestiLCDisplayBold;
+    text-align: center;
+}
+
+/* Description text */
+.section.joinlyca-container p {
+  font-size: 1rem;
+    line-height: 1.16rem;
+    color: #fff;
+    margin-bottom: 1.2rem;
+    margin-top: 0;
+    font-family: GTEestiLCDisplayRegular;
+    text-align: center;
+}
+.joinlyca.card.block img {
+  width: 100px !important ;
+  height: 100px !important;
+  margin-bottom: 15px;
+}
+/* Wrapper for 3 cards side by side */
+.joinlyca.card.block {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Each card */
+.joinlyca.card.block > div {
+ 
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  color: #fff;
+}
+
+.joinlyca.card.block img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.joinlyca.card.block p {
+     font-size: 1rem;
+    line-height: 1.16rem;
+    color: #fff;
+    font-family: GTEestiLCDisplayRegular;
+    text-decoration: none;
+}
+
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+  .joinlyca.card.block {
+    flex-direction: column;
+    align-items: center;
+  }
+}
