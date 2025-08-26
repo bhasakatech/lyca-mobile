@@ -1,0 +1,130 @@
+ .chooseaprepaid.cards.block { 
+    padding: 20px 130px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;   
+}
+/* image 1 */
+.chooseaprepaid.cards.block > div:first-child {
+   border-radius: 12px;
+    grid-row: 1 / span 2;   
+    position: relative;
+  position: relative;
+}
+
+.chooseaprepaid.cards.block > div:first-child div:last-child p:first-child {
+    font-size: 34px;
+    font-weight: bold;
+    top: 23px;
+    color: #ffffff;
+    position: absolute;
+    left: 45px;
+}
+
+.chooseaprepaid.cards.block > div:first-child div:last-child p:nth-of-type(2) {
+     top: 82px;
+    position: absolute;
+    left: 45px;
+   color: #fff;   
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.chooseaprepaid.cards.block > div:first-child  div:last-child p:last-child{
+    font-size: 34px;
+    font-weight: bold;
+    top: 60px;
+    color: #ffffff;
+    position: absolute;
+    left: 309px;    
+}
+
+/* image 2 */
+.chooseaprepaid.cards.block > div:nth-of-type(2) {
+   border-radius: 12px;
+  position: relative;   
+}
+
+.chooseaprepaid.cards.block > div:first-child p:last-child {
+    font-size: 22px;
+    top: 86px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 44px;
+}
+
+.chooseaprepaid.cards.block > div:nth-of-type(2) p:nth-of-type(1){
+    font-size: 31px;
+    font-weight: 450;
+    top: 30px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 44px; 
+}
+
+.chooseaprepaid.cards.block > div:nth-of-type(2) p:nth-of-type(2){
+       font-size: 20px;
+    top: 84px;
+    font-weight: 500;
+    color: #ffffff;
+    position: absolute;
+    left: 45px;  
+}
+
+.chooseaprepaid.cards.block > div:nth-child(2)  div:last-child p:last-child{
+    font-size: 34px;
+    font-weight: bold;
+    top: 60px;
+    color: #ffffff;
+    position: absolute;
+    left: 267px;
+}
+
+.chooseaprepaid.cards.block > div:last-child {
+   border-radius: 12px;
+  position: relative;
+}
+
+.chooseaprepaid.cards.block > div:last-child p:first-child {
+  font-size: 32px;
+    font-weight: bold;
+    top: 12px;
+    color: #ffffff;
+    position: absolute;
+    left: 43px;  
+}
+
+.chooseaprepaid.cards.block > div:last-child p:nth-of-type(2) {
+   font-size: 20px;
+    top: 68px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 42px;
+    font-weight: 500;
+}
+
+.chooseaprepaid.cards.block > div:last-child  div:last-child p:last-child{
+    font-size: 34px;
+    font-weight: bold;
+    top: 45px;
+    color: #ffffff;
+    position: absolute;
+    left: 389px;
+}
+.section.chooseaprepaid-container .default-content-wrapper h1 {
+   margin: 0;
+    font-size: 48px;
+    color: #384c72;
+    line-height: 40.68px;
+    text-align: center;  
+}
+
+.chooseaprepaid-container .default-content-wrapper p {
+    font-size: 16px;
+    color: #667085;
+    line-height: 32.56px;
+    text-align: center;
+}
+
+/* choose prepaid end */
