@@ -1,0 +1,108 @@
+.countries-wrapper {
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin: 20px auto;
+}
+
+.countries-container .default-content-wrapper p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #423e3e;
+  font-weight: bold;
+  font-family: GTEestiLCDisplayBold;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  color: #344054;
+}
+
+.countries {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.countries > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 120px;
+  padding: 15px 10px;
+  border-radius: 8px;
+}
+
+.countries > div:first-child,
+.countries > div:last-child {
+  width: 60px;
+  background: transparent;
+  box-shadow: none;
+  font-size: 24px;
+  color: #6c757d;
+}
+
+.countries picture {
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+.countries img {
+  width: 73%;
+  height: 73%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #dee2e6;
+}
+
+.countries p {
+  margin: 0;
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 14px;
+}
+
+.countries > div:first-child p,
+.countries > div:last-child p {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+@media (width <= 768px) {
+  .countries {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .countries > div {
+    width: 100px;
+    padding: 12px 8px;
+  }
+
+  .countries picture {
+    width: 60px;
+    height: 60px;
+  }
+
+  .countries p {
+    font-size: 13px;
+  }
+}
+
+@media (width <= 480px) {
+  .countries {
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+  }
+
+  .countries > div {
+    width: 90px;
+    flex: 0 0 auto;
+  }
+}
