@@ -1,121 +1,102 @@
-
-/* helpto you */
 .plantypes-container {
-       background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);    
-    margin: 40px auto;
-    border-radius: 20px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  margin: 40px auto;
+  border-radius: 20px;
 }
-
-
 
 .plantypes-container .default-content-wrapper p {
   text-align: center;
-    font-size: 3rem;
-    line-height: 1.6;
-    color: #3a3353;
-    font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.6;
+  color: #3a3353;
+  font-weight: bold;
 }
 
 .plantypes-wrapper {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .plantypes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-   
-    width: 100%;
-    max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  max-width: 1000px;
 }
 
 .plantypes > div {
-    
-    border-radius: 16px;
-     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    transition: all 0.3s ease;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  animation: fade-in-up 0.6s ease forwards;
 }
-
-/* .plantypes > div:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
-} */
 
 .plantypes picture {
-    display: block;
-    width: 100%;
-   }
-
-.plantypes img {
-    width: 70%;
-    height: auto;
-    border-radius: 12px;
+  display: block;
+  width: 100%;
 }
 
-
+.plantypes img {
+  width: 70%;
+  height: auto;
+  border-radius: 12px;
+}
 
 .plantypes p:first-child {
-    font-size: 25px;
-    font-weight: 700;
-    color: #2c3e50;
-   
+  font-size: 25px;
+  font-weight: 700;
+  color: #2c3e50;
 }
 
 .plantypes p:last-child {
-       font-size: 22px;
-    font-weight: 800;
-   color: #3c4242;
-    margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+  color: #3c4242;
+  margin: 0;
 }
 
-/* Animation for subtle entrance effect */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.plantypes > div {
-    animation: fadeInUp 0.6s ease forwards;
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .plantypes > div:nth-child(1) {
-    animation-delay: 0.1s;
+  animation-delay: 0.1s;
 }
 
 .plantypes > div:nth-child(2) {
-    animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .plantypes > div:nth-child(3) {
-    animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 .plantypes > div:nth-child(4) {
-    animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
-/* Media query to ensure this only applies to laptop/desktop sizes */
-@media (min-width: 992px) {
-    .plantypes {
-        grid-template-columns: repeat(2, 1fr);
-    }
+@media (width >= 992px) {
+  .plantypes {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-@media (min-width: 1200px) {
-    .plantypes {
-        grid-template-columns: repeat(4, 1fr);
-    }
-    
-    .plantypes > div {
-        padding: 30px 25px;
-    }
+@media (width >= 1200px) {
+  .plantypes {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .plantypes > div {
+    padding: 30px 25px;
+  }
 }
