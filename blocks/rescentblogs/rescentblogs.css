@@ -28,7 +28,7 @@
 .rescentblogs.blogs.block > div {
   background: #fff;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 10px;
   width: 100%;
   max-width: 350px;
   overflow: hidden;
