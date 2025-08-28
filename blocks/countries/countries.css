@@ -59,13 +59,16 @@
 .countries > div:first-child > div:first-child img {
   width: 50%;
   height: 50%;
-  margin-top: 25px;
+  margin-top: 25px;  
 }
 
 .countries > div:last-child > div:first-child img {
   width: 50%;
   height: 50%;
   margin-top: 25px;
+}
+.countries > div:nth-child(n+7):not(:first-child):not(:last-child) {
+  display: none;
 }
 
 .countries > div:first-child p,
