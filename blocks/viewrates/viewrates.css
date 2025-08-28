@@ -4,14 +4,17 @@
 }
 
 .section.viewrates-container {
-  background-color: #006ae0;
-  padding: 10px;
-  width: 100%;
+    background-color: #006ae0;
+    padding: 10px;
 }
 
 .viewrates.view.block {
   text-align: center;
   color: #fff;
+}
+
+.section.viewrates-container {
+  width: 100%;
 }
 
 .viewrates > div {
@@ -22,15 +25,15 @@
 }
 
 .viewrates.block div:first-child div:last-child {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
 }
 
-.viewrates.block div:first-child div:last-child img {
-  width: 18px;
-  margin-top: 10px;
+.viewrates.block div:first-child div:last-child img{
+    width: 18px;;
+    margin-top: 10px;
 }
 
 .viewrates picture {
@@ -52,8 +55,7 @@
   margin-left: -20px;
 }
 
-/* Responsive: Tablet */
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .viewrates > div {
     flex-flow: row wrap;
     justify-content: center;
@@ -64,8 +66,7 @@
   }
 }
 
-/* Responsive: Mobile / Small Screens */
-@media (max-width: 768px) {
+@media (width <= 769px) {
   .viewrates > div {
     flex-direction: row;
     justify-content: center;

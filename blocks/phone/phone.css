@@ -6,7 +6,7 @@
 }
 
 .phone.block {
-  padding: 15px;
+    padding: 10px;
 }
 
 .phone {
@@ -18,33 +18,32 @@
   flex-wrap: wrap;
 }
 
+.phone.block div:first-child img {
+    width: 75px;
+}
+
+.phone.block div:first-child div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone.block div:first-child div:last-child img {
+    width: 50%;
+    margin-left: 9px;
+    margin-top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .phone > div {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-.phone.block div:first-child {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.phone.block div:first-child img {
-  width: 75px;
-}
-
-.phone.block div:first-child div:last-child {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.phone.block div:first-child div:last-child img {
-  width: 50%;
-  margin-left: 9px;
-  margin-top: 10px;
-  cursor: pointer;
+.section.phone-container {
+  padding: 0;
 }
 
 .phone picture {
@@ -64,8 +63,7 @@
   margin: 0;
 }
 
-/* Responsive: Tablet */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .phone > div {
     flex-direction: column;
     text-align: center;
@@ -81,8 +79,7 @@
   }
 }
 
-/* Responsive: Desktop */
-@media (min-width: 769px) {
+@media (width >= 769px) {
   .phone-container {
     padding: 30px 15px;
   }
