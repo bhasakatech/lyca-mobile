@@ -1,65 +1,78 @@
-.viewrates-wrapper {
-  margin: 0 auto;
-  padding: 20px;
+
+
+/* become retailer */
+.phone-container {
+    
+    background: #2a38cd;
 }
 
-.viewrates {
-  background-color: #395ed8;
-  text-align: center;
-  color: #fff;
-}
-
-.viewrates > div {
-  display: flex;
-  flex-direction: column; /* mobile-first: vertical stack */
-  align-items: center;
-  gap: 20px;
-}
-
-.viewrates picture {
-  display: block;
-  max-width: 150px;
-  margin: 0 auto;
-}
-
-.viewrates img {
-  width: 60%;
-  height: auto;
-}
-
-.viewrates p {
-  margin: 0;
-  font-weight: 600;
-  line-height: 1.4;
-  text-shadow: 0 2px 4px rgb(0 0 0 / 30%);
-}
-
-/* Tablet: 481px to 768px */
-@media (width <= 768px) {
-  .viewrates > div {
-    flex-direction: row;
+.phone-wrapper {
+    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .viewrates img {
-    width: 50%;
-  }
 }
 
-/* Desktop: 769px and above */
-@media (width >= 769px) {
-  .viewrates > div {
-    flex-direction: row;
-    justify-content: center;
-    gap: 40px;
-  }
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 600px;
+}
 
-  .viewrates picture {
-    flex-shrink: 0;
-  }
+.phone > div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
 
-  .viewrates img {
-    width: 40%;
-  }
+.phone picture {
+    display: block;
+}
+
+.phone img {
+    width: 100px;
+    height: auto;
+}
+
+.phone p {
+    font-size: 20px;
+    font-weight: 600;
+    color: hwb(0 100% 0%);
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .phone > div {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .phone img {
+        width: 120px;
+    }
+    
+    .phone p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .phone-container {
+        padding: 30px 15px;
+    }
+    
+    .phone img {
+        width: 100px;
+    }
+    
+    .phone p {
+        font-size: 16px;
+    }
+}
+
+.section.joinlyca-container {
+    background-color: rgb(24, 17, 59);
+    padding: 10px;
+    margin-top: 100px;
 }
