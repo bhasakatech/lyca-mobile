@@ -44,7 +44,7 @@
 }
 
 .signup.block div:nth-child(1) div:nth-child(2) p a:hover {
-  box-shadow: 0 5px 9px color(rgb 19 20 19 / 20%);
+  box-shadow: 0 5px 9px grey;
 }
 
 .signup.block div:nth-child(2) div:nth-child(1) p {
