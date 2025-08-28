@@ -1,3 +1,8 @@
+.section.whylyca-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .whylyca-container {
   padding: 60px 20px;
   background-color: #eff8f8;
