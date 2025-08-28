@@ -1,6 +1,5 @@
 .countries-wrapper {
   padding: 20px;
-  background: #f8f9fa;
   border-radius: 8px;
   margin: 20px auto;
 }
@@ -57,12 +56,16 @@
   margin-bottom: 10px;
 }
 
-.countries img {
-  width: 73%;
-  height: 73%;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 2px solid #dee2e6;
+.countries > div:first-child > div:first-child img {
+  width: 50%;
+  height: 50%;
+  margin-top: 25px;
+}
+
+.countries > div:last-child > div:first-child img {
+  width: 50%;
+  height: 50%;
+  margin-top: 25px;
 }
 
 .countries > div:first-child p,
