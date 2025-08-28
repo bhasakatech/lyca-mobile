@@ -1,72 +1,73 @@
 .phone-wrapper {
-    background-color: blue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 100px !;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 100px;
 }
 
 .phone {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    max-width: 600px;
-    margin: 0 auto;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .phone > div {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .section.phone-container {
-    padding: 0px;
+  padding: 0;
 }
+
 .phone picture {
-    display: block;
+  display: block;
 }
 
 .phone img {
-    width: 100px;
-    height: auto;
-    object-fit: contain;
+  width: 100px;
+  height: auto;
+  object-fit: contain;
 }
 
 .phone p {
-    font-size: 20px;
-    font-weight: 500;
-    color: #fff;
-    margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
 }
 
 @media (width <= 768px) {
-    .phone > div {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
+  .phone > div {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
 
-    .phone img {
-        width: 120px;
-    }
+  .phone img {
+    width: 120px;
+  }
 
-    .phone p {
-        font-size: 18px;
-    }
+  .phone p {
+    font-size: 18px;
+  }
 }
 
 @media (width >= 769px) {
-    .phone-container {
-        padding: 30px 15px;
-    }
+  .phone-container {
+    padding: 30px 15px;
+  }
 
-    .phone img {
-        width: 100px;
-    }
+  .phone img {
+    width: 100px;
+  }
 
-    .phone p {
-        font-size: 16px;
-    }
+  .phone p {
+    font-size: 16px;
+  }
 }

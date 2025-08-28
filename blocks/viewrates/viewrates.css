@@ -1,18 +1,20 @@
 .viewrates-wrapper {
   margin: 0 auto;
-  padding: 0px !important;
+  padding: 1px;
 }
 
-.viewrates.view.block  {
-  width: 100% !important;
+.viewrates.view.block {
+  width: 100%;
   background-color: #003cff;
   text-align: center;
   color: #fff;
-  padding: 15px 0px;
+  padding: 15px 1px;
 }
+
 .section.viewrates-container {
-    width: 100% !important;
+  width: 100%;
 }
+
 .viewrates > div {
   display: flex;
   flex-direction: column;
@@ -41,7 +43,7 @@
 
 @media (width >= 768px) {
   .viewrates > div {
-    flex-flow: row wrap; 
+    flex-flow: row wrap;
     justify-content: center;
   }
 
@@ -50,7 +52,6 @@
   }
 }
 
-/* Desktop: 769px and above */
 @media (width <= 769px) {
   .viewrates > div {
     flex-direction: row;
