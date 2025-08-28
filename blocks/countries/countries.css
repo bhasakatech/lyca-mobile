@@ -40,15 +40,6 @@
   border-radius: 8px;
 }
 
-.countries > div:first-child,
-.countries > div:last-child {
-  width: 60px;
-  background: transparent;
-  box-shadow: none;
-  font-size: 24px;
-  color: #6c757d;
-}
-
 .countries picture {
   display: block;
   width: 70px;
@@ -75,8 +66,12 @@
 .countries > div:first-child,
 .countries > div:last-child {
   display: block;
+  width: 60px;
+  background: transparent;
+  box-shadow: none;
+  font-size: 24px;
+  color: #6c757d;
 }
-
 
 .countries > div:first-child p,
 .countries > div:last-child p {
