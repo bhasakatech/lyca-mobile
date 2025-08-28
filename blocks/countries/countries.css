@@ -2,6 +2,7 @@
   padding: 20px;
   border-radius: 8px;
   margin: 20px auto;
+  width: 100%;
 }
 
 .countries p {
@@ -9,6 +10,11 @@
   font-weight: 600;
   color: #2c3e50;
   font-size: 14px;
+}
+
+.section.countries-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .countries-container .default-content-wrapper p {
