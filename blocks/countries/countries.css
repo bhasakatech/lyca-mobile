@@ -67,9 +67,16 @@
   height: 50%;
   margin-top: 25px;
 }
-.countries > div:nth-child(n+7):not(:first-child):not(:last-child) {
+
+.countries > div:nth-child(n+7) {
   display: none;
 }
+
+.countries > div:first-child,
+.countries > div:last-child {
+  display: block;
+}
+
 
 .countries > div:first-child p,
 .countries > div:last-child p {
