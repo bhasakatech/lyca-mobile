@@ -1,7 +1,6 @@
-/* become retailer */
 .phone-container {
-    
-    background: #2a38cd;
+    background-color: #2a38cd;
+    padding: 40px 20px;
 }
 
 .phone-wrapper {
@@ -14,6 +13,8 @@
     align-items: center;
     gap: 30px;
     max-width: 600px;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .phone > div {
@@ -29,27 +30,27 @@
 .phone img {
     width: 100px;
     height: auto;
+    object-fit: contain;
 }
 
 .phone p {
     font-size: 20px;
     font-weight: 600;
-    color: hwb(0 100% 0%);
-    margin: 0px;
+    color: #ffffff;
+    margin: 0;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .phone > div {
         flex-direction: column;
         text-align: center;
         gap: 20px;
     }
-    
+
     .phone img {
         width: 120px;
     }
-    
+
     .phone p {
         font-size: 18px;
     }
@@ -59,11 +60,11 @@
     .phone-container {
         padding: 30px 15px;
     }
-    
+
     .phone img {
         width: 100px;
     }
-    
+
     .phone p {
         font-size: 16px;
     }
