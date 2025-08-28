@@ -373,8 +373,13 @@ header nav .nav-brand img {
     margin-top: 20px;
   }
 
+     /* quick recharge section */
+  #nav .section .default-content-wrapper {
+    height: auto;
+  }
+  
     /* menu logo */
-  #nav > .section:last-child .default-content-wrapper {
+  #nav >.section:last-child .default-content-wrapper {
     margin-left: 14px;
     margin-top: -5px;
   }
@@ -389,11 +394,6 @@ header nav .nav-brand img {
   #nav .section .default-content-wrapper .button-container {
     width: 92px;
     padding: 4px 18px;
-  }
-
-     /* quick recharge section */
-  #nav .section .default-content-wrapper {
-    height: auto;
   }
 
     /* quick recharge button a */
