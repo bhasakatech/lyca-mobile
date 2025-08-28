@@ -25,7 +25,7 @@
 }
 
 .signup.block div:nth-child(1) div:nth-child(1) p {
-  font-family: GTEestiLCDisplayRegular, sans-serif; 
+  font-family: GTEestiLCDisplayRegular, sans-serif;
   color: #344054;
   font-size: 17px;
 }
@@ -44,7 +44,7 @@
 }
 
 .signup.block div:nth-child(1) div:nth-child(2) p a:hover {
- box-shadow:0px 5px 9px rgba(19, 20, 19, 0.2);
+  box-shadow: 0 5px 9px color(rgb 19 20 19 / 20%);
 }
 
 .signup.block div:nth-child(2) div:nth-child(1) p {
@@ -53,7 +53,7 @@
   margin-bottom: 20px;
   font-size: 17px;
 }
-  
+
 /* Mobile (width <= 600px) */
 @media (width <= 600px) {
   .signup-wrapper {
@@ -77,7 +77,6 @@
   }
 }
 
-
 /* Tablet (width >= 601px) and (width <= 1024px) */
 @media (width >= 601px) and (width <= 1024px) {
   .signup-wrapper {
@@ -97,7 +96,6 @@
     font-size: 28px;
   }
 }
-
 
 /* Desktop (width >= 1025px) */
 @media (width >= 1025px) {
