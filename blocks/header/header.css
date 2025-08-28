@@ -392,7 +392,7 @@ header nav .nav-brand img {
   }
 
      /* quick recharge section */
-  .section .default-content-wrapper {
+  #nav .section .default-content-wrapper {
     height: auto;
   }
 
@@ -414,8 +414,8 @@ header nav .nav-brand img {
   }
 
   /* profile img and cart img */
-  .section .default-content-wrapper > p:nth-child(2) img,
-  .section .default-content-wrapper > p:nth-child(4) img {
+  #nav .section .default-content-wrapper > p:nth-child(2) img,
+  #nav .section .default-content-wrapper > p:nth-child(4) img {
     width: 28px;
     height: 28px;
     aspect-ratio: auto 28/28;
