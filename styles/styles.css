@@ -70,6 +70,14 @@
   }
 }
 
+*{
+  box-sizing: border-box;
+  margin:0px;
+  padding:0px;
+  list-style-type: none;
+  text-decoration: none;
+}
+
 body {
   display: none;
   margin: 0;
@@ -78,6 +86,7 @@ body {
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
   line-height: 1.6;
+  /* box-sizing: border-box; */
 }
 
 body.appear {
