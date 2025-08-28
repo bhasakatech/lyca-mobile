@@ -6,7 +6,12 @@
 }
 
 .phone.block {
-  padding: 10px;
+  padding: 20px;
+}
+
+.section.plantypes-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .phone {
