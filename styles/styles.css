@@ -72,8 +72,8 @@
 
 *{
   box-sizing: border-box;
-  margin:0px;
-  padding:0px;
+  margin:none;
+  padding:none;
   list-style-type: none;
   text-decoration: none;
 }
@@ -86,7 +86,6 @@ body {
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
   line-height: 1.6;
-  /* box-sizing: border-box; */
 }
 
 body.appear {

@@ -1,4 +1,5 @@
 /* header and nav layout */
+
 /* header-wrapper */
 .header-wrapper {
   width: 100%;
@@ -6,6 +7,7 @@
   display: flex;
   align-items: center;
 }
+
 /* header bolck */
 .header {
   width: 100% !important;
@@ -13,7 +15,8 @@
   display: flex;
   align-items: center;
 }
-/*nav-wrapper*/
+
+/* nav-wrapper */
 .header .nav-wrapper {
   background-color: var(--background-color);
   width: 100%;
@@ -23,7 +26,8 @@
   position: sticky;
   top: 0;
 }
-/* nav section*/
+
+/* nav section */
 .header #nav {
   box-sizing: border-box;
   justify-content: flex-start;
@@ -31,17 +35,18 @@
   display: flex;
   align-items: center;
   gap: 0;
-  margin: auto;
   max-width: 1248px;
   height: var(--nav-height);
   padding: 0 24px;
   font-family: var(--body-font-family);
   margin: 0 14.4px 0 40px;
 }
+
 /* nav-hamburger */
 .header .nav-hamburger {
   display: none;
 }
+
 /* nav-brand section (lyca logo) */
 header .nav-brand {
   cursor: pointer;
@@ -50,7 +55,7 @@ header .nav-brand {
   position: relative;
   text-align: center;
   align-items: flex-start;
-  margin: -8px 16px 0px -13px;
+  margin: -8px 16px 0 -13px;
   flex: 0 0 auto;
   border-radius: 50%;
   padding: 12px;
@@ -58,12 +63,14 @@ header .nav-brand {
   border: none;
   outline: none;
 }
+
 /* nav-brand image */
 header nav .nav-brand img {
   width: 100px;
   height: 40px;
-  aspect-ratio:auto 100/24;
+  aspect-ratio: auto 100/24;
 }
+
 /* nav-tools (menu) */
 .header nav .nav-tools {
   align-self: center;
@@ -72,10 +79,12 @@ header nav .nav-brand img {
   align-items: center;
   margin: 0;
 }
+
 /* nav-sections (logo for mobile) */
 .header .nav-sections {
   display: none;
 }
+
 /* nav-tools */
 .nav-tools .default-content-wrapper {
   display: flex;
@@ -83,72 +92,29 @@ header nav .nav-brand img {
   width: fit-content;
   align-self: flex-start;
 }
-/* nav-tools picture*/
+
+/* nav-tools picture */
 .nav-tools .default-content-wrapper picture {
   padding: 12px;
   margin-left: -12px;
   height: auto;
   margin-top: -4px;
 }
-/* nav-tools img*/
+
+/* nav-tools img */
 .nav-tools .default-content-wrapper picture img {
   width: 24px;
   height: 12px;
 }
-/* section for ul */
-#nav>div:nth-child(5) {
-  display: none !important;
-  height: 100%;
-  overflow: hidden;
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  text-align: left;
-  width: 100%;
-  flex-grow: 1;
-}
-/* section default container */
-#nav>div:nth-child(5) .default-content-wrapper {
-  height: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: relative;
-  display: flex;
-  flex: 1 1 auto;
-  white-space: nowrap;
-}
-/*section ul*/
-#nav>div:nth-child(5) .default-content-wrapper ul {
-  height: 100%;
+
+/* section default container (quick recharge) — general before specific to satisfy no-descending-specificity */
+.section .default-content-wrapper {
   display: flex;
   align-items: center;
-  gap: 0px;
-  margin: 0px;
+  justify-content: center;
+  height: 100%;
 }
-/* section ul li */
-#nav>div:nth-child(5) .default-content-wrapper ul li {
-  display: flex;
-  align-items: center;
-  align-items: center;
-  padding: 22px 16px;
-}
-/* section ul li a*/
-#nav>div:nth-child(5) .default-content-wrapper ul li a {
-  font-size: 1rem;
-  position: relative;
-  z-index: 1;
-  color: #21264e;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: left;
-  margin: 0 auto 0 0;
-  font-weight: 500;
-}
-/* removing underline when hover on ul li a */
-#nav>div:nth-child(5) .default-content-wrapper ul li a:hover{
-  text-decoration: none;
-}
+
 /* section for quick recharge */
 .section {
   height: 100%;
@@ -156,17 +122,12 @@ header nav .nav-brand img {
   display: flex;
   align-items: center;
 }
+
 /* section all p */
 .section p {
   cursor: pointer;
 }
-/* section default container (quick recharge) */
-.section .default-content-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
+
 /* quick recharge button container */
 .section .default-content-wrapper .button-container {
   display: flex;
@@ -179,6 +140,7 @@ header nav .nav-brand img {
   border-radius: 5px;
   margin: 0;
 }
+
 /* quick recharge button a */
 .section .default-content-wrapper .button-container a {
   height: 100%;
@@ -192,12 +154,13 @@ header nav .nav-brand img {
   margin: 0;
   text-align: center;
   background: transparent;
-  border-radius: none;
+  border-radius: 0;
   border: none;
 }
+
 /* profile and drop down */
-.section .default-content-wrapper>p:nth-child(2),
-.section .default-content-wrapper>p:nth-child(3) {
+.section .default-content-wrapper > p:nth-child(2),
+.section .default-content-wrapper > p:nth-child(3) {
   margin-left: 12px;
   margin-right: 5px;
   height: 100%;
@@ -206,121 +169,197 @@ header nav .nav-brand img {
   align-items: center;
   justify-content: center;
 }
+
 /* profile img and cart img */
-.section .default-content-wrapper>p:nth-child(2) img,
-.section .default-content-wrapper>p:nth-child(4) img {
+.section .default-content-wrapper > p:nth-child(2) img,
+.section .default-content-wrapper > p:nth-child(4) img {
   width: 32px;
   height: 32px;
   aspect-ratio: auto 32/32;
 }
+
 /* drop down */
-.section .default-content-wrapper>p:nth-child(3) {
+.section .default-content-wrapper > p:nth-child(3) {
   margin: -7px 10px 0 5px;
 }
+
 /* drop down imgs */
-.section .default-content-wrapper>p:nth-child(3) img,
-.section .default-content-wrapper>p:nth-child(7) img {
+.section .default-content-wrapper > p:nth-child(3) img,
+.section .default-content-wrapper > p:nth-child(7) img {
   width: 14px;
   height: 8px;
   aspect-ratio: auto 14/8;
 }
+
 /* EN */
-.section .default-content-wrapper>p:nth-child(5) {
+.section .default-content-wrapper > p:nth-child(5) {
   margin: -4px 0 0 30px;
-  font-size: .938rem;
+  font-size: 0.938rem;
   line-height: 1.099rem;
   color: #344054;
-  font-family: GTEestiLCDisplayRegular;
+  font-family: GTEestiLCDisplayRegular, sans-serif;
 }
-/* us country  */
-.section .default-content-wrapper>p:nth-child(6) {
-  margin: 0px 5px 0 10px;
+
+/* us country */
+.section .default-content-wrapper > p:nth-child(6) {
+  margin: 0 5px 0 10px;
 }
+
 /* drop down */
-.section .default-content-wrapper>p:nth-child(7) {
+.section .default-content-wrapper > p:nth-child(7) {
   margin-top: -2px;
 }
+
 /* us country img */
-.section .default-content-wrapper>p:nth-child(6) img {
+.section .default-content-wrapper > p:nth-child(6) img {
   width: 18px;
   height: 18px;
   aspect-ratio: auto 18/18;
 }
+
 /* menu for mobile */
-#nav>div:last-child {
+#nav > div:last-child {
   display: none;
 }
+
+/* section for ul (keep after generic .section rules to satisfy no-descending-specificity) */
+#nav > div:nth-child(5) {
+  display: none !important;
+  height: 100%;
+  overflow: hidden;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  width: 100%;
+  flex-grow: 1;
+}
+
+/* section default container */
+#nav > div:nth-child(5) .default-content-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  flex: 1 1 auto;
+  white-space: nowrap;
+}
+
+/* section ul */
+#nav > div:nth-child(5) .default-content-wrapper ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin: 0;
+}
+
+/* section ul li */
+#nav > div:nth-child(5) .default-content-wrapper ul li {
+  display: flex;
+  align-items: center;
+  padding: 22px 16px;
+}
+
+/* section ul li a */
+#nav > div:nth-child(5) .default-content-wrapper ul li a {
+  font-size: 1rem;
+  position: relative;
+  z-index: 1;
+  color: #21264e;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  margin: 0 auto 0 0;
+  font-weight: 500;
+}
+
+/* removing underline when hover on ul li a */
+#nav > div:nth-child(5) .default-content-wrapper ul li a:hover {
+  text-decoration: none;
+}
+
 /* styles for large desktops */
-@media (min-width:1441px) {
+@media (width >= 1441px) {
   .header .nav-wrapper {
     display: flex;
     justify-content: center;
   }
 }
+
 /* styles for laptops */
-@media (min-width:850px) {
+@media (width >= 850px) {
   /*  section ul li */
-  #nav>div:nth-child(5) {
+  #nav > div:nth-child(5) {
     display: block !important;
   }
 }
+
 /* styles for tablet */
-@media (min-width:600px) and (max-width:768px) {
+@media (600px <= width <= 768px) {
   /* nav section */
   .header #nav {
     padding-right: 0;
   }
+
   /* lyca logo */
   header .nav-brand {
-    margin: -10px 16px 0px -16px;
+    margin: -10px 16px 0 -16px;
   }
+
   /* quick recharge button */
   .section .default-content-wrapper .button-container {
     width: 92px;
     padding: 4px 18px;
   }
-  /* quick recharge button a*/
+
+  /* quick recharge button a */
   .section .default-content-wrapper .button-container a {
     font-size: 12px;
     line-height: 1.9;
     white-space: nowrap;
   }
+
   /* EN */
-  .section .default-content-wrapper>p:nth-child(5) {
-    font-size: .813rem;
-    line-height: .952rem;
+  .section .default-content-wrapper > p:nth-child(5) {
+    font-size: 0.813rem;
+    line-height: 0.952rem;
     color: #344054;
   }
 }
+
 /* styles for mobile */
-@media (max-width:600px) {
+@media (width <= 600px) {
   .header-wrapper,
   .header {
     width: 100% !important;
     height: 80px;
   }
-    .nav-wrapper {
+
+  .nav-wrapper {
     height: 100% !important;
     padding: 0 16px !important;
     margin: 0;
   }
-  /* hiding lyca logo,menu,EN,us country,drop down for mobile*/
+
+  /* hiding lyca logo,menu,EN,us country,drop down for mobile */
   .header .nav-brand,
   .header nav .nav-tools,
-  .section .default-content-wrapper>p:nth-child(5),
-  .section .default-content-wrapper>p:nth-child(6),
-  .section .default-content-wrapper>p:nth-child(7) {
+  .section .default-content-wrapper > p:nth-child(5),
+  .section .default-content-wrapper > p:nth-child(6),
+  .section .default-content-wrapper > p:nth-child(7) {
     display: none;
   }
+
   /* short logo and menu displayed for mobile */
   .header .nav-sections,
-  #nav>.section:last-child {
+  #nav > .section:last-child {
     display: block;
     margin: 0;
     padding: 12px;
     margin-left: -12px;
     background: transparent;
   }
+
   /* nav section */
   #nav {
     min-height: 100% !important;
@@ -328,60 +367,71 @@ header nav .nav-brand img {
     padding: 0 !important;
     margin: 0 !important;
   }
+
   /* short mobile logo */
   .header .nav-sections {
     margin-top: 20px;
   }
+
   /* menu logo */
-  #nav>.section:last-child .default-content-wrapper {
+  #nav > .section:last-child .default-content-wrapper {
     margin-left: 14px;
     margin-top: -5px;
   }
+
   /* menu img */
-  #nav>.section:last-child img {
+  #nav > .section:last-child img {
     width: 20px;
     height: 16px;
   }
+
   /* quick recharge section */
-  .section .default-content-wrapper{
-    height:auto;
+  .section .default-content-wrapper {
+    height: auto;
   }
+
   /* quick recharge button */
   .section .default-content-wrapper .button-container {
     width: 92px;
     padding: 4px 18px;
   }
-  /* quick recharge button a*/
+
+  /* quick recharge button a */
   .section .default-content-wrapper .button-container a {
     font-size: 12px;
     line-height: 1.9;
     white-space: nowrap;
   }
+
   /* profile */
-  .section .default-content-wrapper>p:nth-child(2) {
+  .section .default-content-wrapper > p:nth-child(2) {
     margin-left: 16px;
   }
+
   /* dropdown */
-  .section .default-content-wrapper>p:nth-child(3) {
+  .section .default-content-wrapper > p:nth-child(3) {
     margin: -7px 8px 0 0;
   }
+
   /* profile img and cart img */
-  .section .default-content-wrapper>p:nth-child(2) img,
-  .section .default-content-wrapper>p:nth-child(4) img {
+  .section .default-content-wrapper > p:nth-child(2) img,
+  .section .default-content-wrapper > p:nth-child(4) img {
     width: 28px;
     height: 28px;
     aspect-ratio: auto 28/28;
   }
 }
+
 /* styles to stop scroll bar for quick recharge */
-@media (max-width:330px) {
+@media (width <= 330px) {
   /* quick recharge section */
-  #nav>.section:nth-child(6) {
+  #nav > .section:nth-child(6) {
     overflow-x: scroll;
   }
 }
+
 /* styles to add padding for nav */
-@media (min-width:400px) and (max-width:600px) {
+@media (400px <= width <= 600px) {
   /* nav section */
   #nav {
     padding: 0 0 0 16px !important;
