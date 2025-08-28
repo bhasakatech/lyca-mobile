@@ -1,56 +1,5 @@
-.whylyca-container .default-content-wrapper p {
-  margin: 0 0 40px;
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 52px;
-  text-align: center;
-  color: #384c72;
-}
-
 .downloadapp-wrapper {
   width: 75%;
-}
-
-.whylyca-wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.whylyca > div {
-  background: #fff;
-  border-radius: 12px;
-  padding: 25px 20px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 12px rgb(0 0 0 / 8%);
-}
-
-.whylyca > div:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 16px rgb(0 0 0 / 15%);
-}
-
-.whylyca picture img {
-  width: 100px !important;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-.whylyca > div > div:nth-child(2) p:first-child {
-  font-size: 20px;
-  font-weight: bold;
-  color: #002b5c;
-  margin-bottom: 10px;
-}
-
-.whylyca > div > div:nth-child(2) p:last-child {
-  font-size: 16px;
-  line-height: 24px;
-  color: #555;
-  margin: 0;
 }
 
 .downloadapp.block div:nth-child(1) {
