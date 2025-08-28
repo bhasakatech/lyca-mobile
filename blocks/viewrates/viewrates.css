@@ -3,12 +3,12 @@
   padding: 20px;
 }
 
-.viewrates {
+.viewrates.view.block  {
+  width: 100%;
   background-color: #395ed8;
   text-align: center;
   color: #fff;
 }
-
 .viewrates > div {
   display: flex;
   flex-direction: column;
@@ -29,9 +29,10 @@
 
 .viewrates p {
   margin: 0;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.4;
   text-shadow: 0 2px 4px rgb(0 0 0 / 30%);
+  margin-left: -20px;
 }
 
 @media (width >= 768px) {
