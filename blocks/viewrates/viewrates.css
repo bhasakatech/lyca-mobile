@@ -36,9 +36,8 @@
 
 @media (width >= 768px) {
   .viewrates > div {
-    flex-direction: row;
+    flex-flow: row wrap; 
     justify-content: center;
-    flex-wrap: wrap;
   }
 
   .viewrates img {
