@@ -1,0 +1,72 @@
+
+
+/* become retailer */
+.phone-container {
+    
+    background: #2a38cd;
+}
+
+.phone-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 600px;
+}
+
+.phone > div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.phone picture {
+    display: block;
+}
+
+.phone img {
+    width: 100px;
+    height: auto;
+}
+
+.phone p {
+    font-size: 20px;
+    font-weight: 600;
+    color: hwb(0 100% 0%);
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .phone > div {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .phone img {
+        width: 120px;
+    }
+    
+    .phone p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .phone-container {
+        padding: 30px 15px;
+    }
+    
+    .phone img {
+        width: 100px;
+    }
+    
+    .phone p {
+        font-size: 16px;
+    }
+}
