@@ -1,65 +1,65 @@
 .viewrates-wrapper {
-    margin: 0 auto;
-    padding: 20px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .viewrates {
-    background-color: #395ed8;
-    text-align: center;
-    color: #fff;
+  background-color: #395ed8;
+  text-align: center;
+  color: #fff;
 }
 
 .viewrates > div {
-    display: flex;
-    flex-direction: column; /* mobile-first: stack vertically */
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column; /* mobile-first: vertical stack */
+  align-items: center;
+  gap: 20px;
 }
 
 .viewrates picture {
-    display: block;
-    max-width: 150px;
-    margin: 0 auto;
+  display: block;
+  max-width: 150px;
+  margin: 0 auto;
 }
 
 .viewrates img {
-    width: 60%;
-    height: auto;
+  width: 60%;
+  height: auto;
 }
 
 .viewrates p {
-    margin: 0;
-    font-weight: 600;
-    line-height: 1.4;
-    text-shadow: 0 2px 4px rgb(0 0 0 / 30%);
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.4;
+  text-shadow: 0 2px 4px rgb(0 0 0 / 30%);
 }
 
 /* Tablet: 481px to 768px */
-@media (width <= 769px)  {
-    .viewrates > div {
-        flex-direction: row; /* align items horizontally on tablet */
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+@media (width <= 768px) {
+  .viewrates > div {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
-    .viewrates img {
-        width: 50%;
-    }
+  .viewrates img {
+    width: 50%;
+  }
 }
 
 /* Desktop: 769px and above */
-@media (width >= 769px)   {
-    .viewrates > div {
-        flex-direction: row;
-        justify-content: center;
-        gap: 40px;
-    }
+@media (width >= 769px) {
+  .viewrates > div {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
 
-    .viewrates picture {
-        flex-shrink: 0;
-    }
+  .viewrates picture {
+    flex-shrink: 0;
+  }
 
-    .viewrates img {
-        width: 40%;
-    }
+  .viewrates img {
+    width: 40%;
+  }
 }
