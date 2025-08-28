@@ -7,7 +7,9 @@
   text-align: center;
   color: #384c72;
 }
-
+.downloadapp-wrapper {
+    width: 75%;
+}
 /* Cards wrapper */
 .whylyca-wrapper {
   display: grid;
@@ -75,11 +77,13 @@
 }
 
 .downloadapp.block div:nth-child(1) div:nth-child(2) h2 {
-  color: rgb(128 128 130);
-  font-size: 30px;
-  margin-left: 20px;
-  line-height: 10.5px;
+  color: #667085;
+  font-size: 25px;
+  margin-left: 40px;
+  line-height: 11.5px;
   font-weight: 500;
+  font-family: "GTEestiLCDisplayLight",'Montserrat', 'Poppins', 'Helvetica Neue', sans-serif;
+
 }
 
 .downloadapp.block div:nth-child(1) div:nth-child(2) ul {
@@ -92,9 +96,11 @@
 }
 
 .downloadapp.block div:nth-child(1) div:nth-child(2) li {
-  display: flex;
-  gap: 10px;
-  align-items: center;
+    margin-bottom: 11px;
+    line-height: 1.7;
+    display: flex;
+    gap: 13px;
+    align-items: center;
 }
 
 .downloadapp.block div:nth-child(1) div:nth-child(2) p {
