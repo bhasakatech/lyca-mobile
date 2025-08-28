@@ -1,4 +1,6 @@
 .section.joinlyca-container {
+  display: flex;
+  flex-direction: column;
   background: #1a2253;
   color: #fff;
   text-align: center;
