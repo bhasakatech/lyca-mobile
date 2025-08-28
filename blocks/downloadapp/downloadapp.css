@@ -1,4 +1,3 @@
-/* Section Heading */
 .whylyca-container .default-content-wrapper p {
   margin: 0 0 40px;
   font-size: 42px;
@@ -12,7 +11,6 @@
   width: 75%;
 }
 
-/* Cards wrapper */
 .whylyca-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -21,7 +19,6 @@
   margin: 0 auto;
 }
 
-/* Each card */
 .whylyca > div {
   background: #fff;
   border-radius: 12px;
@@ -36,14 +33,12 @@
   box-shadow: 0 6px 16px rgb(0 0 0 / 15%);
 }
 
-/* Card icon */
 .whylyca picture img {
   width: 100px !important;
   height: auto;
   margin-bottom: 20px;
 }
 
-/* Card title */
 .whylyca > div > div:nth-child(2) p:first-child {
   font-size: 20px;
   font-weight: bold;
@@ -51,7 +46,6 @@
   margin-bottom: 10px;
 }
 
-/* Card description */
 .whylyca > div > div:nth-child(2) p:last-child {
   font-size: 16px;
   line-height: 24px;
@@ -59,7 +53,6 @@
   margin: 0;
 }
 
-/* Download App Block */
 .downloadapp.block div:nth-child(1) {
   display: flex;
   align-items: center;
