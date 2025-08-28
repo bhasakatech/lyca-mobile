@@ -7,9 +7,11 @@
   text-align: center;
   color: #384c72;
 }
+
 .downloadapp-wrapper {
-    width: 75%;
+  width: 75%;
 }
+
 /* Cards wrapper */
 .whylyca-wrapper {
   display: grid;
@@ -82,8 +84,7 @@
   margin-left: 40px;
   line-height: 11.5px;
   font-weight: 500;
-  font-family: "GTEestiLCDisplayLight",'Montserrat', 'Poppins', 'Helvetica Neue', sans-serif;
-
+  font-family: GTEestiLCDisplayLight, Montserrat, Poppins, Helvetica Neue, sans-serif;
 }
 
 .downloadapp.block div:nth-child(1) div:nth-child(2) ul {
@@ -96,11 +97,11 @@
 }
 
 .downloadapp.block div:nth-child(1) div:nth-child(2) li {
-    margin-bottom: 11px;
-    line-height: 1.7;
-    display: flex;
-    gap: 13px;
-    align-items: center;
+  margin-bottom: 11px;
+  line-height: 1.7;
+  display: flex;
+  gap: 13px;
+  align-items: center;
 }
 
 .downloadapp.block div:nth-child(1) div:nth-child(2) p {
@@ -128,7 +129,7 @@
 }
 
 /* Mobile Styles */
-@media (width <= 600px){
+@media (width <= 600px) {
   .whylyca-wrapper {
     grid-template-columns: 1fr;
   }
