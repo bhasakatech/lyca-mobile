@@ -1,0 +1,50 @@
+/* view rates start */
+.viewrates-wrapper {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.viewrates {
+ background-color: #395ed8;
+    text-align: center;
+    color: white;
+}
+
+.viewrates > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.viewrates picture {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.viewrates img {
+  width: 60%;
+  height: auto;
+}
+
+.viewrates p {
+  margin: 0px;  
+  font-weight: 600;
+  line-height: 1.4;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .viewrates > div {
+    flex-direction: row;
+    justify-content: center;
+      }
+  
+  .viewrates picture {   
+    flex-shrink: 0;
+  }
+  
+ 
+}
