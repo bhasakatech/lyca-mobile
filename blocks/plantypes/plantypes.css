@@ -1,0 +1,95 @@
+.plantypes-container {
+  background: #eff8ff;
+  margin: 40px auto;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.plantypes-wrapper {
+    width:55%;
+}
+
+.section.plantypes-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.plantypes-container .default-content-wrapper p {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1.6;
+  color: #3a3353;
+  font-weight: bold;
+}
+
+.plantypes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.plantypes > div {
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  animation: fade-in-up 0.6s ease forwards;
+}
+
+.plantypes picture {
+  display: block;
+  width: 100%;
+}
+
+.plantypes img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.plantypes p:first-child {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.plantypes p:last-child {
+  font-size: 15px;
+  font-weight: 500;
+  color: #3c4242;
+  margin: 0;
+}
+
+.plantypes > div:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.plantypes > div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.plantypes > div:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.plantypes > div:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+@media (width >= 992px) {
+  .plantypes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 1200px) {
+  .plantypes {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .plantypes > div {
+    padding: 30px 25px;
+  }
+}
