@@ -7,6 +7,10 @@
   padding: 10px 20px;
 }
 
+.section.joinlyca-container .default-content-wrapper{
+  display: flex ;
+  flex-direction: column;
+}
 .section.joinlyca-container h1 {
   font-size: 3rem;
   line-height: 3.48rem;
