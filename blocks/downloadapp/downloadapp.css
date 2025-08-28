@@ -1,0 +1,151 @@
+.whylyca-container .default-content-wrapper p {
+  margin: 0 0 40px;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+  color: #384c72;
+}
+
+.downloadapp-wrapper {
+  width: 75%;
+}
+
+.whylyca-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.whylyca > div {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 8%);
+}
+
+.whylyca > div:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgb(0 0 0 / 15%);
+}
+
+.whylyca picture img {
+  width: 100px !important;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.whylyca > div > div:nth-child(2) p:first-child {
+  font-size: 20px;
+  font-weight: bold;
+  color: #002b5c;
+  margin-bottom: 10px;
+}
+
+.whylyca > div > div:nth-child(2) p:last-child {
+  font-size: 16px;
+  line-height: 24px;
+  color: #555;
+  margin: 0;
+}
+
+.downloadapp.block div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.downloadapp.block div:nth-child(1) div:nth-child(1) {
+  width: 50%;
+}
+
+.downloadapp.block div:nth-child(1) div:nth-child(1) img {
+  width: 70% !important;
+}
+
+.downloadapp.block div:nth-child(1) div:nth-child(2) {
+  width: 50% !important;
+}
+
+.downloadapp.block div:nth-child(1) div:nth-child(2) h2 {
+  color: #667085;
+  font-size: 25px;
+  margin-left: 40px;
+  line-height: 11.5px;
+  font-weight: 500;
+  font-family: GTEestiLCDisplayLight, Montserrat, Poppins, "Helvetica Neue", sans-serif;
+}
+
+.downloadapp.block div:nth-child(1) div:nth-child(2) ul {
+  color: rgb(56 56 58);
+  font-size: 17px;
+  line-height: 2.4;
+  font-weight: 500;
+  margin-top: 40px;
+  list-style: none;
+}
+
+.downloadapp.block div:nth-child(1) div:nth-child(2) li {
+  margin-bottom: 11px;
+  line-height: 1.7;
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+
+.downloadapp.block div:nth-child(1) div:nth-child(2) p {
+  display: inline-block;
+  margin-left: 20px;
+  width: 40% !important;
+}
+
+/* Tablet Styles */
+@media (width <= 1024px) {
+  .whylyca-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .downloadapp.block div:nth-child(1) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .downloadapp.block div:nth-child(1) div:nth-child(1),
+  .downloadapp.block div:nth-child(1) div:nth-child(2) {
+    width: 100% !important;
+  }
+}
+
+/* Mobile Styles */
+@media (width <= 600px) {
+  .whylyca-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .whylyca > div {
+    padding: 20px 15px;
+  }
+
+  .whylyca picture img {
+    width: 80px !important;
+  }
+
+  .downloadapp.block div:nth-child(1) {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .downloadapp.block div:nth-child(1) div:nth-child(2) h2 {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .downloadapp.block div:nth-child(1) div:nth-child(2) ul {
+    font-size: 15px;
+  }
+}
