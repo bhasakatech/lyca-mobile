@@ -373,7 +373,7 @@ header nav .nav-brand img {
     margin-top: 20px;
   }
 
-  /* menu logo */
+    /* menu logo */
   #nav > .section:last-child .default-content-wrapper {
     margin-left: 14px;
     margin-top: -5px;
@@ -385,18 +385,18 @@ header nav .nav-brand img {
     height: 16px;
   }
 
-  /* quick recharge section */
-  .section .default-content-wrapper {
-    height: auto;
-  }
-
   /* quick recharge button */
-  .section .default-content-wrapper .button-container {
+  #nav .section .default-content-wrapper .button-container {
     width: 92px;
     padding: 4px 18px;
   }
 
-  /* quick recharge button a */
+     /* quick recharge section */
+  .section .default-content-wrapper {
+    height: auto;
+  }
+
+    /* quick recharge button a */
   .section .default-content-wrapper .button-container a {
     font-size: 12px;
     line-height: 1.9;
@@ -437,4 +437,4 @@ header nav .nav-brand img {
     padding: 0 0 0 16px !important;
     margin: 0 !important;
   }
-}
+}              
