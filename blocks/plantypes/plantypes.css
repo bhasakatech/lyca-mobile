@@ -1,7 +1,7 @@
 .plantypes-container {
   background: #eff8ff;
   margin: 40px auto;
-  padding: 10px 10px;
+  padding: 10px;
   border-radius: 20px;
 }
 
@@ -16,6 +16,7 @@
 .plantypes-wrapper {
     width: 40%;
 }
+
 .plantypes {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
