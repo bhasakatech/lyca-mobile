@@ -3,12 +3,14 @@
   padding: 1px;
 }
 
+.section.viewrates-container {
+    background-color: #006ae0;
+    padding: 10px;
+}
+
 .viewrates.view.block {
-  width: 100%;
-  background-color: #003cff;
   text-align: center;
   color: #fff;
-  padding: 15px 1px;
 }
 
 .section.viewrates-container {
@@ -20,6 +22,18 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+}
+
+.viewrates.block div:first-child div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.viewrates.block div:first-child div:last-child img{
+    width: 18px;;
+    margin-top: 10px;
 }
 
 .viewrates picture {
