@@ -27,6 +27,14 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 15px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.countries::-webkit-scrollbar {
+  display: none;
 }
 
 .countries p {
@@ -44,6 +52,9 @@
   width: 120px;
   padding: 15px 10px;
   border-radius: 8px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  box-sizing: border-box;
 }
 
 .countries picture {
@@ -57,7 +68,7 @@
 .countries > div:last-child > div:first-child img {
   width: 50%;
   height: 50%;
-  margin-top: 25px;  
+  margin-top: 25px;
 }
 
 .countries > div:nth-child(n+7) {
@@ -85,9 +96,15 @@
   .countries {
     justify-content: center;
     gap: 10px;
-    flex-wrap: nowrap; /* Prevent wrapping */
-    overflow-x: auto;   /* Enable horizontal scroll */
+    flex-wrap: nowrap;
+    overflow-x: auto;
     padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .countries::-webkit-scrollbar {
+    display: none;
   }
 
   .countries-container .default-content-wrapper p {
@@ -97,7 +114,6 @@
   .countries > div {
     width: 100px;
     padding: 12px 8px;
-    flex: 0 0 auto; /* Fixed width for scrollable items */
   }
 
   .countries picture {
@@ -109,7 +125,6 @@
     font-size: 13px;
   }
 
-  /* Show only first 3 country cards */
   .countries > div:nth-child(n+5):not(:last-child) {
     display: none;
   }
@@ -132,11 +147,17 @@
     display: flex;
     transition: transform 0.3s ease;
     gap: 15px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .countries::-webkit-scrollbar {
+    display: none;
   }
 
   .countries > div {
     flex: 0 0 20%;
-    box-sizing: border-box;
   }
 
   .arrow-left,
@@ -150,7 +171,7 @@
     cursor: pointer;
     z-index: 10;
     padding: 8px;
-    box-shadow: 0 0 5px rgba(0 0 0 / 20%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   }
 
   .arrow-left {
