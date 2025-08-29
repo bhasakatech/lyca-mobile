@@ -3,7 +3,6 @@
   position: relative;
   width: 100%;
   max-width: 1265px; 
-  margin: auto;
   overflow-x: auto;
   anchor-name: --carousel;
   border: 2px solid green;
@@ -12,15 +11,15 @@
 }
 
 /* making scroll bar hidden */
-.carousel-container::-webkit-scrollbar{
-    display: none;
+.carousel-container::-webkit-scrollbar {
+  display: none;
 }
 
 /* carosel-wrapper */
-.carousel-wrapper{
-    width:100%;
-    padding: 0 !important;
-    margin: 0 !important;
+.carousel-wrapper {
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 /* banner carousel for slides */
@@ -29,20 +28,48 @@
   width: 100%;
 }
 
+/* Left and right arrows */
+.bannercarousel > div:first-child,
+.bannercarousel > div:last-child {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+  border-radius: 50%;
+  cursor: pointer;
+  position-anchor: --carousel;
+  translate: -150%;
+  background-color: rgb(63 63 63 / 0%);
+}
+
+/* left arrow */
+.bannercarousel > div:first-child {
+  position-area: left center;
+  translate: 150%;
+}
+
+/* right arrow */
+.bannercarousel > div:last-child {
+  position-area: right center;
+} 
+
 /* making full width except left and right arrow */
-.bannercarousel > div:not(:first-child):not(:last-child) {
+.bannercarousel > div:not(:first-child, :last-child) {
   flex: 0 0 100%;   
   min-width: 100%;
 }
 
 /* making full width of inner div */
-.bannercarousel >div >div:not(:first-child):not(:last-child) {
-    width:100%;
-    height:100%;
+.bannercarousel > div > div:not(:first-child, :last-child) {
+  width: 100%;
+  height: 100%;
 }
 
 /* making picture as full width */
-.bannercarousel picture:not(:first-child):not(:last-child){
+.bannercarousel picture:not(:first-child, :last-child) {
   display: block !important;
   width: 100% !important;
   height: 100%;
@@ -50,37 +77,8 @@
 }
 
 /* making img as full width */
-.bannercarousel img:not(:first-child):not(:last-child){
+.bannercarousel img:not(:first-child, :last-child) {
   width: 100% !important;
   max-width: 100% !important;
   height: 100%;
 }
-
-/* Left and right arrows */
-.bannercarousel>div:first-child,.bannercarousel>div:last-child {
-  position: fixed;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height:50px;
-  z-index: 10;
-  border-radius: 50%;
-  cursor: pointer;
-  position-anchor: --carousel;
-  translate: -150%;
-  background-color: rgba(63, 63, 63, 0);
-}
-
-/* left arrow */
-.bannercarousel>div:first-child{
-  position-area: left center;
-  translate: 150%;
-}
-
-/* right arrow */
-.bannercarousel>div:last-child{
-    position-area: right center;
-} 
-
-
