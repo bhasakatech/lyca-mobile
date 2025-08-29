@@ -3,7 +3,7 @@ footer {
   font-size: var(--body-font-size-xs);
 }
 
-footer .footer>div {
+footer .footer > div {
   margin: auto;
   max-width: 1200px;
   padding: 40px 24px 24px;
@@ -13,167 +13,163 @@ footer .footer p {
   margin: 0;
 }
 
-@media (width >=900px) {
-  footer .footer>div {
+@media (width >= 900px) {
+  footer .footer > div {
     padding: 40px 32px 24px;
   }
-  
 }
 
 .footer-wrapper {
+  width: 100%;
   background-color: #21254f;
   height: fit-content;
 }
 
-.footer {
-  margin-left: 34px;
+footer .footer {
+  width: auto;
   margin-right: 34px;
 }
 
-.footer-child-wrapper {
+footer .footer-child-wrapper {
   max-width: 1372px;
   margin: auto;
 }
 
-.footer-child-wrapper .section {
+footer .footer-child-wrapper .section {
   width: 100%;
   margin: auto;
-
 }
 
-.list-wrapper {
+.footer-child-wrapper .section > div {
+  width: 100%;
+}
+
+.footer-child-wrapper .list-wrapper {
+  width: inherit;
   display: flex;
   justify-content: space-between;
 }
 
-.list-wrapper>div>div {
+.footer-child-wrapper .list-wrapper > div > div {
   display: flex;
   flex-direction: column;
   margin-left: 24px;
   font-size: 16px;
-  color: #ffff;
+  color: #fff;
   width: 100%;
   gap: 16px;
 }
 
-.list-wrapper>div>div>table td:first-of-type {
+.footer-child-wrapper .list-wrapper > div > div > table td:first-of-type {
   width: 100%;
   font-weight: 700;
+  text-align: left;
 }
 
-.list-wrapper>div>div>table td:last-of-type {
+.footer-child-wrapper .list-wrapper > div > div > table td:last-of-type {
   display: none;
-
 }
 
-.list-wrapper>div>div>ul {
+.footer-child-wrapper .list-wrapper > div > div > ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 16px;
   justify-content: space-between;
-  padding: unset;
-
+  padding: 0;
 }
 
-.list-wrapper>div>div>ul>li>a {
-  color: #ffff;
+.footer-child-wrapper .list-wrapper > div > div > ul > li > a {
+  color: #fff;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: -0.5px;
-
 }
 
-.list-wrapper>div:last-of-type>div>ul,
-.list-wrapper>div:last-of-type>div {
-  gap: 0px;
-
+.footer-child-wrapper .list-wrapper > div:last-of-type > div > ul,
+.footer-child-wrapper .list-wrapper > div:last-of-type > div {
+  gap: 10px;
 }
 
-.list-wrapper>div>div>table td:first-of-type {
-  text-align: left !important;
-}
-
-.list-wrapper>div:last-of-type img {
+.footer-child-wrapper .list-wrapper > div:last-of-type img {
   border-radius: 8px;
   width: 135px;
   height: 40px;
 }
 
-.default-content-wrapper {
-  padding-top: 36px;
-  padding-bottom: 36px;
+.footer-child-wrapper > .section:last-of-type {
+  width: 100%;
+  padding-left: 24px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 16px 96px;
-  min-height: 100px;
-  border-top: 1px solid #bec6d5;
-  margin-top: 32px;
+  justify-content: center;
+  margin-top: 16px;
 }
 
-.default-content-wrapper>p:nth-of-type(2) {
-  color: #ffff;
+.footer-child-wrapper .default-content-wrapper {
+  width: 100%;
+  border-top: 1px solid #bec6d5;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.footer-child-wrapper .default-content-wrapper > p:nth-of-type(2) {
+  color: #fff;
   font-size: 16px;
 }
 
-.default-content-wrapper>p:last-of-type {
+.footer-child-wrapper .default-content-wrapper > p:last-of-type {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  color: #ffff;
-
+  color: #fff;
 }
 
-.default-content-wrapper>p:first-of-type img {
-  width: 93px;
-  height: 36px;
-
-}
-
-.default-content-wrapper>p:last-of-type img {
+.footer-child-wrapper .default-content-wrapper > p:last-of-type img {
+  height: 32px;
+  width: 32px;
   border-radius: 100%;
 }
 
-@media screen and (max-width:599px) {
+.footer-child-wrapper .default-content-wrapper > p:first-of-type img {
+  width: 93px;
+  height: 36px;
+}
 
-  .footer {
-    padding: 0 16px;
-    margin: 0;
-  }
-
+/* Small screens */
+@media screen and (width <= 599px) {
   .footer-child-wrapper {
-    padding: 0  !important;
+    padding: 0;
   }
 
-  .list-wrapper>div>div>table td:last-of-type {
-    display: block !important;
-
+  .footer-child-wrapper .list-wrapper > div > div > table td:last-of-type {
+    display: block;
   }
 
-  .list-wrapper {
+  .footer-child-wrapper .list-wrapper {
     flex-direction: column;
     max-width: 97%;
     gap: 16px;
-    padding-right: 32px;
     padding-top: 5px;
   }
 
-  .list-wrapper>div>div>ul {
+  .footer-child-wrapper .list-wrapper > div > div > ul {
     display: none;
   }
 
-   .list-wrapper>div:last-of-type{
+  .footer-child-wrapper .list-wrapper > div:last-of-type {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: unset;
-   }
+    padding: 0;
+  }
 
-  .list-wrapper>div:last-of-type>div {
-    padding-top:24px ;
+  .footer-child-wrapper .list-wrapper > div:last-of-type > div {
+    padding: 24px 0;
     border-top: 1px solid #bec6d5;
     display: flex;
     justify-content: space-between;
@@ -182,135 +178,116 @@ footer .footer p {
     width: 100%;
   }
 
-  .list-wrapper>div:last-of-type>div>table td:first-of-type {
+  .footer-child-wrapper .list-wrapper > div:last-of-type > div > table td:first-of-type {
     display: flex;
     justify-content: center;
   }
 
-  .list-wrapper>div:last-of-type>div>ul {
-    display: flex !important;
+  .footer-child-wrapper .list-wrapper > div:last-of-type > div > ul {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 4px;
   }
 
-  .list-wrapper>div:last-of-type>div>ul img {
+  .footer-child-wrapper .list-wrapper > div:last-of-type > div > ul img {
     width: 99px;
     height: 29px;
-
   }
 
-  .default-content-wrapper>p:nth-of-type(1),
-  .default-content-wrapper>p:nth-of-type(3) {
+  .footer-child-wrapper .default-content-wrapper > p:nth-of-type(1),
+  .footer-child-wrapper .default-content-wrapper > p:nth-of-type(3) {
     display: none;
-
   }
 
-  .default-content-wrapper {
+  .footer-child-wrapper .default-content-wrapper {
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 12px;
   }
-
 }
 
-
-@media screen and (min-width:600px) and (max-width:767px) {
-
+@media screen and (600px <= width <= 767px) {
   .footer {
     padding: 0 16px;
     margin: 0;
   }
 
   .footer-child-wrapper {
-    padding: 5px !important;
-
+    padding: 5px;
   }
 
-  .list-wrapper>div>div>table td:last-of-type {
-    display: none !important;
-
+  .footer-child-wrapper .list-wrapper > div > div > table td:last-of-type {
+    display: none;
   }
 
   .list-wrapper {
     flex-direction: column;
   }
 
-  .default-content-wrapper>p:nth-of-type(1),
-  .default-content-wrapper>p:nth-of-type(3) {
+  .footer-child-wrapper .default-content-wrapper > p:nth-of-type(1),
+  .footer-child-wrapper .default-content-wrapper > p:nth-of-type(3) {
     display: none;
-
   }
 
-  .default-content-wrapper {
+  .footer-child-wrapper .default-content-wrapper {
     justify-content: center;
     align-items: center;
   }
-
 }
 
-@media screen and (min-width:767px) and (max-width:768px) {
-
+@media screen and (767px <= width <= 768px) {
   .footer {
     padding: 0 16px;
     margin: 0;
   }
 
   .footer-child-wrapper {
-    padding: 0 !important;
-
+    padding: 0;
   }
 
-  .list-wrapper>div>div>table td:last-of-type {
-    display: none !important;
-
+  .list-wrapper > div > div > table td:last-of-type {
+    display: none;
   }
 
   .list-wrapper {
     flex-wrap: wrap;
     justify-content: center;
-    row-gap: 16px;
+    row-gap: 24px;
   }
 
-  .default-content-wrapper>p:nth-of-type(1),
-  .default-content-wrapper>p:nth-of-type(3) {
+  .footer-child-wrapper .default-content-wrapper > p:nth-of-type(1),
+  .footer-child-wrapper .default-content-wrapper > p:nth-of-type(3) {
     display: none;
-
   }
 
-  .default-content-wrapper {
+  .footer-child-wrapper .default-content-wrapper {
     justify-content: center;
     align-items: center;
     gap: 14px;
     font-size: 16px;
     line-height: 18.56px;
   }
-
 }
 
-@media screen and (min-width:769px) and (max-width:1024px) {
-
+@media screen and (769px <= width <= 1024px) {
   .footer {
-    padding: 0 16px;
+    padding: 16px;
     margin: 0;
   }
 
   .footer-child-wrapper {
-    padding: 0 !important;
-
+    padding: 0;
   }
 
-  .list-wrapper>div>div>table td:last-of-type {
-    display: none !important;
-
+  .footer-child-wrapper .list-wrapper > div > div > table td:last-of-type {
+    display: none;
   }
 
-  .list-wrapper {
+  .footer-child-wrapper .list-wrapper {
     flex-wrap: wrap;
     justify-content: space-between;
-    column-gap: 24px;
     row-gap: 24px;
   }
-
 }
