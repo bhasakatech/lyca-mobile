@@ -32,7 +32,7 @@
 }
 
 /* announcementbar-para-main-div */
-.announcementbar>div:first-child {
+.announcementbar > div:first-child {
     text-align: center;
     color: #344054;
     font-size: 16px;
@@ -44,11 +44,11 @@
     height: 100%;
     flex: 1 1;
     padding: 0 !important;
-    font-family: GTEestiLCDisplayRegular;
+    font-family: GTEestiLCDisplayRegular, sans-serif;
 }
 
-/* announcementbar- cancel symbol main div */
-.announcementbar>div:last-child {
+/* announcementbar-cancel symbol main div */
+.announcementbar > div:last-child {
     padding: 0 !important;
     margin-left: auto !important;
     display: flex;
@@ -56,9 +56,9 @@
     justify-content: center;
 }
 
-/* announcementbar -cancel sybmol inner div */
-.announcementbar>div:last-child>div {
-    padding:7px 8px 0 8px;
+/* announcementbar-cancel symbol inner div */
+.announcementbar > div:last-child > div {
+    padding: 7px 8px 0;
     width: 100%;
     display: flex;
     align-items: flex-end;
@@ -66,7 +66,7 @@
 }
 
 /* announcementbar-paragraph */
-.announcementbar>div>div>p {
+.announcementbar > div > div > p {
     margin: 0 !important;
     padding: 0 !important;
 }
@@ -85,20 +85,20 @@
 }
 
 /* media query for tablet */
-@media (width<=768px) {
+@media (width <= 768px) {
     /* announcementbar-wrapper */
     .announcementbar-wrapper {
-        padding:0 16px !important;
+        padding: 0 16px !important;
     }
 
     /* announcementbar-para-main-div */
-    .announcementbar>div:first-child p{
+    .announcementbar > div:first-child p {
         font-size: 14px;
         font-weight: 400;
         line-height: 16px;
         letter-spacing: 0;
         color: #344054;
         text-align: left;
-        font-family: GTEestiLCDisplayBold;
+        font-family: GTEestiLCDisplayBold, sans-serif;
     }
 }
