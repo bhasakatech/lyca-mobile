@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  flex-direction: row;
 }
 
 .downloadapp.block div:nth-child(1) div:nth-child(1) {
@@ -13,11 +14,11 @@
 }
 
 .downloadapp.block div:nth-child(1) div:nth-child(1) img {
-  width: 70% !important;
+  width: 70%;
 }
 
 .downloadapp.block div:nth-child(1) div:nth-child(2) {
-  width: 50% !important;
+  width: 50%;
 }
 
 .downloadapp.block div:nth-child(1) div:nth-child(2) h2 {
@@ -49,52 +50,106 @@
 .downloadapp.block div:nth-child(1) div:nth-child(2) p {
   display: inline-block;
   margin-left: 20px;
-  width: 40% !important;
+  width: 40%;
 }
 
-/* Tablet Styles */
-@media (width <= 1024px) {
-  .whylyca-wrapper {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
+@media (width >= 600px) and (width <= 1024px) {
   .downloadapp.block div:nth-child(1) {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    gap: 20px;
   }
 
   .downloadapp.block div:nth-child(1) div:nth-child(1),
   .downloadapp.block div:nth-child(1) div:nth-child(2) {
-    width: 100% !important;
-  }
-}
-
-/* Mobile Styles */
-@media (width <= 600px) {
-  .whylyca-wrapper {
-    grid-template-columns: 1fr;
+    width: 50%;
   }
 
-  .whylyca > div {
-    padding: 20px 15px;
+  .downloadapp.block div:nth-child(1) div:nth-child(2) {
+    padding-left: 20px;
   }
 
-  .whylyca picture img {
-    width: 80px !important;
-  }
-
-  .downloadapp.block div:nth-child(1) {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .downloadapp.block div:nth-child(1) div:nth-child(2) h2 {
-    font-size: 24px;
-    line-height: 1.4;
+  .downloadapp.block div:nth-child(1) div:nth-child(2) h2,
+  .downloadapp.block div:nth-child(1) div:nth-child(2) p {
+    margin-left: 0;
+    text-align: left;
+    width: 100%;
   }
 
   .downloadapp.block div:nth-child(1) div:nth-child(2) ul {
-    font-size: 15px;
+    padding-left: 0;
+    margin-left: 0;
   }
+
+  .downloadapp.block div:nth-child(1) div:nth-child(2) li {
+    align-items: flex-start;
+    gap: 13px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+ @media (width >= 600px) and (width <= 1024px) {
+  .downloadapp.block div:nth-child(1) div:nth-child(2) p {
+    width: 60%;
+    margin: 10px 0;
+    text-align: left;
+  }
+
+  .downloadapp.block div:nth-child(1) div:nth-child(2) p picture img {
+    width: 200px;
+    height: auto;
+  }
+}
+
+
+
+}
+
+
+
+/* 📱 Mobile: stacked layout */
+@media (width <= 599px) {
+  .downloadapp.block div:nth-child(1) {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .downloadapp.block div:nth-child(1) div:nth-child(1),
+  .downloadapp.block div:nth-child(1) div:nth-child(2) {
+    width: 100%;
+  }
+
+  .downloadapp.block div:nth-child(1) div:nth-child(2) h2,
+  .downloadapp.block div:nth-child(1) div:nth-child(2) p {
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .downloadapp.block div:nth-child(1) div:nth-child(1) img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .downloadapp.block div:nth-child(1) div:nth-child(2) button {
+  font-size: 14px;
+  padding: 8px 16px;
+  width: 100%;
+  max-width: 220px;
+  margin: 20px auto 0;
+  display: block;
+}
+
+@media (width <= 599px) {
+  .downloadapp.block div:nth-child(1) div:nth-child(2) p {
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .downloadapp.block div:nth-child(1) div:nth-child(2) p picture img {
+    width: 180px;
+    height: auto;
+  }
+}
+
 }
