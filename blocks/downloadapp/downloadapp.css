@@ -100,13 +100,9 @@
   }
 }
 
-
-
 }
 
-
-
-/* 📱 Mobile: stacked layout */
+/* Mobile: stacked layout */
 @media (width <= 599px) {
   .downloadapp.block div:nth-child(1) {
     flex-direction: column;
