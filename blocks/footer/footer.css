@@ -3,7 +3,7 @@ footer {
   font-size: var(--body-font-size-xs);
 }
 
-footer .footer>div {
+footer .footer > div {
   margin: auto;
   max-width: 1200px;
   padding: 40px 24px 24px;
@@ -13,11 +13,10 @@ footer .footer p {
   margin: 0;
 }
 
-@media (width >=900px) {
-  footer .footer>div {
+@media (min-width: 900px) {
+  footer .footer > div {
     padding: 40px 32px 24px;
   }
-
 }
 
 .footer-wrapper {
@@ -39,10 +38,9 @@ footer .footer-child-wrapper {
 footer .footer-child-wrapper .section {
   width: 100%;
   margin: auto;
-
 }
 
-.footer-child-wrapper .section>div {
+.footer-child-wrapper .section > div {
   width: 100%;
 }
 
@@ -50,60 +48,56 @@ footer .footer-child-wrapper .section {
   width: inherit;
   display: flex;
   justify-content: space-between;
-
 }
 
-.footer-child-wrapper .list-wrapper>div>div {
+.footer-child-wrapper .list-wrapper > div > div {
   display: flex;
   flex-direction: column;
   margin-left: 24px;
   font-size: 16px;
-  color: #ffff;
+  color: #fff;
   width: 100%;
   gap: 16px;
 }
 
-.footer-child-wrapper .list-wrapper>div>div>table td:first-of-type {
+.footer-child-wrapper .list-wrapper > div > div > table td:first-of-type {
   width: 100%;
   font-weight: 700;
+  text-align: left;
 }
 
-.footer-child-wrapper .list-wrapper>div>div>table td:last-of-type {
+.footer-child-wrapper .list-wrapper > div > div > table td:last-of-type {
   display: none;
 }
 
-.footer-child-wrapper .list-wrapper>div>div>ul {
+.footer-child-wrapper .list-wrapper > div > div > ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 16px;
   justify-content: space-between;
-  padding: unset;
+  padding: 0;
 }
 
-.footer-child-wrapper .list-wrapper>div>div>ul>li>a {
-  color: #ffff;
+.footer-child-wrapper .list-wrapper > div > div > ul > li > a {
+  color: #fff;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: -0.5px;
 }
 
-.footer-child-wrapper .list-wrapper>div:last-of-type>div>ul,
-.footer-child-wrapper .list-wrapper>div:last-of-type>div {
+.footer-child-wrapper .list-wrapper > div:last-of-type > div > ul,
+.footer-child-wrapper .list-wrapper > div:last-of-type > div {
   gap: 10px;
 }
 
-.footer-child-wrapper .list-wrapper>div>div>table td:first-of-type {
-  text-align: left !important;
-}
-
-.footer-child-wrapper .list-wrapper>div:last-of-type img {
+.footer-child-wrapper .list-wrapper > div:last-of-type img {
   border-radius: 8px;
   width: 135px;
   height: 40px;
 }
 
-.footer-child-wrapper>.section:last-of-type {
+.footer-child-wrapper > .section:last-of-type {
   width: 100%;
   padding-left: 24px;
   display: flex;
@@ -119,48 +113,43 @@ footer .footer-child-wrapper .section {
   justify-content: space-between;
   padding-top: 36px;
   padding-bottom: 36px;
-
 }
 
-.footer-child-wrapper .default-content-wrapper>p:nth-of-type(2) {
-  color: #ffff;
+.footer-child-wrapper .default-content-wrapper > p:nth-of-type(2) {
+  color: #fff;
   font-size: 16px;
 }
 
-.footer-child-wrapper .default-content-wrapper>p:last-of-type {
+.footer-child-wrapper .default-content-wrapper > p:last-of-type {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  color: #ffff;
+  color: #fff;
 }
 
-.footer-child-wrapper .default-content-wrapper>p:last-of-type img {
+.footer-child-wrapper .default-content-wrapper > p:last-of-type img {
   height: 32px;
   width: 32px;
+  border-radius: 100%;
 }
 
-.footer-child-wrapper .default-content-wrapper>p:first-of-type img {
+.footer-child-wrapper .default-content-wrapper > p:first-of-type img {
   width: 93px;
   height: 36px;
 }
 
-.footer-child-wrapper .default-content-wrapper>p:last-of-type img {
-  border-radius: 100%;
-}
-
-@media screen and (max-width:599px) {
-
+@media screen and (max-width: 599px) {
   .footer {
     padding: 0 16px;
   }
 
   .footer-child-wrapper {
-    padding: 0 !important;
+    padding: 0;
   }
 
-  .footer-child-wrapper .list-wrapper>div>div>table td:last-of-type {
-    display: block !important;
+  .footer-child-wrapper .list-wrapper > div > div > table td:last-of-type {
+    display: block;
   }
 
   .footer-child-wrapper .list-wrapper {
@@ -170,21 +159,20 @@ footer .footer-child-wrapper .section {
     padding-top: 5px;
   }
 
-  .footer-child-wrapper .list-wrapper>div>div>ul {
-    display: none !important;
+  .footer-child-wrapper .list-wrapper > div > div > ul {
+    display: none;
   }
 
-  .footer-child-wrapper .list-wrapper>div:last-of-type {
+  .footer-child-wrapper .list-wrapper > div:last-of-type {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: unset;
+    padding: 0;
   }
 
-  .footer-child-wrapper .list-wrapper>div:last-of-type>div {
-    padding-top: 24px;
-    padding-bottom: 24px;
+  .footer-child-wrapper .list-wrapper > div:last-of-type > div {
+    padding: 24px 0;
     border-top: 1px solid #bec6d5;
     display: flex;
     justify-content: space-between;
@@ -193,26 +181,25 @@ footer .footer-child-wrapper .section {
     width: 100%;
   }
 
-  .footer-child-wrapper .list-wrapper>div:last-of-type>div>table td:first-of-type {
+  .footer-child-wrapper .list-wrapper > div:last-of-type > div > table td:first-of-type {
     display: flex;
     justify-content: center;
   }
 
-  .footer-child-wrapper .list-wrapper>div:last-of-type>div>ul {
-    display: flex !important;
+  .footer-child-wrapper .list-wrapper > div:last-of-type > div > ul {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 4px;
   }
 
-  .footer-child-wrapper .list-wrapper>div:last-of-type>div>ul img {
+  .footer-child-wrapper .list-wrapper > div:last-of-type > div > ul img {
     width: 99px;
     height: 29px;
-
   }
 
-  .footer-child-wrapper .default-content-wrapper>p:nth-of-type(1),
-  .footer-child-wrapper .default-content-wrapper>p:nth-of-type(3) {
+  .footer-child-wrapper .default-content-wrapper > p:nth-of-type(1),
+  .footer-child-wrapper .default-content-wrapper > p:nth-of-type(3) {
     display: none;
   }
 
@@ -222,55 +209,50 @@ footer .footer-child-wrapper .section {
     text-align: center;
     font-size: 12px;
   }
-
 }
 
-
-@media screen and (min-width:600px) and (max-width:767px) {
-
+@media screen and (min-width: 600px) and (max-width: 767px) {
   .footer {
     padding: 0 16px;
     margin: 0;
   }
 
   .footer-child-wrapper {
-    padding: 5px !important;
+    padding: 5px;
   }
 
-  .footer-child-wrapper .list-wrapper>div>div>table td:last-of-type {
-    display: none !important;
+  .footer-child-wrapper .list-wrapper > div > div > table td:last-of-type {
+    display: none;
   }
 
   .list-wrapper {
     flex-direction: column;
   }
 
-  .footer-child-wrapper .default-content-wrapper>p:nth-of-type(1),
-  .footer-child-wrapper .default-content-wrapper>p:nth-of-type(3) {
+  .footer-child-wrapper .default-content-wrapper > p:nth-of-type(1),
+  .footer-child-wrapper .default-content-wrapper > p:nth-of-type(3) {
     display: none;
-
   }
 
   .footer-child-wrapper .default-content-wrapper {
     justify-content: center;
     align-items: center;
   }
-
 }
 
-@media screen and (min-width:767px) and (max-width:768px) {
-
+/* 767px - 768px */
+@media screen and (min-width: 767px) and (max-width: 768px) {
   .footer {
     padding: 0 16px;
     margin: 0;
   }
 
   .footer-child-wrapper {
-    padding: 0 !important;
+    padding: 0;
   }
 
-  .list-wrapper>div>div>table td:last-of-type {
-    display: none !important;
+  .list-wrapper > div > div > table td:last-of-type {
+    display: none;
   }
 
   .list-wrapper {
@@ -279,10 +261,9 @@ footer .footer-child-wrapper .section {
     row-gap: 24px;
   }
 
-  .footer-child-wrapper .default-content-wrapper>p:nth-of-type(1),
-  .footer-child-wrapper .default-content-wrapper>p:nth-of-type(3) {
+  .footer-child-wrapper .default-content-wrapper > p:nth-of-type(1),
+  .footer-child-wrapper .default-content-wrapper > p:nth-of-type(3) {
     display: none;
-
   }
 
   .footer-child-wrapper .default-content-wrapper {
@@ -292,22 +273,20 @@ footer .footer-child-wrapper .section {
     font-size: 16px;
     line-height: 18.56px;
   }
-
 }
 
-@media screen and (min-width:769px) and (max-width:1024px) {
-
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .footer {
-    padding: 16px 16px;
+    padding: 16px;
     margin: 0;
   }
 
   .footer-child-wrapper {
-    padding: 0 !important;
+    padding: 0;
   }
 
-  .footer-child-wrapper .list-wrapper>div>div>table td:last-of-type {
-    display: none !important;
+  .footer-child-wrapper .list-wrapper > div > div > table td:last-of-type {
+    display: none;
   }
 
   .footer-child-wrapper .list-wrapper {
@@ -316,5 +295,4 @@ footer .footer-child-wrapper .section {
     justify-content: space-between;
     row-gap: 24px;
   }
-
 }
