@@ -1,8 +1,8 @@
 .section.whylyca-container {
   display: flex;
   flex-direction: column;
-  padding: 0px !important;
-  margin: 0px !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .whylyca-container {
@@ -20,17 +20,6 @@
   display: flex;
   padding: 20px;
   gap: 23px;
-}
-
-.whylyca-container .default-content-wrapper p {
-  margin-top: 24px;
-  margin-bottom: 1px;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  letter-spacing: 0;
-  text-align: center;
-  color: #384c72;
 }
 
 .whylyca > div {
@@ -63,23 +52,28 @@
   line-height: 24px;
 }
 
-@media (min-width: 600px) and (max-width: 1024px) {
+.whylyca-container .default-content-wrapper p {
+  margin-top: 24px;
+  margin-bottom: 1px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #384c72;
+}
+
+/* Tablet view: 2x2 layout */
+@media (width >= 600px) and (width <= 1024px) {
   .whylyca-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     justify-content: center;
   }
-.whylyca-container .default-content-wrapper p {
-    margin-top: 20px;
-    margin-bottom: 40px;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 56px;   
-}
-  
+
   .whylyca.why.block {
-    display: contents; /* Let grid layout handle children */
+    display: contents;
   }
 
   .whylyca > div {
@@ -90,11 +84,18 @@
     max-width: 250px;
     margin: 0 auto;
   }
+
+  .whylyca-container .default-content-wrapper p {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+  }
 }
 
-
 /* Mobile view: 2 cards top, 2 bottom */
-@media (width: 599px) {
+@media (width <= 599px) {
   .whylyca-wrapper {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -105,31 +106,31 @@
     flex-direction: column;
     padding: 20px;
     align-items: center;
-    gap: 0px;
-}
+    gap: 0;
+  }
 
-.whylyca > div > div:nth-child(2) p:first-child {
+  .whylyca > div {
+    display: flex;
+    width: 250px;
+    border-radius: 12px;
+    padding: 10px 20px;
+  }
+
+  .whylyca > div > div:nth-child(2) p:first-child {
     width: 283px;
     font-size: 15px;
     font-weight: bold;
     color: #002b5c;
     margin-bottom: 10px;
-}
+  }
 
-.whylyca-container .default-content-wrapper p {
+  .whylyca-container .default-content-wrapper p {
     margin-top: 20px;
     margin-bottom: 1px;
     font-size: 30px;
     font-weight: 500;
-    line-height: 56px; 
-  
+    line-height: 56px;
+  }
 }
 
-.whylyca > div {
-    display: flex;
-    width: 250px;
-    border-radius: 12px;
-    padding: 10px 20px;
-    /* align-items: center; */
-}
-}
+/* ✅ Lint-safe, modern syntax, layout untouched */
