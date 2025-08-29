@@ -96,6 +96,10 @@
     padding-bottom: 10px;
   }
 
+  .countries p {
+    font-size: 13px;
+  }
+
   .countries-container .default-content-wrapper p {
     font-size: 2rem;
   }
@@ -110,10 +114,7 @@
     width: 60px;
     height: 60px;
   }
-
-  .countries p {
-    font-size: 13px;
-  }
+  
 
   /* Show only first 3 country cards */
   .countries > div:nth-child(n+5):not(:last-child) {
