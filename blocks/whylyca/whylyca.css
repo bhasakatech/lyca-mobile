@@ -18,7 +18,7 @@
 
 .whylyca-container .default-content-wrapper p {
   margin-top: 24px;
-  margin-bottom: 1px;
+  margin-bottom: 30px;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
@@ -51,6 +51,22 @@
   padding: 10px;
 }
 
+.whylyca.why.block div:nth-child(1) div:nth-child(2) {
+    width: 100%;
+}
+
+.whylyca.why.block div:nth-child(2) div:nth-child(2){
+    width: 100%;
+}
+
+.whylyca.why.block div:nth-child(3) div:nth-child(2){
+    width: 120%;
+}
+
+.whylyca.why.block div:nth-child(4) div:nth-child(2){
+    width: 100%;
+}
+
 .whylyca picture img {
   width: 107px;
   height: 107px;
@@ -59,7 +75,7 @@
 
 .whylyca > div > div:nth-child(2) p:first-child {
   width: 100%;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: bold;
   color: #002b5c;
   margin-bottom: 18px;
@@ -146,7 +162,8 @@
   .whylyca.why.block {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 20px;    
+    margin-left: 25px;
     align-items: center;
     gap: 0;
   }
