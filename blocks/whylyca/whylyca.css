@@ -39,14 +39,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 23px;
+  gap: 40px;
 }
 
 .whylyca > div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 250px;
+  width: 260px;
   border-radius: 12px;
   padding: 10px;
 }
