@@ -75,7 +75,7 @@
   .whylyca-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 75px;
     justify-content: center;
   }
 
