@@ -53,6 +53,7 @@
   width: 40%;
 }
 
+/* Tablet view: 600px–1024px */
 @media (width >= 600px) and (width <= 1024px) {
   .downloadapp.block div:nth-child(1) {
     flex-direction: row;
@@ -87,7 +88,6 @@
     padding-left: 0;
   }
 
- @media (width >= 600px) and (width <= 1024px) {
   .downloadapp.block div:nth-child(1) div:nth-child(2) p {
     width: 60%;
     margin: 10px 0;
@@ -100,9 +100,7 @@
   }
 }
 
-}
-
-/* Mobile: stacked layout */
+/* Mobile view: <=599px */
 @media (width <= 599px) {
   .downloadapp.block div:nth-child(1) {
     flex-direction: column;
@@ -126,16 +124,6 @@
     margin: 0 auto;
   }
 
-  .downloadapp.block div:nth-child(1) div:nth-child(2) button {
-  font-size: 14px;
-  padding: 8px 16px;
-  width: 100%;
-  max-width: 220px;
-  margin: 20px auto 0;
-  display: block;
-}
-
-@media (width <= 599px) {
   .downloadapp.block div:nth-child(1) div:nth-child(2) p {
     width: 100%;
     margin: 10px auto;
@@ -146,6 +134,4 @@
     width: 180px;
     height: auto;
   }
-}
-
 }
