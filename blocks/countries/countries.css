@@ -5,6 +5,14 @@
   width: 100%;
 }
 
+/* Keep this before the container style to avoid no-descending-specificity */
+.countries p {
+  margin: 0;
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 14px;
+}
+
 .section.countries-container {
   display: flex;
   flex-direction: column;
@@ -29,13 +37,6 @@
   gap: 15px;
 }
 
-.countries p {
-  margin: 0;
-  font-weight: 600;
-  color: #2c3e50;
-  font-size: 14px;
-}
-
 .countries > div {
   display: flex;
   flex-direction: column;
@@ -53,11 +54,16 @@
   margin-bottom: 10px;
 }
 
-.countries > div:first-child > div:first-child img,
-.countries > div:last-child > div:first-child img {
+.countries > div:first-child > div:first-child img {
   width: 50%;
   height: 50%;
   margin-top: 25px;  
+}
+
+.countries > div:last-child > div:first-child img {
+  width: 50%;
+  height: 50%;
+  margin-top: 25px;
 }
 
 .countries > div:nth-child(n+7) {
@@ -81,7 +87,7 @@
 }
 
 /* ✅ Tablet */
-@media (max-width: 768px) {
+@media (width >=768px) {
   .countries {
     justify-content: center;
     gap: 10px;
@@ -115,8 +121,8 @@
   }
 }
 
-/* ✅ Mobile */
-@media (max-width: 599px) {
+/* Mobile */
+@media (width >= 599px) {
   .carousel-wrapper {
     position: relative;
     display: flex;
@@ -150,7 +156,7 @@
     cursor: pointer;
     z-index: 10;
     padding: 8px;
-    box-shadow: 0 0 5px rgba(0 0 0 / 20%);
+    box-shadow: 0 0 5px rgb(0 0 0 / 20%);
   }
 
   .arrow-left {
