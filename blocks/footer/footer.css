@@ -13,7 +13,7 @@ footer .footer p {
   margin: 0;
 }
 
-@media (min-width: 900px) {
+@media (width >= 900px) {
   footer .footer > div {
     padding: 40px 32px 24px;
   }
@@ -139,11 +139,8 @@ footer .footer-child-wrapper .section {
   height: 36px;
 }
 
-@media screen and (max-width: 599px) {
-  .footer {
-    padding: 0 16px;
-  }
-
+/* Small screens */
+@media screen and (width <= 599px) {
   .footer-child-wrapper {
     padding: 0;
   }
@@ -211,7 +208,7 @@ footer .footer-child-wrapper .section {
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 767px) {
+@media screen and (600px <= width <= 767px) {
   .footer {
     padding: 0 16px;
     margin: 0;
@@ -240,8 +237,7 @@ footer .footer-child-wrapper .section {
   }
 }
 
-/* 767px - 768px */
-@media screen and (min-width: 767px) and (max-width: 768px) {
+@media screen and (767px <= width <= 768px) {
   .footer {
     padding: 0 16px;
     margin: 0;
@@ -275,7 +271,7 @@ footer .footer-child-wrapper .section {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (769px <= width <= 1024px) {
   .footer {
     padding: 16px;
     margin: 0;
@@ -290,7 +286,6 @@ footer .footer-child-wrapper .section {
   }
 
   .footer-child-wrapper .list-wrapper {
-    padding-top: 40px;
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 24px;
