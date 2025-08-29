@@ -82,13 +82,17 @@
 }
 
 /* ✅ Tablet */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .countries {
     justify-content: center;
     gap: 10px;
     flex-wrap: nowrap; /* Prevent wrapping */
     overflow-x: auto;  /* Enable horizontal scroll */
     padding-bottom: 10px;
+  }
+
+  .countries p {
+    font-size: 13px;
   }
 
   .countries-container .default-content-wrapper p {
@@ -106,9 +110,7 @@
     height: 60px;
   }
 
-  .countries p {
-    font-size: 13px;
-  }
+  
 
   /* Show only first 3 country cards */
   .countries > div:nth-child(n+5):not(:last-child) {
@@ -117,7 +119,7 @@
 }
 
 /* ✅ Mobile */
-@media (max-width: 599px) {
+@media (width <= 599px) {
   .carousel-wrapper {
     position: relative;
     display: flex;
