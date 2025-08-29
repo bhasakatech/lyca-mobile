@@ -5,7 +5,6 @@
   max-width: 1265px; 
   overflow-x: auto;
   anchor-name: --carousel;
-  border: 2px solid green;
   padding: 0 !important;
   margin: 0 !important;
 }
@@ -68,17 +67,34 @@
   height: 100%;
 }
 
+.bannercarousel picture,
+.bannercarousel picture img {
+  display: block; 
+  width: 100% !important;
+  height: auto !important;
+  object-fit: cover;
+}
+
 /* making picture as full width */
 .bannercarousel picture:not(:first-child, :last-child) {
   display: block !important;
   width: 100% !important;
-  height: 100%;
+  height: 100% !important;
   object-fit: cover;
 }
 
 /* making img as full width */
 .bannercarousel img:not(:first-child, :last-child) {
+  display: block;
   width: 100% !important;
   max-width: 100% !important;
   height: 100%;
+}
+
+/* Left and right arrows hiding for tablet and mobile */
+@media (width <= 768px){
+.bannercarousel > div:first-child,
+.bannercarousel > div:last-child {
+  display: none;
+}
 }
