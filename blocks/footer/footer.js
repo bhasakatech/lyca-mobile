@@ -17,5 +17,4 @@ export default async function decorate(block) {
   footer.classList.add('footer-child-wrapper');
   while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
   block.append(footer);
-  
 }
