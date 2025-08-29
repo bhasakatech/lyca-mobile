@@ -27,18 +27,28 @@
   color: #384c72;
 }
 
+.whylyca-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 23px;
+  padding: 20px;
+}
+
 .whylyca.why.block {
   display: flex;
-  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 23px;
 }
 
 .whylyca > div {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 250px;
   border-radius: 12px;
   padding: 10px;
-  align-items: center;
 }
 
 .whylyca picture img {
@@ -48,11 +58,12 @@
 }
 
 .whylyca > div > div:nth-child(2) p:first-child {
-  width: 283px;
+  width: 100%;
   font-size: 19px;
   font-weight: bold;
   color: #002b5c;
   margin-bottom: 18px;
+  text-align: center;
 }
 
 .whylyca > div > div:nth-child(2) p:last-child {
@@ -68,31 +79,54 @@
     margin-top: 20px;
     margin-bottom: 40px;
     font-size: 40px;
-    font-weight: 700;
     line-height: 56px;
   }
 
   .whylyca-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 75px;
+    gap: 40px;
     justify-content: center;
+    padding: 20px;
   }
 
   .whylyca.why.block {
-    display: contents;
+    display: contents; /* Let wrapper handle layout */
   }
 
   .whylyca > div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    max-width: 250px;
-    margin: 0 auto;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .whylyca picture img {
+    width: 107px;
+    height: 107px;
+    margin-bottom: 20px;
+  }
+
+  .whylyca > div > div:nth-child(2) p:first-child {
+    font-size: 18px;
+    margin-bottom: 12px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .whylyca > div > div:nth-child(2) p:last-child {
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    width: 100%;
   }
 }
 
+/* Mobile view: <=599px */
 @media (width <= 599px) {
   .whylyca-container .default-content-wrapper p {
     margin-top: 20px;
@@ -103,8 +137,10 @@
   }
 
   .whylyca-wrapper {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    justify-content: center;
   }
 
   .whylyca.why.block {
@@ -117,16 +153,25 @@
 
   .whylyca > div {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 250px;
     border-radius: 12px;
     padding: 10px 20px;
   }
 
   .whylyca > div > div:nth-child(2) p:first-child {
-    width: 283px;
+    width: 100%;
     font-size: 15px;
     font-weight: bold;
     color: #002b5c;
     margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .whylyca picture img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 15px;
   }
 }
