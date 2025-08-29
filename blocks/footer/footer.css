@@ -17,9 +17,8 @@ footer .footer p {
   footer .footer>div {
     padding: 40px 32px 24px;
   }
+  
 }
-
-/* footer */
 
 .footer-wrapper {
   background-color: #21254f;
@@ -43,11 +42,8 @@ footer .footer p {
 }
 
 .list-wrapper {
-  /* border: 1px solid ghostwhite; */
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
-  /* gap: 68px; */
 }
 
 .list-wrapper>div>div {
@@ -76,7 +72,6 @@ footer .footer p {
   flex-direction: column;
   gap: 16px;
   justify-content: space-between;
-  /* align-items: start; */
   padding: unset;
 
 }
@@ -84,7 +79,6 @@ footer .footer p {
 .list-wrapper>div>div>ul>li>a {
   color: #ffff;
   font-weight: 400;
-  /* line-height: 40px; */
   font-size: 16px;
   letter-spacing: -0.5px;
 
@@ -107,20 +101,15 @@ footer .footer p {
 }
 
 .default-content-wrapper {
-  /* border: 1px solid red; */
   padding-top: 36px;
   padding-bottom: 36px;
-  /* width: 97%; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px 96px;
   min-height: 100px;
-  border-top: 1px solid;
-  border-color: #bec6d5;
+  border-top: 1px solid #bec6d5;
   margin-top: 32px;
-    /* gap: 14px; */
-    /* margin: auto; */
 }
 
 .default-content-wrapper>p:nth-of-type(2) {
@@ -179,13 +168,13 @@ footer .footer p {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
     width: 100%;
     padding: unset;
    }
+
   .list-wrapper>div:last-of-type>div {
     padding-top:24px ;
-    border: 1px solid;
+    border-top: 1px solid #bec6d5;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -194,7 +183,6 @@ footer .footer p {
   }
 
   .list-wrapper>div:last-of-type>div>table td:first-of-type {
-    /* border: 1px solid; */
     display: flex;
     justify-content: center;
   }
@@ -203,9 +191,7 @@ footer .footer p {
     display: flex !important;
     flex-direction: row;
     justify-content: center;
-    /* width: 100%; */
     gap: 4px;
-    /* padding: unset; */
   }
 
   .list-wrapper>div:last-of-type>div>ul img {
@@ -224,9 +210,9 @@ footer .footer p {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 14px;
-    /* width: 100%; */
+    font-size: 12px;
   }
+
 }
 
 
@@ -261,6 +247,7 @@ footer .footer p {
     justify-content: center;
     align-items: center;
   }
+
 }
 
 @media screen and (min-width:767px) and (max-width:768px) {
@@ -299,9 +286,11 @@ footer .footer p {
     font-size: 16px;
     line-height: 18.56px;
   }
+
 }
 
 @media screen and (min-width:769px) and (max-width:1024px) {
+
   .footer {
     padding: 0 16px;
     margin: 0;
@@ -324,12 +313,4 @@ footer .footer p {
     row-gap: 24px;
   }
 
-  /* .default-content-wrapper {
-    justify-content: center;
-    align-items: center;
-    padding: 0 96px;
-    gap: 14px;
-
-
-  } */
 }
