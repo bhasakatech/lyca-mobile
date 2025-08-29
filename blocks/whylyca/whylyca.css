@@ -1,10 +1,11 @@
 .section.whylyca-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  padding: 0px !important;
+  margin: 0px !important;
 }
 
 .whylyca-container {
-  padding: 60px 20px;
   background-color: #eff8f8;
   text-align: center;
   font-family: Arial, sans-serif;
@@ -18,12 +19,12 @@
 .whylyca.why.block {
   display: flex;
   padding: 20px;
-  gap: 10px;
+  gap: 23px;
 }
 
 .whylyca-container .default-content-wrapper p {
-  margin-top: 0;
-  margin-bottom: 15px;
+  margin-top: 24px;
+  margin-bottom: 1px;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
@@ -32,19 +33,12 @@
   color: #384c72;
 }
 
-.whylyca-wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .whylyca > div {
+  display: flex;
   width: 250px;
   border-radius: 12px;
   padding: 10px;
-  text-align: center;
+  align-items: center;
 }
 
 .whylyca picture img {
@@ -54,29 +48,88 @@
 }
 
 .whylyca > div > div:nth-child(2) p:first-child {
-  font-size: 20px;
+  width: 283px;
+  font-size: 19px;
   font-weight: bold;
   color: #002b5c;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
 }
 
 .whylyca > div > div:nth-child(2) p:last-child {
   margin: 0;
   text-align: center;
-  font-size: 17px;
+  font-size: 16px;
   color: #344054;
   line-height: 24px;
 }
 
-@media (width <= 1024px) {
+@media (min-width: 600px) and (max-width: 1024px) {
+  .whylyca-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: center;
+  }
+.whylyca-container .default-content-wrapper p {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;   
+}
+  
+  .whylyca.why.block {
+    display: contents; /* Let grid layout handle children */
+  }
+
+  .whylyca > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
+
+
+/* Mobile view: 2 cards top, 2 bottom */
+@media (width: 599px) {
   .whylyca-wrapper {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
+
+  .whylyca.why.block {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    gap: 0px;
 }
 
-@media (width <= 600px) {
-  .whylyca-wrapper {
-    grid-template-columns: 1fr;
-  }
+.whylyca > div > div:nth-child(2) p:first-child {
+    width: 283px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #002b5c;
+    margin-bottom: 10px;
+}
+
+.whylyca-container .default-content-wrapper p {
+    margin-top: 20px;
+    margin-bottom: 1px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 56px; 
+  
+}
+
+.whylyca > div {
+    display: flex;
+    width: 250px;
+    border-radius: 12px;
+    padding: 10px 20px;
+    /* align-items: center; */
+}
 }
