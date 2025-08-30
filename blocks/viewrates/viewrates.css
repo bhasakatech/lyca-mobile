@@ -1,0 +1,93 @@
+.viewrates-wrapper {
+  margin: 0 auto;
+  padding: 1px;
+}
+
+.section.viewrates-container {
+  background-color: #006ae0;
+  padding: 10px;
+  width: 100%;
+}
+
+.viewrates.view.block {
+  text-align: center;
+  padding: 12px;
+  color: #fff;
+}
+
+.viewrates > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.viewrates img {
+  width: 60%;
+  height: auto;
+}
+
+.viewrates.block div:first-child div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.viewrates.block div:first-child div:last-child img {
+  width: 18px;
+  margin-top: 10px;
+}
+
+.viewrates picture {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.viewrates p {
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.4;
+  text-shadow: 0 2px 4px rgb(0 0 0 / 30%);
+  margin-left: -20px;
+}
+
+@media (width >= 768px) {
+  .viewrates > div {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .viewrates img {
+    width: 50%;
+  }
+}
+
+@media (width <= 769px) {
+  .viewrates > div {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1px;
+  }
+  
+.viewrates.view.block div:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.viewrates.view.block div:first-child div:last-child {
+    display: flex;
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+}
+
+  .viewrates picture {
+    flex-shrink: 0;
+  }
+
+  .viewrates img {
+    width: 40%;
+  }
+}

@@ -1,0 +1,104 @@
+/* announcementbar styles */
+.announcementbar-container {
+    width: 100%;
+    min-height: 40px;
+    margin: 0;
+    padding: 0;
+    background-color: #ffeeb2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* announcementbar-wrapper */
+.announcementbar-wrapper {
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    padding: 0 40px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* announcementbar */
+.announcementbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* announcementbar-para-main-div */
+.announcementbar > div:first-child {
+    text-align: center;
+    color: #344054;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex: 1 1;
+    padding: 0 !important;
+    font-family: GTEestiLCDisplayRegular, sans-serif;
+}
+
+/* announcementbar-cancel symbol main div */
+.announcementbar > div:last-child {
+    padding: 0 !important;
+    margin-left: auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* announcementbar-cancel symbol inner div */
+.announcementbar > div:last-child > div {
+    padding: 7px 8px 0;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+/* announcementbar-paragraph */
+.announcementbar > div > div > p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* announcementbar picture */
+.announcementbar picture {
+    background: transparent;
+}
+
+/* announcementbar picture img */
+.announcementbar img {
+    width: 24px;
+    height: 24px;
+    aspect-ratio: auto 24/24;
+    background: transparent;
+}
+
+/* media query for tablet */
+@media (width <= 768px) {
+    /* announcementbar-wrapper */
+    .announcementbar-wrapper {
+        padding: 0 16px !important;
+    }
+
+    /* announcementbar-para-main-div */
+    .announcementbar > div:first-child p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0;
+        color: #344054;
+        text-align: left;
+        font-family: GTEestiLCDisplayBold, sans-serif;
+    }
+}

@@ -1,8 +1,15 @@
 .section.joinlyca-container {
+  display: flex;
+  flex-direction: column;
   background: #1a2253;
   color: #fff;
   text-align: center;
   padding: 10px 20px;
+}
+
+.section.joinlyca-container .default-content-wrapper{
+  display: flex ;
+  flex-direction: column;
 }
 
 .section.joinlyca-container h1 {
@@ -25,7 +32,7 @@
 
 .joinlyca.card.block img {
   width: 100px !important;
-  height: 100px !important;
+  height: auto !important;
   margin-bottom: 15px;
 }
 
