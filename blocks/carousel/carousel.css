@@ -2,34 +2,34 @@
 .carousel-container {
   position: relative;
   width: 100%;
-  max-width: 1265px; 
+  max-width: 1265px;
   overflow-x: auto;
-  anchor-name: --carousel;
   padding: 0 !important;
   margin: 0 !important;
+  anchor-name: --carousel;
+  scroll-snap-type: x mandatory;
 }
 
-/* making scroll bar hidden */
+/* Hide scrollbar */
 .carousel-container::-webkit-scrollbar {
   display: none;
 }
 
-/* carosel-wrapper */
+/* Carousel wrapper */
 .carousel-wrapper {
   width: 100%;
   padding: 0 !important;
   margin: 0 !important;
 }
 
-/* banner carousel for slides */
+/* Banner carousel for slides */
 .bannercarousel {
   display: flex;
   width: 100%;
 }
 
 /* Left and right arrows */
-.bannercarousel > div:first-child,
-.bannercarousel > div:last-child {
+.btn-next, .btn-prev {
   position: fixed;
   display: flex;
   align-items: center;
@@ -40,61 +40,51 @@
   border-radius: 50%;
   cursor: pointer;
   position-anchor: --carousel;
-  translate: -150%;
-  background-color: rgb(63 63 63 / 0%);
+  background-color: rgb(87 86 86);
+  transform: translateX(-150%);
 }
 
-/* left arrow */
-.bannercarousel > div:first-child {
-  position-area: left center;
-  translate: 150%;
+/* Left arrow specific styles */
+.btn-prev {
+  position-area: left center; 
+  transform: translateX(150%);
 }
 
-/* right arrow */
-.bannercarousel > div:last-child {
-  position-area: right center;
-} 
+/* Right arrow specific styles */
+.btn-next {
+  position-area: right center; 
+}
 
-/* making full width except left and right arrow */
-.bannercarousel > div:not(:first-child, :last-child) {
-  flex: 0 0 100%;   
+/* Shared hover/focus styles for both arrows */
+.btn-prev:hover, .btn-prev:focus, .btn-next:hover, .btn-next:focus {
+  background-color: rgb(92 91 91); 
+}
+
+/* Making full width for slides except for left and right arrow */
+.slide {
+  flex: 0 0 100%;
   min-width: 100%;
 }
 
-/* making full width of inner div */
-.bannercarousel > div > div:not(:first-child, :last-child) {
+/* Making full width of inner div */
+.slide > div {
   width: 100%;
   height: 100%;
 }
 
-.bannercarousel picture,
-.bannercarousel picture img {
-  display: block; 
+/* Making slide picture and img as full width */
+.slide picture,
+.slide picture img {
+  display: block;
   width: 100% !important;
   height: auto !important;
   object-fit: cover;
 }
 
-/* making picture as full width */
-.bannercarousel picture:not(:first-child, :last-child) {
-  display: block !important;
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover;
-}
-
-/* making img as full width */
-.bannercarousel img:not(:first-child, :last-child) {
-  display: block;
-  width: 100% !important;
-  max-width: 100% !important;
-  height: 100%;
-}
-
 /* Left and right arrows hiding for tablet and mobile */
-@media (width <= 768px){
-.bannercarousel > div:first-child,
-.bannercarousel > div:last-child {
-  display: none;
-}
+@media (width <= 768px) { 
+  .btn-next,
+  .btn-prev {
+    display: none;
+  }
 }
