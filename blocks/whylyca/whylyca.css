@@ -1,24 +1,19 @@
 .section.whylyca-container {
   display: flex;
   flex-direction: column;
-  padding: 1px !important;
-  margin: 1px !important;
+  padding: 1px;
+  margin: 1px 1px 30px 1px;
 }
 
 .whylyca-container {
-  background-color: #eff8f8;
+  background-color: #f2f5fa;
   text-align: center;
   font-family: Arial, sans-serif;
-}
-
-.section .whylyca-container {
-  background-color: #7497dd;
-  display: flex;
+  width: 100%;
 }
 
 .whylyca-container .default-content-wrapper p {
-  margin-top: 24px;
-  margin-bottom: 30px;
+  margin-top: 23px;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
@@ -30,7 +25,7 @@
 .whylyca-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 20px;
   justify-content: center;
   padding: 40px 20px;
   max-width: 1400px;
@@ -39,7 +34,7 @@
 }
 
 .whylyca.why.block {
-  display: contents; /* Let wrapper handle layout */
+  display: contents;
 }
 
 .whylyca > div {
@@ -47,7 +42,7 @@
   flex-direction: column;
   align-items: center;
   border-radius: 12px;
-  padding: 40px 1px;
+  padding: 35px 1px;
   box-sizing: border-box;
   width: 100%;
   max-width: 290px;
@@ -60,15 +55,14 @@
 }
 
 .whylyca > div > div:nth-child(2) p:first-child {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: bold;
   color: #002b5c;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 .whylyca > div > div:nth-child(2) p:last-child {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   color: #344054;
   line-height: 24px;
@@ -77,70 +71,102 @@
   width: 98%;
 }
 
-/* Tablet view: 2 cards per row */
+/* Laptop view: 4 cards side by side */
 @media (width <= 1024px) {
+  .whylyca-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 30px 15px;
+  }
+
   .whylyca-container .default-content-wrapper p {
     font-size: 40px;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
+  .whylyca > div {
+    padding: 30px 10px;
+  }
+
+  .whylyca picture img {
+    width: 100px;
+  }
+}
+
+/* Tablet view: 2 cards per row */
+@media (width <= 768px) {
   .whylyca-wrapper {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 20px;
   }
 
-  .whylyca > div {
-    max-width: 100%;
-    padding: 30px 20px;
-  }
-
-  .whylyca picture img {
-    width: 100px;
-  }
-
-  .whylyca > div > div:nth-child(2) p:first-child {
-    font-size: 18px;
-  }
-
-  .whylyca > div > div:nth-child(2) p:last-child {
-    font-size: 15px;
-    line-height: 22px;
-  }
-}
-
-/* Mobile view: 1 card per row */
-@media (width <= 599px) {
   .whylyca-container .default-content-wrapper p {
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 20px;
-  }
-
-  .whylyca-wrapper {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 10px;
+    font-size: 36px;
+    margin-bottom: 25px;
   }
 
   .whylyca > div {
-    max-width: 100%;
-    padding: 20px;
+    padding: 25px 10px;
   }
 
   .whylyca picture img {
     width: 90px;
-    height: 90px;
+  }
+}
+
+/* Mobile view: 1 card per row */
+@media (width <= 430px) {
+  .whylyca-wrapper {
+    margin: 1px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px !important;
+  }
+
+  .whylyca-container .default-content-wrapper p {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .whylyca picture img {
+    width: 80px;
   }
 
   .whylyca > div > div:nth-child(2) p:first-child {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .whylyca > div > div:nth-child(2) p:last-child {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 22px;
-    margin-bottom: 20px;
+  }
+}
+
+/* Small mobile view: 1 card per row */
+@media (width <= 385px) {
+  .whylyca-wrapper {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 10px !important;
+  }
+
+  .whylyca > div {
+    max-width: fit-content;
+    margin: 1px auto;
+}
+
+  .whylyca picture img {
+    width: 70px;
+  }
+
+  .whylyca > div > div:nth-child(2) p:first-child {
+    font-size: 15px;
+  }
+
+  .whylyca > div > div:nth-child(2) p:last-child {
+    font-size: 13px;
+    line-height: 20px;
   }
 }
