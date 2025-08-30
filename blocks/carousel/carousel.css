@@ -91,7 +91,7 @@
   height: 100%;
 }
 
-/* Left and right arrows hiding for the tablet and mobile */
+/* Left and right arrows hiding for tablet and mobile */
 @media (width <= 768px){
 .bannercarousel > div:first-child,
 .bannercarousel > div:last-child {
