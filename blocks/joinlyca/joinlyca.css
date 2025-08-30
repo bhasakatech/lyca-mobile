@@ -14,8 +14,7 @@
 }
 
 .section.joinlyca-container h1 {
-  font-family: GTEestiLCDisplayBold;
-  font-size: 3.5rem;
+  font-size: 3rem;
   line-height: 3.48rem;
   color: #fff;
   font-weight: 700;
@@ -30,13 +29,6 @@
   margin-bottom: 1.2rem;
   margin-top: 0;
   text-align: center;
-}
-
-.joinlyca-container .default-content-wrapper > p {
-  color: rgb(253, 253, 253);
-  font-size: 21px;
-  font-family: GTEestiLCDisplayBold;  
-  margin: 1px 1px 40px 1px !important;
 }
 
 .joinlyca.card.block img {
@@ -77,73 +69,5 @@
   .joinlyca.card.block {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-  }
-
-  .joinlyca-container .default-content-wrapper > p {
-  color: rgb(255, 253, 253);
-  font-size: 15px;
-  font-family: GTEestiLCDisplayBold;  
-  margin: 1px 1px 40px 1px !important;
-}
-
-  .section.joinlyca-container h1 {
-    font-size: 2.2rem;
-    line-height: 2.2rem;
-    margin: 20px;
-  }
-
-  .joinlyca.card.block > div {
-    width: 160px;
-    height: 160px;
-  }
-}
-
-/* Tablet: 600px to 768px */
-@media (width >= 600px) and (width <= 768px) {
-  .joinlyca.card.block {
-    align-items: center;
-    gap: 30px;
-  }
-
-.joinlyca-container .default-content-wrapper > p {
-  color: rgb(255, 253, 253);
-  font-size: 16px;
-  font-family: GTEestiLCDisplayBold;
-  margin-bottom: 40px;
-}
-
-
-  .section.joinlyca-container h1 {
-        font-family: GTEestiLCDisplayBold;
-    font-size: 2.8rem;
-    line-height: 3rem;
-    margin: 25px;
-  }
-
-  .joinlyca.card.block > div {
-    width: 170px;
-    height: 170px;
-  }
-}
-
-/* Desktop: 769px and up */
-@media (width >= 769px) {
-  .joinlyca.card.block {
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-  }
-
-  .section.joinlyca-container h1 {
-    font-size: 3.5rem;
-    line-height: 3.48rem;
-    margin: 30px;
-  }
-
-  .joinlyca.card.block > div {
-    width: 180px;
-    height: 180px;
   }
 }
