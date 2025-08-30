@@ -1,108 +1,139 @@
+.section.phone-container {
+    background-color: #006ae0;
+    padding: 10px;
+    width: 100%;
+    margin-top: 40px;
+}
+
 .phone-wrapper {
-  background-color: #006ae0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.phone.block {
-  padding: 20px;
-}
-
-.section.plantypes-container {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .phone {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  max-width: 600px;
-  margin: 0 auto;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
 }
 
 .phone > div {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
-.phone img {
-  width: 100px;
-  height: auto;
-  object-fit: contain;
-}
-
-.phone.block div:first-child img {
-  width: 75px;
-}
-
-.phone.block div:first-child div:last-child {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.phone.block div:first-child div:last-child img {
-  width: 50%;
-  margin-left: 9px;
-  margin-top: 10px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.section.phone-container {
-  padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .phone picture {
-  display: block;
+    display: block;
+    max-width: 100px;
+    flex-shrink: 0;
+}
+
+.phone img {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
 }
 
 .phone p {
-  font-size: 20px;
-  font-weight: 500;
-  color: #fff;
-  margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+}
+
+.phone.block div:first-child div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.phone.block div:first-child div:last-child img {
+    width: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+@media (width <= 1027px) {
+    .phone > div {
+        gap: 18px;
+    }
+
+    .phone img {
+        width: 70px;
+    }
+
+    .phone p {
+        font-size: 15px;
+    }
 }
 
 @media (width <= 768px) {
-  .phone > div {
-    flex-direction: column;
-    text-align: center;
-    gap: 1px;
-  }
+    .phone {
+        flex-direction: column;
+        gap: 15px;
+    }
 
-  .phone.block {
-    padding: 1px;
+    .phone > div {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .phone img {
+        width: 60px;
+    }
+
+    .phone p {
+        font-size: 14px;
+    }
+
+    .phone.block {
+        padding: 10px;
+    }
 }
 
-  .phone img {
-    width: 120px;
-  }
+@media (width <= 430px) {
+    .phone > div {
+        flex-direction: row;
+        gap: 12px;
+    }
 
-  .phone p {
-    font-size: 18px;
-  }
+    .phone img {
+        width: 50px;
+    }
+
+    .phone-wrapper {
+        padding: 1px;
+    }
+
+    .phone.block div:first-child div:last-child {
+        gap: 20px;
+    }
+
+    .phone p {
+        font-size: 13px;
+    }
 }
 
-@media (width >= 769px) {
-  .phone-container {
-    padding: 30px 15px;
-  }
+@media (width <= 385px) {
+    .phone > div {
+        flex-direction: row;
+        gap: 10px;
+    }
 
-  .phone img {
-    width: 100px;
-  }
+    .phone img {
+        width: 45px;
+    }
 
-  .viewrates-wrapper {
-    padding: 1px !important;
-}
-
-  .phone p {
-    font-size: 16px;
-  }
+    .phone p {
+        font-size: 12px;
+    }
 }

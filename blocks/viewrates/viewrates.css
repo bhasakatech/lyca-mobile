@@ -6,24 +6,49 @@
 .section.viewrates-container {
   background-color: #006ae0;
   padding: 10px;
+  margin-top: 40px;
 }
 
 .viewrates.view.block {
   text-align: center;
-  padding: 12px;
   color: #fff;
 }
 
-.viewrates > div {
+.viewrates {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
 
+.viewrates > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.viewrates picture {
+  display: block;
+  max-width: 100px;
+  flex-shrink: 0;
+}
+
 .viewrates img {
-  width: 60%;
+  width: 80px;
   height: auto;
+}
+
+.viewrates p {
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.4;
+  text-shadow: 0 2px 4px rgb(0 0 0 / 30%);
+  font-size: 18px;
+  color: #fff;
 }
 
 .viewrates.block div:first-child div:last-child {
@@ -38,55 +63,71 @@
   margin-top: 10px;
 }
 
-.viewrates picture {
-  display: block;
-  max-width: 150px;
-  margin: 0 auto;
-}
-
-.viewrates p {
-  margin: 0;
-  font-weight: 500;
-  line-height: 1.4;
-  text-shadow: 0 2px 4px rgb(0 0 0 / 30%);
-  margin-left: -20px;
-}
-
-@media (width >= 768px) {
+@media (width <= 1027px) {
   .viewrates > div {
-    flex-flow: row wrap;
-    justify-content: center;
+    gap: 18px;
   }
 
   .viewrates img {
-    width: 50%;
+    width: 70px;
+  }
+
+  .viewrates p {
+    font-size: 15px;
   }
 }
 
-@media (width <= 769px) {
+@media (width <= 768px) {
+  .viewrates {
+    flex-direction: column;
+    gap: 15px;
+  }
+
   .viewrates > div {
     flex-direction: row;
-    justify-content: center;
-    gap: 1px;
-  }
-  
-.viewrates.view.block div:first-child {
-    display: flex;
-    flex-direction: column;
-}
-
-.viewrates.view.block div:first-child div:last-child {
-    display: flex;
-    text-align: center;
-    color: #fff;
-    font-size: 17px;
-}
-
-  .viewrates picture {
-    flex-shrink: 0;
+    gap: 15px;
   }
 
   .viewrates img {
-    width: 40%;
+    width: 60px;
+  }
+
+  .viewrates p {
+    font-size: 14px;
+  }
+}
+
+@media (width <= 430px) {
+  .viewrates > div {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .viewrates img {
+    width: 50px;
+  }
+
+  .viewrates p {
+    font-size: 13px;
+  }
+
+  .viewrates.block div:first-child div:last-child {
+  gap: 15px;
+}
+
+}
+
+@media (width <= 385px) {
+  .viewrates > div {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .viewrates img {
+    width: 45px;
+  }
+
+  .viewrates p {
+    font-size: 12px;
   }
 }
