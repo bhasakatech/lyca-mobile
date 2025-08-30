@@ -3,8 +3,8 @@ export default function decorate(block) {
 
   // Helper to create and replace buttons
   const createButton = (className, textContent) => {
-    const button = document.createElement("button");
-    button.classList.add("btn", className);
+    const button = document.createElement('button');
+    button.classList.add('btn', className);
     button.textContent = textContent;
     return button;
   };
@@ -12,23 +12,23 @@ export default function decorate(block) {
   // Replace first and last divs with buttons
   rows.forEach((row, index) => {
     if (index === 0) {
-      row.replaceWith(createButton("btn-next", "→"));
+      row.replaceWith(createButton('btn-next', '→'));
     } else if (index === rows.length - 1) {
-      row.replaceWith(createButton("btn-prev", "←"));
+      row.replaceWith(createButton('btn-prev', '←'));
     } else {
-      row.classList.add("slide");
+      row.classList.add('slide');
     }
   });
 
   // Select only slides inside the current block
-  const slides = block.querySelectorAll(".slide");
+  const slides = block.querySelectorAll('.slide');
 
   let currentSlide = 0;
   const totalSlides = slides.length - 1;
 
   // Select buttons from within block
-  const nextBtn = block.querySelector(".btn-next");
-  const prevBtn = block.querySelector(".btn-prev");
+  const nextBtn = block.querySelector('.btn-next');
+  const prevBtn = block.querySelector('.btn-prev');
 
   // Update slide position
   const updateSlidePosition = () => {
@@ -50,8 +50,8 @@ export default function decorate(block) {
   };
 
   // Event listeners for button clicks
-  nextBtn?.addEventListener("click", goToNextSlide);
-  prevBtn?.addEventListener("click", goToPrevSlide);
+  nextBtn?.addEventListener('click', goToNextSlide);
+  prevBtn?.addEventListener('click', goToPrevSlide);
 
   // Automatic slide transition
   let autoSlideIndex = 1;
