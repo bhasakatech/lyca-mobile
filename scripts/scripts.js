@@ -13,11 +13,6 @@ import {
 } from './aem.js';
 
 /**
- * Builds hero block and prepends to main in a new section.
- * @param {Element} main The container element
- */
-
-/**
  * load fonts.css and set a session storage flag
  */
 async function loadFonts() {

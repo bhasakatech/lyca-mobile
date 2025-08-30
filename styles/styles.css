@@ -70,14 +70,6 @@
   }
 }
 
-*{
-  box-sizing: border-box;
-  margin:0;
-  padding:0;
-  list-style-type: none;
-  text-decoration: none;
-}
-
 body {
   display: none;
   margin: 0;
@@ -232,6 +224,7 @@ main img {
 }
 
 main > .section > div {
+  max-width: 1200px;
   margin: auto;
   padding: 0 24px;
 }
