@@ -1,72 +1,213 @@
 .section.joinlyca-container {
-  display: flex;
-  flex-direction: column;
-  background: #1a2253;
-  color: #fff;
-  text-align: center;
-  padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #21254f;
+    color: white;
 }
 
-.section.joinlyca-container .default-content-wrapper{
-  display: flex ;
-  flex-direction: column;
-}
-
-.section.joinlyca-container h1 {
-  font-size: 3rem;
-  line-height: 3.48rem;
-  color: #fff;
-  font-weight: bold;
-  margin-bottom: .25rem;
-  text-align: center;
-}
-
-.section.joinlyca-container p {
-  font-size: 1rem;
-  line-height: 1.16rem;
-  color: #fff;
-  margin-bottom: 1.2rem;
-  margin-top: 0;
-  text-align: center;
-}
-
-.joinlyca.card.block img {
-  width: 100px !important;
-  height: auto !important;
-  margin-bottom: 15px;
+.joinlyca-wrapper {
+    /* background-color: #d2c7c7; */
+    width: 100%;
 }
 
 .joinlyca.card.block {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 40px;
-  flex-wrap: wrap;
+    display: flex;
 }
 
-.joinlyca.card.block > div {
-  border-radius: 50%;
-  width: 180px;
-  height: 180px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s ease;
-  color: #fff;
+/* Content wrapper */
+.section.joinlyca-container .default-content-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
 
-.joinlyca.card.block p {
-  font-size: 1rem;
-  line-height: 1.16rem;
-  color: #fff;
-  text-decoration: none;
+.section.joinlyca-container .joinlyca.card.block > div {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center;
+    justify-content: center;
 }
 
-/* Mobile */
-@media (width <= 768px) {
-  .joinlyca.card.block {
+.section.joinlyca-container .default-content-wrapper h1 {
+    font-size: 3rem;
+    line-height: 3.48rem;
+    color: #fff;
+    margin-top: 5px;
+    margin-bottom: 0.25rem;
+    font-family: GTEestiLCDisplayBold;
+}
+
+.section.joinlyca-container .default-content-wrapper p {
+    font-size: 1.3rem;
+    line-height: 1.16rem;
+    color: #fff;
+    margin-bottom: 1.2rem;
+    font-family: GTEestiLCDisplayRegular;
+    text-align: center;
+}
+
+/* Card wrapper */
+.section.joinlyca-container .joinlyca-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual card */
+.section.joinlyca-container .joinlyca.card.block > div {
+    color: #000000;
+    border-radius: 8px;
+    padding: 15px 1px;
+    width: 30%;
+    min-width: 250px;
+    box-sizing: border-box;
+    display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.section.joinlyca-container .joinlyca.card.block picture img {
+    width: auto;
+    max-width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Card label text */
+.section.joinlyca-container .joinlyca.card.block > div > div:last-child p {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Responsive: 1024px and below */
+@media (width <=1024px) {
+    .section.joinlyca-container .joinlyca.card.block > div {
+        width: 30%;
+    }
+
+    .section.joinlyca-container .default-content-wrapper h1 {
+        font-size: 2rem;
+        line-height: 3.48rem;
+        color: #fff;
+        margin-top: 1px !important;
+        margin-bottom: 1px;
+        font-family: GTEestiLCDisplayBold;
+    }
+
+    .section.joinlyca-container .joinlyca.card.block picture img {
+        max-width: 80px; /* Slightly smaller image */
+    }
+
+    .section.joinlyca-container .default-content-wrapper p {
+        font-size: 1.1rem;
+        margin-bottom: 1.2rem;
+    }
+
+  .section.joinlyca-container .joinlyca.card.block > div {
+    min-width: 150px;
   }
+}
+
+/* Responsive: 768px and below */
+@media (width <= 768px) {
+    .section.joinlyca-container .joinlyca.card.block > div {
+        width: 30%;
+    }
+
+    .section.joinlyca-container .joinlyca.card.block > div {
+    min-width: 150px;
+  }
+
+}
+
+/* Responsive: 425px and below */
+
+@media (width <= 430px) {
+    .section.joinlyca-container .joinlyca-wrapper {
+        gap: 10px; /* Reduce spacing to fit */
+        padding: 0 10px; /* Add horizontal padding */
+    }
+
+    .section.joinlyca-container .joinlyca.card.block > div {
+        min-width: 120px;
+    }
+
+    .section.joinlyca-container .default-content-wrapper p {
+        font-size: 16px;
+    }
+
+    .section.joinlyca-container .joinlyca.card.block > div > div:last-child p {
+        font-size: 13px;
+    }
+
+    .section.joinlyca-container .joinlyca.card.block picture img {
+        max-width: 75px; /* Slightly smaller image */
+    }
+}
+
+@media (max-width: 385px) {
+    .section.joinlyca-container .joinlyca-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding: 1px 1px;
+        box-sizing: border-box;
+    }
+
+    .section.joinlyca-container {
+    padding: 1px;
+}
+
+    /* First two cards side by side */
+    .section.joinlyca-container .joinlyca.card.block > div {
+        flex: 0 0 45%;
+        max-width: 45%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    /* Third card full width centered */
+    .section.joinlyca-container .joinlyca.card.block > div:nth-child(3) {
+        flex: 1px 1px 100%;
+        max-width: 300px;
+        margin: 1px auto;
+    }
+
+    .joinlyca.card.block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .section.joinlyca-container .joinlyca.card.block picture img {
+        max-width: 70px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .section.joinlyca-container .joinlyca.card.block > div > div:last-child p {
+        font-size: 10px;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100px;
+    }
+
+    .section.joinlyca-container .default-content-wrapper p {
+    font-size: 13px;
+    line-height: 1.16rem;
+    color: lab(100% 0.01 -0.01);
+    margin-bottom: 1.2rem;
+    font-family: GTEestiLCDisplayRegular;
+    text-align: center;
+    }
 }
