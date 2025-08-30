@@ -40,24 +40,24 @@
   cursor: pointer;
   position-anchor: --carousel;
   translate: -150%;
-  background-color: rgb(87, 86, 86); /* rgb() is correct here */
+  background-color: rgb(87, 86, 86); /* Use correct rgb() color function */
 }
 
-/* making background color constant */
-.btn-next:hover, .btn-next:focus, .btn-prev:hover, .btn-prev:focus {
-   background-color: rgb(92, 91, 91); /* rgb() is correct here */
-}
-
-/* left arrow */
+/* Left arrow specific styles */
 .btn-prev {
   position-area: left center;
   translate: 150%;
 }
 
-/* right arrow */
+/* Right arrow specific styles */
 .btn-next {
   position-area: right center;
-} 
+}
+
+/* Shared hover/focus styles for both arrows */
+.btn-prev:hover, .btn-prev:focus, .btn-next:hover, .btn-next:focus {
+  background-color: rgb(92, 91, 91); /* Use correct rgb() color function */
+}
 
 /* making full width except left and right arrow */
 .slide {
@@ -86,23 +86,4 @@
   .btn-prev {
     display: none;
   }
-}
-
-/* Correct order for .btn-prev and .btn-prev:hover */
-.btn-prev {
-  position-area: left center;
-  translate: 150%;
-}
-
-.btn-prev:hover, .btn-prev:focus {
-  background-color: rgb(92, 91, 91);
-}
-
-/* Correct order for .btn-next and .btn-next:hover */
-.btn-next {
-  position-area: right center;
-}
-
-.btn-next:hover, .btn-next:focus {
-  background-color: rgb(92, 91, 91);
 }
