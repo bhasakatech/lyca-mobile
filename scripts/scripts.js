@@ -12,7 +12,6 @@ import {
   loadCSS,
 } from './aem.js';
 
-
 /**
  * load fonts.css and set a session storage flag
  */
@@ -24,7 +23,6 @@ async function loadFonts() {
     // do nothing
   }
 }
-
 
 /**
  * Decorates the main element.
