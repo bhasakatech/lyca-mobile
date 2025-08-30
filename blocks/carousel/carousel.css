@@ -18,12 +18,13 @@
 /* Carousel wrapper */
 .carousel-wrapper {
   width: 100%;
+  max-width: 100% !important;
   padding: 0 !important;
   margin: 0 !important;
 }
 
 /* Banner carousel for slides */
-.bannercarousel {
+.carousel-container .bannercarousel {
   display: flex;
   width: 100%;
 }
