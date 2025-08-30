@@ -142,10 +142,6 @@ pre {
   white-space: pre;
 }
 
-main > div {
-  margin: 40px 16px;
-}
-
 input,
 textarea,
 select,
@@ -225,11 +221,6 @@ main img {
 .icon img {
   height: 100%;
   width: 100%;
-}
-
-/* sections */
-main > .section {
-  margin: 40px 0;
 }
 
 main > .section > div {
