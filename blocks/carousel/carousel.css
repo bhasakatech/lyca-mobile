@@ -2,7 +2,7 @@
 .carousel-container {
   position: relative;
   width: 100%;
-  max-width: 1265px;
+  max-width: 1265px; 
   overflow-x: auto;
   anchor-name: --carousel;
   padding: 0 !important;
@@ -40,12 +40,12 @@
   cursor: pointer;
   position-anchor: --carousel;
   translate: -150%;
-  background-color: rgb(85, 84, 84); 
+  background-color: rgb(87, 86, 86); /* rgb() is correct here */
 }
 
-/* Making background color constant */
+/* making background color constant */
 .btn-next:hover, .btn-next:focus, .btn-prev:hover, .btn-prev:focus {
-  background-color: rgb(97, 97, 97);  
+   background-color: rgb(92, 91, 91); /* rgb() is correct here */
 }
 
 /* left arrow */
@@ -61,7 +61,7 @@
 
 /* making full width except left and right arrow */
 .slide {
-  flex: 0 0 100%;
+  flex: 0 0 100%;   
   min-width: 100%;
 }
 
@@ -74,7 +74,7 @@
 /* making slide picture and img as full width */
 .slide picture,
 .slide picture img {
-  display: block;
+  display: block; 
   width: 100% !important;
   height: auto !important;
   object-fit: cover;
@@ -88,21 +88,21 @@
   }
 }
 
-/* Fixing order of selectors for .btn-prev and .btn-prev:hover */
+/* Correct order for .btn-prev and .btn-prev:hover */
 .btn-prev {
   position-area: left center;
   translate: 150%;
 }
 
 .btn-prev:hover, .btn-prev:focus {
-  background-color: rgb(109, 108, 108);
+  background-color: rgb(92, 91, 91);
 }
 
-/* Fixing order of selectors for .btn-next and .btn-next:hover */
+/* Correct order for .btn-next and .btn-next:hover */
 .btn-next {
   position-area: right center;
 }
 
 .btn-next:hover, .btn-next:focus {
-  background-color: rgb(109, 108, 108);
+  background-color: rgb(92, 91, 91);
 }
