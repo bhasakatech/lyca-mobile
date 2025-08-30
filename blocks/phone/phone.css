@@ -73,8 +73,12 @@
   .phone > div {
     flex-direction: column;
     text-align: center;
-    gap: 20px;
+    gap: 0px;
   }
+
+  .phone.block {
+    padding: 1px;
+}
 
   .phone img {
     width: 120px;
@@ -93,6 +97,10 @@
   .phone img {
     width: 100px;
   }
+
+  .viewrates-wrapper {
+    padding: 0px !important;
+}
 
   .phone p {
     font-size: 16px;
