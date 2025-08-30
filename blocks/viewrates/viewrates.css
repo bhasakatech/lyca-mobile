@@ -68,8 +68,20 @@
   .viewrates > div {
     flex-direction: row;
     justify-content: center;
-    gap: 40px;
+    gap: 1px;
   }
+  
+.viewrates.view.block div:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.viewrates.view.block div:first-child div:last-child {
+    display: flex;
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+}
 
   .viewrates picture {
     flex-shrink: 0;
