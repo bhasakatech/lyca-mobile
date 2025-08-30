@@ -73,7 +73,7 @@
   .phone > div {
     flex-direction: column;
     text-align: center;
-    gap: 0px;
+    gap: 1px;
   }
 
   .phone.block {
@@ -99,7 +99,7 @@
   }
 
   .viewrates-wrapper {
-    padding: 0px !important;
+    padding: 1px !important;
 }
 
   .phone p {
