@@ -1,0 +1,198 @@
+.section.whylyca-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.whylyca-container {
+  background-color: #eff8f8;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.section .whylyca-container {
+  background-color: #7497dd;
+  display: flex;
+}
+
+.whylyca-container .default-content-wrapper p {
+  margin-top: 24px;
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #384c72;
+}
+
+.whylyca-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1px !important;
+  padding: 1px !important;
+}
+
+.whylyca.why.block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.whylyca > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 290px;
+  border-radius: 12px;  
+    padding: 50px 1px;
+}
+
+.whylyca.why.block div:nth-child(1) div:nth-child(2) {
+    width: 100%;
+}
+
+.whylyca.why.block div:nth-child(2) div:nth-child(2){
+    width: 100%;
+}
+
+.whylyca.why.block div:nth-child(3) div:nth-child(2){
+    width: 120%;
+}
+
+.whylyca.why.block div:nth-child(4) div:nth-child(2){
+    width: 100%;
+}
+
+.whylyca picture img {
+  width: 107px;
+  height: auto;
+}
+
+.whylyca > div > div:nth-child(2) p:first-child {
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #002b5c;
+  text-align: center;
+}
+
+.whylyca > div > div:nth-child(2) p:last-child {
+  margin: 0;
+  width: 98%;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  color: #344054;
+  line-height: 24px;
+}
+
+@media (width <= 1024px) {
+  .whylyca-container .default-content-wrapper p {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    line-height: 56px;
+  }
+
+  .whylyca-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+
+  .whylyca.why.block {
+    display: contents; /* Let wrapper handle layout */
+  }
+
+  .whylyca > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 1px 20px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+  }
+
+  .whylyca picture img {
+    width: 100px;
+    height: auto;
+  }
+
+  .whylyca > div > div:nth-child(2) p:first-child {
+    font-size: 18px;
+    margin: 1px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .whylyca > div > div:nth-child(2) p:last-child {
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* Mobile view: <=599px */
+@media (width <= 599px) {
+  .whylyca-container .default-content-wrapper p {
+    margin-bottom: 1px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 56px;
+  }
+
+  .whylyca-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    padding: 1px !important;
+  }
+
+  .whylyca.why.block {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;    
+    align-items: center;
+    gap: 0;
+  }
+
+  .whylyca > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    margin-left: 15px;
+    border-radius: 12px;
+    padding: 1px 20px;
+  }
+
+  .whylyca > div > div:nth-child(2) p:first-child {
+    margin: 1px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #002b5c;
+    text-align: center;
+  }
+
+  .whylyca > div > div:nth-child(2) p:last-child {
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    width: 94%;
+    margin-bottom: 45px;
+  }
+
+  .whylyca picture img {
+    width: 90px;
+    height: 90px;
+  }
+}

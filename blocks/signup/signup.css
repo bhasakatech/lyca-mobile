@@ -1,0 +1,127 @@
+.section.highlight.signup-container {
+  background-color: #eff8ff;
+  padding: 30px 1px;  
+  display: flex;
+  flex-direction: column;
+}
+
+.countries p {
+  margin: 0;
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 14px;
+}
+
+.section.highlight.signup-container .default-content-wrapper p {
+  text-align: center;
+  font-family: GTEestiLCDisplayThin, sans-serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #344054;
+  font-weight: bold;
+}
+
+.signup-wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.signup.block div:first-child {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.signup.block div:nth-child(1) div:nth-child(1) p {
+  font-family: GTEestiLCDisplayRegular, sans-serif;
+  color: #344054;
+  font-size: 17px;
+}
+
+.signup.block div:nth-child(1) div:nth-child(2) p a {
+  white-space: nowrap;
+  background-color: #08dc7d;
+  color: #21254f;
+  padding: 13px 50px;
+  font-size: 15px;
+  border-radius: 4px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.signup.block div:nth-child(1) div:nth-child(2) p a:hover {
+  box-shadow: 0 2px 9px grey;
+}
+
+.signup.block div:nth-child(2) div:nth-child(1) p {
+  color: #667085;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+/* ✅ Mobile: up to 600px */
+@media (width <= 600px) {
+  .signup-wrapper {
+    width: 90%;
+  }
+
+  .signup.block div:first-child {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .signup.block div:nth-child(1) div:nth-child(2) p a {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .section.highlight.signup-container .default-content-wrapper p {
+    font-size: 24px;
+  }
+}
+
+/*  Tablet: 601px to 1024px */
+@media (width >= 601px) and (width <= 1024px) {
+  .signup-wrapper {
+    width: 85%;
+  }
+
+  .signup.block div:first-child {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .signup.block div:nth-child(1) div:nth-child(2) p a {
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+  }
+
+  .section.highlight.signup-container .default-content-wrapper p {
+    font-size: 28px;
+  }
+}
+
+/* ✅ Desktop: 1025px and up */
+@media (width >= 1025px) {
+  .signup-wrapper {
+    width: 70%;
+  }
+
+  .signup.block div:first-child {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .section.highlight.signup-container .default-content-wrapper p {
+    font-size: 35px;
+  }
+}
