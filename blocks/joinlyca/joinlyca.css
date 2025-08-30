@@ -5,20 +5,22 @@
   color: #fff;
   text-align: center;
   padding: 10px 20px;
+  margin-bottom: 100px;
 }
 
-.section.joinlyca-container .default-content-wrapper{
-  display: flex ;
+.section.joinlyca-container .default-content-wrapper {
+  display: flex;
   flex-direction: column;
 }
 
 .section.joinlyca-container h1 {
-  font-size: 3rem;
+  font-family: GTEestiLCDisplayBold, sans-serif; /* added generic fallback */
+  font-size: 3.5rem;
   line-height: 3.48rem;
   color: #fff;
-  font-weight: bold;
-  margin-bottom: .25rem;
+  font-weight: 700;
   text-align: center;
+  margin: 30px;
 }
 
 .section.joinlyca-container p {
@@ -30,10 +32,17 @@
   text-align: center;
 }
 
+.joinlyca-container .default-content-wrapper > p {
+  color: rgb(253 253 253); /* modern rgb syntax */
+  font-size: 21px;
+  font-family: GTEestiLCDisplayBold, sans-serif;
+  margin: 1px 1px 40px !important; /* removed redundant value */
+}
+
 .joinlyca.card.block img {
   width: 100px !important;
   height: auto !important;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .joinlyca.card.block {
@@ -63,10 +72,84 @@
   text-decoration: none;
 }
 
-/* Mobile */
-@media (width <= 768px) {
+/* Mobile: up to 599px */
+@media (width <= 599px) {
   .joinlyca.card.block {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
+  }
+
+  .joinlyca-container .default-content-wrapper > p {    
+    color: rgb(255 253 253); /* modern rgb syntax */
+    font-size: 15px;
+    font-family: GTEestiLCDisplayBold, sans-serif;
+    margin: 1px 1px 40px !important;
+  }
+
+  .section.joinlyca-container h1 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    margin: 20px;
+  }
+
+  .joinlyca.card.block > div {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+/* Tablet: 600px to 768px */
+@media (width >= 600px) and (width <= 768px) {
+  .joinlyca.card.block {
+    align-items: center;
+    gap: 30px;
+  }
+
+  .joinlyca-container .default-content-wrapper > p {
+    color: rgb(255 253 253); /* modern rgb syntax */
+    font-size: 16px;
+    font-family: GTEestiLCDisplayBold, sans-serif;
+    margin-bottom: 40px;
+  }
+
+  .section.joinlyca-container h1 {
+    font-family: GTEestiLCDisplayBold, sans-serif;
+    font-size: 2.8rem;
+    line-height: 3rem;
+    margin: 25px;
+  }
+
+  .joinlyca.card.block > div {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+/* Desktop: 769px and up */
+@media (width >= 769px) {
+  .joinlyca.card.block {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .joinlyca-container .default-content-wrapper > p {
+    color: rgb(255 253 253); /* modern rgb syntax */
+    font-size: 18px;
+    font-family: GTEestiLCDisplayBold, sans-serif;
+    margin-bottom: 40px;
+  }
+
+  .section.joinlyca-container h1 {
+    font-size: 3.5rem;
+    line-height: 3.48rem;
+    margin: 30px;
+  }
+
+  .joinlyca.card.block > div {
+    width: 180px;
+    height: 180px;
   }
 }
