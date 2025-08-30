@@ -18,6 +18,7 @@
 }
 
 .rescentblogs-wrapper {
+  padding: 1px !important;
   display: flex;
   justify-content: center;
 }
@@ -67,10 +68,60 @@
   line-height: 24px;
 }
 
-/* Mobile: 1 card per row */
-@media (width <= 599px) {
+@media (width <= 1024px) {
+  .rescentblogs.blogs.block > div {
+    flex: 1 1 32%;
+  }
+
+  .rescentblogs.blogs.block > div:first-child > div:first-child img {
+  width: 500px;
+  height: 202px;
+  }
+
+}
+
+/* Tablet: 1 card per row at exactly 768px */
+@media (width<= 768px) {
   .rescentblogs.blogs.block {
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .rescentblogs.blogs.block > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .rescentblogs.blogs.block > div:first-child > div:first-child img {
+  width: 1000px;
+  height: 300px;  
+  object-fit: cover;
+}
+
+.rescentblogs.blogs.block > div:nth-child(2) > div:first-child img {
+  width: 1000px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.rescentblogs.blogs.block > div:last-child > div:first-child img {
+  width: 1000px;
+  height: 300px;  
+  object-fit: cover;
+}
+
+  .rescentblogs-container .default-content-wrapper p {
+    font-size: 35px !important;
+    margin-bottom: 30px;
+  }
+}
+
+
+/* Mobile: 1 card per row */
+@media (width <= 480px) {
+  .rescentblogs.blogs.block {
+    display: flex;
     align-items: center;
   }
 
@@ -86,40 +137,6 @@
 
   .rescentblogs-container .default-content-wrapper p {
     font-size: 27px !important;
-    margin-bottom: 30px;
-  }
-}
-
-/* Tablet: 1 card per row at exactly 768px */
-@media (width>= 768px) and (width <= 1024px) {
-  .rescentblogs.blogs.block {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .rescentblogs.blogs.block > div {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-
-  .rescentblogs.blogs.block > div:first-child > div:first-child img {
-  width: 1000px;
-  height: 300px;
-}
-
-.rescentblogs.blogs.block > div:nth-child(2) > div:first-child img {
-  width: 1000px;
-  height: 300px;
-}
-
-.rescentblogs.blogs.block > div:last-child > div:first-child img {
-  width: 1000px;
-  height: 300px;
-}
-
-  .rescentblogs-container .default-content-wrapper p {
-    font-size: 35px !important;
     margin-bottom: 30px;
   }
 }
