@@ -70,6 +70,14 @@
   }
 }
 
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
 body {
   display: none;
   margin: 0;
@@ -140,10 +148,6 @@ pre {
   background-color: var(--light-color);
   overflow-x: auto;
   white-space: pre;
-}
-
-main > div {
-  margin: 40px 16px;
 }
 
 input,
@@ -227,13 +231,7 @@ main img {
   width: 100%;
 }
 
-/* sections */
-main > .section {
-  margin: 40px 0;
-}
-
 main > .section > div {
-  max-width: 1200px;
   margin: auto;
   padding: 0 24px;
 }
