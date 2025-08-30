@@ -72,8 +72,8 @@
   text-decoration: none;
 }
 
-/* 📱 Mobile: up to 599px */
-@media (max-width: 599px) {
+/*    Mobile: up to 599px */
+@media (width <= 599px) {
   .joinlyca.card.block {
     flex-direction: column;
     align-items: center;
@@ -99,8 +99,8 @@
   }
 }
 
-/* 📲 Tablet: 600px to 768px */
-@media (min-width: 600px) and (max-width: 768px) {
+/* Tablet: 600px to 768px */
+@media (width >= 600px) and (width <= 768px) {
   .joinlyca.card.block {
     align-items: center;
     gap: 30px;
@@ -127,15 +127,14 @@
   }
 }
 
-/* 💻 Desktop: 769px and up */
-@media (min-width: 769px) {
+/* Desktop: 769px and up */
+@media (width >= 769px) {
   .joinlyca.card.block {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     gap: 40px;
   }
-
 
   .section.joinlyca-container h1 {
     font-size: 3.5rem;
