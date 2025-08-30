@@ -178,6 +178,15 @@
     object-fit: contain;
   }
 
+  .section.joinlyca-container .default-content-wrapper p {
+    font-size: 13px;
+    line-height: 1.16rem;
+    color: #fff;
+    margin-bottom: 1.2rem;
+    font-family: GTEestiLCDisplayRegular, sans-serif;
+    text-align: center;
+  }
+
   .section.joinlyca-container .joinlyca.card.block > div > div:last-child p {
     font-size: 10px;
     text-align: center;
@@ -187,12 +196,5 @@
     max-width: 100px;
   }
 
-  .section.joinlyca-container .default-content-wrapper p {
-    font-size: 13px;
-    line-height: 1.16rem;
-    color: #fff;
-    margin-bottom: 1.2rem;
-    font-family: GTEestiLCDisplayRegular, sans-serif;
-    text-align: center;
-  }
+  
 }
