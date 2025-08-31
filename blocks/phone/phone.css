@@ -16,7 +16,7 @@
     align-items: center;
     gap: 20px;
     width: 100%;
-    font-family: "Roboto", sans-serif; /* ✅ Added generic fallback */
+    font-family: "Roboto", sans-serif; 
 }
 
 .phone > div {
@@ -123,9 +123,13 @@
 }
 
 @media (width <= 385px) {
+
+        .phone-wrapper {
+        padding: 1px !important;
+    }
+
     .phone > div {
         flex-direction: row;
-        gap: 10px;
     }
 
     .phone img {
@@ -133,6 +137,6 @@
     }
 
     .phone p {
-        font-size: 12px;
+        font-size: 13px;
     }
 }
