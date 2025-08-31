@@ -1,6 +1,6 @@
 .section.highlight.signup-container {
   background-color: #eff8ff;
-  padding: 30px 1px;  
+  padding: 30px 20px;  
   display: flex;
   flex-direction: column;
 }
@@ -65,9 +65,10 @@
 
 /* ✅ Mobile: up to 600px */
 @media (width <= 600px) {
-  .signup-wrapper {
-    width: 90%;
-  }
+     .signup-wrapper {
+        padding: 1px !important;
+        width: 100%;
+    }
 
   .signup.block div:first-child {
     flex-direction: column;
