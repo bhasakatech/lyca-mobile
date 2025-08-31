@@ -4,6 +4,7 @@
 }
 
 .phone-wrapper {
+    padding: 13px 1px !important;
     display: flex;
     align-items: center;
     justify-content: center;
