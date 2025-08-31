@@ -91,7 +91,7 @@
 .chooseaprepaid.cards.block > div:first-child div:last-child p:first-child {
     font-size: 34px;
     font-weight: 500;
-    top: 23px;
+    top: 45px;
     margin-top: 2px;
     color: #fff;
     position: absolute;
@@ -163,6 +163,14 @@
         left: 33px;
     }
 
+    .chooseaprepaid.cards.block > div:first-child div:last-child p:first-child {
+        font-size: 33px;
+        font-weight: 500;
+        top: 25px !important;
+        margin-top: 2px;
+        left: 40px;
+    }
+
     .chooseaprepaid.cards.block > div:nth-of-type(2) p:nth-of-type(2) {
         font-size: 20px;
         top: 56px;
@@ -176,7 +184,7 @@
         > div:first-child
         div:last-child
         p:nth-of-type(2) {
-        top: 62px;
+        top: 60px;
     }
 
     .chooseaprepaid.cards.block > div:first-child div:last-child p:last-child {
@@ -193,8 +201,8 @@
     }
 
     .chooseaprepaid.cards.block > div:last-child div:last-child p:last-child {
-        left: 29% !important;
-        top: 16% !important;
+        left: 36% !important;
+        top: 17% !important;
     }
 }
 
@@ -241,6 +249,15 @@
         left: 28px;
     }
 
+    .chooseaprepaid.cards.block > div:first-child div:last-child p:first-child {
+        font-size: 34px;
+        font-weight: 500;
+        top: 12px !important;
+        margin-top: 2px;
+        position: absolute;
+        left: 30px;
+    }
+
     .chooseaprepaid.cards.block > div:first-child div:last-child p:last-child {
         left: 234px !important;
         top: 8px !important;
@@ -258,7 +275,7 @@
         div:last-child
         p:last-child {
         left: 32% !important;
-        top: 4% !important;
+        top: 2% !important;
     }
 
     .chooseaprepaid.cards.block > div:first-child div:last-child p:first-child {
@@ -343,7 +360,7 @@
 
     .chooseaprepaid.cards.block > div:first-child div:last-child p:first-child {
         font-size: 26px;
-        top: 15px;
+        top: 18px !important;
         color: #fff;
         position: absolute;
         left: 20px;
@@ -376,7 +393,7 @@
         > div:nth-of-type(2)
         div:last-child
         p:last-child {
-        left: 49% !important;
+        left: 53% !important;
         top: 2% !important;
     }
 }
@@ -393,7 +410,7 @@
         > div:nth-of-type(2)
         div:last-child
         p:last-child {
-        left: 62% !important;
-        top: 9% !important;
+        left: 66% !important;
+        top: 3% !important;
     }
 }
