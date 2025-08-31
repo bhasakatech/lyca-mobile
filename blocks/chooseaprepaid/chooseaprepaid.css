@@ -235,15 +235,15 @@
         left: 25px;
     }
 
-    .chooseaprepaid.cards.block > div:first-child div:last-child p:last-child {
-        left: 234px !important;
-        top: 8px !important;
-    }
-
     .chooseaprepaid.cards.block > div:nth-of-type(2) p:nth-of-type(1) {
         font-size: 25px;
         top: -8px;
         left: 28px;
+    }
+
+    .chooseaprepaid.cards.block > div:first-child div:last-child p:last-child {
+        left: 234px !important;
+        top: 8px !important;
     }
 
     .chooseaprepaid.cards.block {

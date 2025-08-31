@@ -111,6 +111,10 @@
 @media (width <= 430px) {
 .plantypes picture {
     max-width: 50px;
+  }  
+
+  .plantypes p {
+    font-size: 12px;
   }
 
   .section.plantypes-container .default-content-wrapper p {
@@ -135,9 +139,4 @@
     width: 275px;
 }
 
-  
-
-  .plantypes p {
-    font-size: 12px;
-  }
 }
