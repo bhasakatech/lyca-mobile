@@ -1,5 +1,6 @@
 .countries-wrapper {
-  padding: 20px;
+  box-sizing: border-box;
+  padding: 1px;
   border-radius: 8px;
   margin: 21px auto;
   width: 100%;
