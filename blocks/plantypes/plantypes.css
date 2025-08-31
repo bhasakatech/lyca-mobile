@@ -1,136 +1,138 @@
 .section.plantypes-container {
   display: flex;
   flex-direction: column;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-.plantypes-container {
-  background-color: #eff8ff;
-  text-align: center;
   font-family: Arial, sans-serif;
+  background-color: #eff8ff;
+  margin-top: 40px;
+  padding-bottom: 50px;
 }
 
-.plantypes-wrapper {
-  width: 100%;
-}
-
-.plantypes-container .default-content-wrapper p {
-  margin-top: 24px;
-  margin-bottom: 1px;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  letter-spacing: 0;
+.default-content-wrapper {
   text-align: center;
+  margin: 10px 1px;
+}
+
+.default-content-wrapper p {
+  font-size: 3rem;
+  font-weight: 700;
   color: #3a3353;
+  margin-bottom: 30px;
 }
 
-.plantypes {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  justify-content: center;
-  width: 100%;
+/* Outer wrapper stays block */
+.plantypes-wrapper {
+  overflow-x: auto;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-.plantypes > div {
+/* Flex applied to actual card container */
+.plantypes.plans.block {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+  scroll-snap-type: x mandatory;
+}
+
+/* Each card */
+.plantypes.plans.block > div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  width: 100%;
-  max-width: 250px;
-  margin: 0 auto;
-  border-radius: 12px;
-  padding: 10px;
-  transition: all 0.3s ease;
-  animation: fade-in-up 0.6s ease forwards;
+  gap: 6px;
+  padding: 8px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  min-width: 150px;
+  scroll-snap-align: start;
 }
 
-.plantypes picture {
-  display: block;
-  width: 100%;
-}
-
-.plantypes img {
-  width: 107px;
+.plantypes.plans.block picture img {
+  width: 120px;
   height: auto;
-  border-radius: 12px;
-  margin-bottom: 20px;
 }
 
-.plantypes p:first-child {
-  width: 283px;
-  font-size: 19px;
-  font-weight: bold;
-  color: #2c3e50;
-  margin-bottom: 18px;
-}
 
-.plantypes p:last-child {
-  margin: 0;
-  text-align: center;
+/* Text styling */
+.plantypes p {
+  margin: 1px;
   font-size: 16px;
-  color: #3c4242;
-  line-height: 24px;
+  font-weight: 600;
+  color: #2c3e50;
+  line-height: 1.3;
+  text-align: center;
 }
 
-.plantypes > div:nth-child(1) { animation-delay: 0.1s; }
-.plantypes > div:nth-child(2) { animation-delay: 0.2s; }
-.plantypes > div:nth-child(3) { animation-delay: 0.3s; }
-.plantypes > div:nth-child(4) { animation-delay: 0.4s; }
-
-@media (width >= 600px) and (width <= 1024px) {
-  .plantypes-container .default-content-wrapper p {
-    margin-left: 50px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 56px;
+/* Responsive tweaks */
+@media (width <= 1024px) {
+  .default-content-wrapper p {
+    padding-top: 20px;
+    font-size: 24px;
   }
 
-  .plantypes {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+  .plantypes.plans.block > div {
+    min-width: 130px;
+    padding: 6px;
   }
 
-  .plantypes > div {
-    max-width: 100%;
-    margin: 0 auto;
+  .plantypes.plans.block picture img {
+  width: 100px;
+  height: auto;
+}
+
+  .plantypes p {
+    font-size: 13px;
   }
 }
 
-
-@media (width <= 599px) {
-  .plantypes-container .default-content-wrapper p {
-    margin-top: 20px;
-    margin-bottom: 1px;
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 56px;
+/* Responsive tweaks */
+@media (width <= 768px) {
+  .default-content-wrapper p {
+    padding-top: 20px;
+    font-size: 24px;
   }
 
-  .plantypes {
+  .plantypes.plans.block > div {
+    min-width: 130px;
+    padding: 6px;
+  }
+
+  .plantypes.plans.block picture img {
+  width: 100px;
+  height: auto;
+}
+
+  .plantypes p {
+    font-size: 13px;
+  }
+}
+
+@media (width <= 430px) {
+  .default-content-wrapper p {
+    font-size: 22px;
+  }
+
+  .plantypes.plans.block picture img {
+  width: 90px;
+  height: auto;
+  }
+
+  .plantypes-wrapper{
+    padding: 1px !important;
+  }
+
+  .plantypes.plans.block {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    padding: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 275px;
+}
+
+  .plantypes picture {
+    max-width: 50px;
   }
 
-  .plantypes > div {
-    width: 100%;
-    max-width: 250px;
-    padding: 10px 20px;
-  }
-
-  .plantypes p:first-child {
-    width: 283px;
-    font-size: 15px;
-    font-weight: bold;
-    color: #2c3e50;
-    margin-bottom: 10px;
+  .plantypes p {
+    font-size: 12px;
   }
 }
