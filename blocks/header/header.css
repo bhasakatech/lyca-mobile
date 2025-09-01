@@ -17,8 +17,7 @@
   height: 81px;
   display: flex;
   align-items: center;
-
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   background-color: var(--background-color);
 }
 
@@ -100,17 +99,17 @@ header .nav-brand {
   outline: none;
 }
 
-/* nav-brand default-container  */
-header .nav-brand .default-content-wrapper {
-  height: 100%;
-  margin: 0;
-}
-
 /* nav-brand image */
 header nav .nav-brand img {
   width: 100px;
   height: 40px;
   aspect-ratio: auto 100/24;
+}
+
+/* nav-brand default-container  */
+header .nav-brand .default-content-wrapper {
+  height: 100%;
+  margin: 0;
 }
 
 /* nav-sections (logo for mobile) */
