@@ -103,6 +103,7 @@ header nav .nav-tools .default-content-wrapper picture {
   margin-left: -12px;
   height: auto;
   margin-top: -2px;
+  cursor: pointer;
 }
 
 /* nav-tools img */
