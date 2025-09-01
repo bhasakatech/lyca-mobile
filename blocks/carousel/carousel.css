@@ -111,7 +111,7 @@
 .carousel-dot.active {
   width: 47px;
   border-radius: 30%;
-  background-color: rgb(53, 63, 87)
+  background-color: rgb(53 63 87)
 }
 
 /* Left and right arrows hiding for tablet and mobile */
