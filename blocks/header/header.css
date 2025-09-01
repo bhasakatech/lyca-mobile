@@ -4,26 +4,29 @@
   height: 81px;
   display: flex;
   align-items: center;
+  box-sizing: border-box;
+  position: sticky;
+  z-index: 12;
+  top: 0;
 }
 
-/* header bolck */
+/* header block */
 .header {
   width: 100% !important;
-  height: 80px;
+  height: 81px;
   display: flex;
   align-items: center;
+  box-sizing: border-box;
+  background-color: var(--background-color);
 }
 
 /* nav-wrapper */
 .header .nav-wrapper {
+  box-sizing: border-box;
   background-color: var(--background-color);
   width: 100%;
   height: auto;
-  box-sizing: border-box;
-  padding: 1px;
-  z-index: 2;
-  position: sticky;
-  top: 0;
+  padding: 0 24px;
 }
 
 /* nav section */
@@ -49,6 +52,7 @@
 /* nav-brand section (lyca logo) */
 header .nav-brand {
   cursor: pointer;
+  height: 100%;
   display: inline-flex;
   justify-content: center;
   position: relative;
@@ -70,8 +74,14 @@ header nav .nav-brand img {
   aspect-ratio: auto 100/24;
 }
 
+/* nav-brand default-container  */
+header .nav-brand .default-content-wrapper {
+  height: 100%;
+  margin: 0;
+}
+
 /* nav-tools (menu) */
-.header nav .nav-tools {
+header nav .nav-tools {
   align-self: center;
   display: flex;
   flex: 0 0 auto;
@@ -79,13 +89,8 @@ header nav .nav-brand img {
   margin: 0;
 }
 
-/* nav-sections (logo for mobile) */
-.header .nav-sections {
-  display: none;
-}
-
 /* nav-tools */
-.nav-tools .default-content-wrapper {
+header nav .nav-tools .default-content-wrapper {
   display: flex;
   align-items: center;
   width: fit-content;
@@ -93,21 +98,26 @@ header nav .nav-brand img {
 }
 
 /* nav-tools picture */
-.nav-tools .default-content-wrapper picture {
+header nav .nav-tools .default-content-wrapper picture {
   padding: 12px;
   margin-left: -12px;
   height: auto;
-  margin-top: -4px;
+  margin-top: -2px;
 }
 
 /* nav-tools img */
-.nav-tools .default-content-wrapper picture img {
+header nav .nav-tools .default-content-wrapper picture img {
   width: 24px;
   height: 12px;
 }
 
+/* nav-sections (logo for mobile) */
+.header .nav-sections {
+  display: none;
+}
+
 /* section default container (quick recharge) — general before specific to satisfy no-descending-specificity */
-.section .default-content-wrapper {
+.header .section .default-content-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,7 +125,7 @@ header nav .nav-brand img {
 }
 
 /* section for quick recharge */
-.section {
+#nav > .section:nth-child(6) {
   height: 100%;
   margin-left: auto;
   display: flex;
@@ -123,32 +133,32 @@ header nav .nav-brand img {
 }
 
 /* section all p */
-.section p {
+.header .section p {
   cursor: pointer;
 }
 
 /* quick recharge button container */
-.section .default-content-wrapper .button-container {
+.header .section .default-content-wrapper .button-container {
   display: flex;
-  padding: 4px 24px;
+  padding: 2px 17px;
   align-items: center;
   justify-content: center;
   background-color: #006ae0;
   min-width: 7.5rem;
-  height: 2rem;
+  height: 2rem !important;
   border-radius: 5px;
   margin: 0;
 }
 
 /* quick recharge button a */
-.section .default-content-wrapper .button-container a {
+.header .section .default-content-wrapper .button-container a {
   height: 100%;
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   color: #fff;
   position: relative;
-  line-height: 1.6;
+  line-height: 2;
   padding: 0;
   margin: 0;
   text-align: center;
@@ -158,8 +168,8 @@ header nav .nav-brand img {
 }
 
 /* profile and drop down */
-.section .default-content-wrapper > p:nth-child(2),
-.section .default-content-wrapper > p:nth-child(3) {
+.header .section .default-content-wrapper > p:nth-child(2),
+.header .section .default-content-wrapper > p:nth-child(3) {
   margin-left: 12px;
   margin-right: 5px;
   height: 100%;
@@ -170,29 +180,29 @@ header nav .nav-brand img {
 }
 
 /* profile img and cart img */
-.section .default-content-wrapper > p:nth-child(2) img,
-.section .default-content-wrapper > p:nth-child(4) img {
+.header .section .default-content-wrapper > p:nth-child(2) img,
+.header .section .default-content-wrapper > p:nth-child(4) img {
   width: 32px;
   height: 32px;
   aspect-ratio: auto 32/32;
 }
 
 /* drop down */
-.section .default-content-wrapper > p:nth-child(3) {
-  margin: -7px 10px 0 5px;
+.header .section .default-content-wrapper > p:nth-child(3) {
+  margin: -3px 9px 0 4px;
 }
 
 /* drop down imgs */
-.section .default-content-wrapper > p:nth-child(3) img,
-.section .default-content-wrapper > p:nth-child(7) img {
+.header .section .default-content-wrapper > p:nth-child(3) img,
+.header .section .default-content-wrapper > p:nth-child(7) img {
   width: 14px;
   height: 8px;
   aspect-ratio: auto 14/8;
 }
 
 /* EN */
-.section .default-content-wrapper > p:nth-child(5) {
-  margin: -4px 0 0 30px;
+.header .section .default-content-wrapper > p:nth-child(5) {
+  margin: 0 0 0 30px;
   font-size: 0.938rem;
   line-height: 1.099rem;
   color: #344054;
@@ -200,17 +210,17 @@ header nav .nav-brand img {
 }
 
 /* us country */
-.section .default-content-wrapper > p:nth-child(6) {
-  margin: 0 5px 0 10px;
+.header .section .default-content-wrapper > p:nth-child(6) {
+  margin: 5px 5px 0 10px;
 }
 
 /* drop down */
-.section .default-content-wrapper > p:nth-child(7) {
-  margin-top: -2px;
+.header .section .default-content-wrapper > p:nth-child(7) {
+  margin-top: 0;
 }
 
 /* us country img */
-.section .default-content-wrapper > p:nth-child(6) img {
+.header .section .default-content-wrapper > p:nth-child(6) img {
   width: 18px;
   height: 18px;
   aspect-ratio: auto 18/18;
@@ -242,6 +252,7 @@ header nav .nav-brand img {
   position: relative;
   flex: 1 1 auto;
   white-space: nowrap;
+  margin: -2px 0 0;
 }
 
 /* section ul */
@@ -251,6 +262,7 @@ header nav .nav-brand img {
   align-items: center;
   gap: 0;
   margin: 0;
+  padding: 0 !important;
 }
 
 /* section ul li */
@@ -278,16 +290,19 @@ header nav .nav-brand img {
 }
 
 /* styles for large desktops */
-@media (width >= 1441px) {
+@media (width >= 1440px) {
   .header .nav-wrapper {
     display: flex;
     justify-content: center;
+  }
+
+  .header #nav {
+    width: 1248px;
   }
 }
 
 /* styles for laptops */
 @media (width >= 850px) {
-  /*  section ul li */
   #nav > div:nth-child(5) {
     display: block !important;
   }
@@ -295,31 +310,26 @@ header nav .nav-brand img {
 
 /* styles for tablet */
 @media (600px <= width <= 768px) {
-  /* nav section */
   .header #nav {
     padding-right: 0;
   }
 
-  /* lyca logo */
   header .nav-brand {
     margin: -10px 16px 0 -16px;
   }
 
-  /* quick recharge button */
-  .section .default-content-wrapper .button-container {
+  .header .section .default-content-wrapper .button-container {
     width: 92px;
-    padding: 4px 18px;
+    padding: 0 18px;
   }
 
-  /* quick recharge button a */
-  .section .default-content-wrapper .button-container a {
+  .header .section .default-content-wrapper .button-container a {
     font-size: 12px;
-    line-height: 1.9;
+    line-height: 2.9;
     white-space: nowrap;
   }
 
-  /* EN */
-  .section .default-content-wrapper > p:nth-child(5) {
+  .header .section .default-content-wrapper > p:nth-child(5) {
     font-size: 0.813rem;
     line-height: 0.952rem;
     color: #344054;
@@ -335,21 +345,20 @@ header nav .nav-brand img {
   }
 
   .nav-wrapper {
+    width: 100% !important;
     height: 100% !important;
     padding: 0 16px !important;
     margin: 0;
   }
 
-  /* hiding lyca logo,menu,EN,us country,drop down for mobile */
   .header .nav-brand,
   .header nav .nav-tools,
-  .section .default-content-wrapper > p:nth-child(5),
-  .section .default-content-wrapper > p:nth-child(6),
-  .section .default-content-wrapper > p:nth-child(7) {
+  .header .section .default-content-wrapper > p:nth-child(5),
+  .header .section .default-content-wrapper > p:nth-child(6),
+  .header .section .default-content-wrapper > p:nth-child(7) {
     display: none;
   }
 
-  /* short logo and menu displayed for mobile */
   .header .nav-sections,
   #nav > .section:last-child {
     display: block;
@@ -359,7 +368,6 @@ header nav .nav-brand img {
     background: transparent;
   }
 
-  /* nav section */
   #nav {
     min-height: 100% !important;
     max-width: 100%;
@@ -367,52 +375,43 @@ header nav .nav-brand img {
     margin: 0 !important;
   }
 
-  /* short mobile logo */
   .header .nav-sections {
-    margin-top: 20px;
+    margin-top: 3px;
   }
 
-     /* quick recharge section */
   #nav .section .default-content-wrapper {
     height: auto;
   }
-  
-    /* menu logo */
-  #nav >.section:last-child .default-content-wrapper {
+
+  #nav > .section:last-child .default-content-wrapper {
     margin-left: 14px;
-    margin-top: -5px;
+    margin-top: -10px;
   }
 
-  /* menu img */
   #nav > .section:last-child img {
     width: 20px;
     height: 16px;
   }
 
-  /* quick recharge button */
   #nav .section .default-content-wrapper .button-container {
-    width: 92px;
-    padding: 4px 18px;
+    max-width: 92px;
+    padding: 2px 0 !important;
   }
 
-    /* quick recharge button a */
-  .section .default-content-wrapper .button-container a {
+  .header .section .default-content-wrapper .button-container a {
     font-size: 12px;
-    line-height: 1.9;
+    line-height: 2.5;
     white-space: nowrap;
   }
 
-  /* profile */
-  .section .default-content-wrapper > p:nth-child(2) {
+  .header .section .default-content-wrapper > p:nth-child(2) {
     margin-left: 16px;
   }
 
-  /* dropdown */
-  .section .default-content-wrapper > p:nth-child(3) {
+  .header .section .default-content-wrapper > p:nth-child(3) {
     margin: -7px 8px 0 0;
   }
 
-  /* profile img and cart img */
   #nav .section .default-content-wrapper > p:nth-child(2) img,
   #nav .section .default-content-wrapper > p:nth-child(4) img {
     width: 28px;
@@ -423,7 +422,6 @@ header nav .nav-brand img {
 
 /* styles to stop scroll bar for quick recharge */
 @media (width <= 330px) {
-  /* quick recharge section */
   #nav > .section:nth-child(6) {
     overflow-x: scroll;
   }
@@ -431,9 +429,8 @@ header nav .nav-brand img {
 
 /* styles to add padding for nav */
 @media (400px <= width <= 600px) {
-  /* nav section */
   #nav {
     padding: 0 0 0 16px !important;
     margin: 0 !important;
   }
-}              
+}
