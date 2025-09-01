@@ -14,6 +14,7 @@
     gap: 100px;
     flex-direction: row;
 }
+
 /* right click images */
 .downloadapp.block div:nth-child(1) div:nth-child(2) ul li:nth-child(1) img {
     /* background-color: red; */
@@ -24,6 +25,7 @@
     /* background-color: red; */
     width: 22px !important;
 }
+
 .downloadapp.block div:nth-child(1) div:nth-child(2) ul li:nth-child(3) img {
     /* background-color: red; */
     width: 26px !important;
@@ -238,6 +240,7 @@
         background-color: #006ae0;
         color: #fff;
     }
+
     .downloadapp.block
         div:nth-child(1)
         div:nth-child(2)
@@ -257,6 +260,7 @@
         /* background-color: red; */
         width: 74%;
     }
+    
     .downloadapp.block
         div:nth-child(1)
         div:nth-child(2)
