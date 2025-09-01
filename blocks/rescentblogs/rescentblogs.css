@@ -1,7 +1,7 @@
 .section.rescentblogs-container {
     display: flex;
     flex-direction: column;
-    padding: 63px 1px !important;
+    padding: 6px 1px 60px 2px !important;
 }
 
 .rescentblogs-container {
@@ -38,7 +38,7 @@
 .rescentblogs.blogs.block {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 28px;
     justify-content: center;
     width: 100%;
 }
@@ -48,7 +48,7 @@
     border: 1px solid #ddd;
     border-radius: 19px;
     width: 100%;
-    max-width: 320px;
+    max-width: 316px;
     height: 400px;
     overflow: hidden;box-shadow: 0 3px 8px rgb(0 0 0 / 22%) !important;
 }
@@ -76,6 +76,15 @@
 }
 
 @media (width <= 1024px) {
+
+    .rescentblogs.blogs.block {
+        padding: 2px 1px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+    width: 100%;
+}
     .rescentblogs.blogs.block > div {
         flex: 1 1 20%;
     }
@@ -84,17 +93,20 @@
         width: 500px;
         height: 202px;
     }
+
 }
 
 /* Tablet: 1 card per row at exactly 768px */
 @media (width<= 768px) {
     .rescentblogs.blogs.block {
+        padding: 20px;
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
     }
 
     .rescentblogs.blogs.block > div {
+        padding-bottom: 55px;
         flex: 0 0 100%;
         max-width: 100%;
     }
