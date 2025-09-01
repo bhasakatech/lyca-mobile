@@ -4,6 +4,7 @@
   padding: 20px;
   background-color: #21254f;
   color: white;
+  height: 100vh;
 }
 
 .joinlyca-wrapper {
@@ -16,10 +17,9 @@
 }
 
 .section.joinlyca-container .default-content-wrapper {
+  margin: 1px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
+  padding: 10px 20px 20px;
 }
 
 .section.joinlyca-container .joinlyca.card.block > div {
@@ -54,6 +54,7 @@
 }
 
 .section.joinlyca-container .joinlyca-wrapper {
+  margin: 1px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
