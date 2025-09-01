@@ -5,7 +5,7 @@
 
 .rescentblogs-container {
     margin: 1px auto;
-    padding: 30px 10px !important;
+    padding: 30px 15px !important;
 }
 
 .rescentblogs-container .default-content-wrapper p {
@@ -31,13 +31,13 @@
 
 .rescentblogs.blogs.block > div:first-child > div:first-child img {
     width: 500px;
-    height: 242px;
+    height: 222px;
 }
 
 .rescentblogs.blogs.block {
     display: flex;
     flex-wrap: wrap;
-    gap: 35px;
+    gap: 25px;
     justify-content: center;
     width: 100%;
 }
@@ -47,8 +47,10 @@
     border: 1px solid #ddd;
     border-radius: 19px;
     width: 100%;
-    max-width: 350px;
+    max-width: 320px;
+    height: 400px;
     overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .24) !important;
 }
 
 .rescentblogs.blogs.block > div > div:last-child {
