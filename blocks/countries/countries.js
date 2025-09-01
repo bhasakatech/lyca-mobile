@@ -53,13 +53,5 @@ export default function decorate(block) {
   nextBtn?.addEventListener('click', goToNextSlide);
   prevBtn?.addEventListener('click', goToPrevSlide);
 
-  // Automatic slide transition
-//   let autoSlideIndex = 1;
-//   setInterval(() => {
-//     currentSlide = autoSlideIndex < slides.length ? autoSlideIndex : 0;
-//     updateSlidePosition();
-//     autoSlideIndex = currentSlide + 1;
-//   }, 2000);
-
   updateSlidePosition(); // Initialize slide position
 }
