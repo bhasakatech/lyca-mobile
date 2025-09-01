@@ -24,6 +24,18 @@ export default function decorate(block) {
   let currentSlide = 0;
   const totalSlides = slides.length;
 
+    // ----- ✅ Update slides and dots -----
+  const updateSlidePosition = () => {
+    slides.forEach((slide) => {
+      slide.style.transform = `translateX(${(-currentSlide) * 100}%)`;
+    });
+
+    const dots = block.querySelectorAll('.carousel-dot');
+    dots.forEach((dot, index) => {
+      dot.classList.toggle('active', index === currentSlide);
+    });
+  };
+
   // ----- ✅ Create Dots -----
   const dotsContainer = document.createElement('div');
   dotsContainer.className = 'carousel-dots';
@@ -40,18 +52,6 @@ export default function decorate(block) {
   });
 
   block.appendChild(dotsContainer);
-
-  // ----- ✅ Update slides and dots -----
-  const updateSlidePosition = () => {
-    slides.forEach((slide) => {
-      slide.style.transform = `translateX(${(- currentSlide) * 100}%)`;
-    });
-
-    const dots = block.querySelectorAll('.carousel-dot');
-    dots.forEach((dot, index) => {
-      dot.classList.toggle('active', index === currentSlide);
-    });
-  };
 
   const goToNextSlide = () => {
     currentSlide = currentSlide < totalSlides - 1 ? currentSlide + 1 : 0;
