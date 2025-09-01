@@ -191,15 +191,17 @@
         max-width: 140px;
     }
 
+     .downloadapp.block div:nth-child(1) div:nth-child(2) p picture img {
+        width: 80px;
+        height: auto;
+    }
+
     .downloadapp.block div:nth-child(1) div:nth-child(2) ul li:nth-child(2) img {
     /* background-color: red; */
     width: 17px !important;
 }
 
-    .downloadapp.block div:nth-child(1) div:nth-child(2) p picture img {
-        width: 80px;
-        height: auto;
-    }
+   
 
     .downloadapp.block div:nth-child(1) div:nth-child(2) h2 {
         font-size: 15px;
@@ -261,24 +263,4 @@
         width: 100%;
     }
 
-    .downloadapp.block
-        div:nth-child(1)
-        div:nth-child(2)
-        ul
-        li:nth-child(2)
-        img {
-        /* background-color: red; */
-        width: 74%;
-    }
-
-    .downloadapp.block
-        div:nth-child(1)
-        div:nth-child(2)
-        ul
-        li:nth-child(3)
-        img {
-        /* background-color: red; */
-        width: 110%;
-        padding-right: 5px;
-    }
 }

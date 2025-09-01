@@ -76,7 +76,6 @@
 }
 
 @media (width <= 1024px) {
-
     .rescentblogs.blogs.block {
         padding: 2px 1px;
     display: flex;
@@ -85,6 +84,7 @@
     justify-content: center;
     width: 100%;
 }
+
     .rescentblogs.blogs.block > div {
         flex: 1 1 20%;
     }
