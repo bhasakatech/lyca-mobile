@@ -3,7 +3,7 @@
 }
 
 .section.downloadapp-container {
-    padding: 60px;
+    padding:40px 1px;
     margin-top: 20px;
     margin-bottom: 40px;
 }
@@ -119,11 +119,10 @@
     }
 
     .downloadapp.block div:nth-child(1) div:nth-child(1) img {
-        width: 400px !important;
+        width: 100%;
         height: auto;
         display: block;
     }
-    
 
     .downloadapp.block div:nth-child(1) div:nth-child(2) h2 {
         font-size: 20px;
@@ -192,13 +191,21 @@
         max-width: 140px;
     }
 
-    .downloadapp.block div:nth-child(1) div:nth-child(2) p picture img {
+     .downloadapp.block div:nth-child(1) div:nth-child(2) p picture img {
         width: 80px;
         height: auto;
     }
 
+    .downloadapp.block div:nth-child(1) div:nth-child(2) ul li:nth-child(2) img {
+    /* background-color: red; */
+    width: 17px !important;
+}
+
+   
+
     .downloadapp.block div:nth-child(1) div:nth-child(2) h2 {
         font-size: 15px;
+        width: 185px;
         margin-left: 0;
         line-height: 0.4;
         text-align: left;
@@ -256,24 +263,4 @@
         width: 100%;
     }
 
-    .downloadapp.block
-        div:nth-child(1)
-        div:nth-child(2)
-        ul
-        li:nth-child(2)
-        img {
-        /* background-color: red; */
-        width: 74%;
-    }
-
-    .downloadapp.block
-        div:nth-child(1)
-        div:nth-child(2)
-        ul
-        li:nth-child(3)
-        img {
-        /* background-color: red; */
-        width: 110%;
-        padding-right: 5px;
-    }
 }
