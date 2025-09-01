@@ -29,6 +29,13 @@
   color: #667085;
 }
 
+.alreadylyca-wrapper .alreadylyca > div:nth-of-type(2) > div:first-of-type p,
+.alreadylyca-wrapper .alreadylyca > div:nth-of-type(2) > div:last-of-type p,
+.alreadylyca-wrapper .alreadylyca > div:nth-of-type(3) > div:first-of-type > p,
+.alreadylyca-wrapper .alreadylyca > div:nth-of-type(3) > div:last-of-type > p {
+  margin: 0;
+}
+
 .alreadylyca-container #already-with-lyca {
   font-size: 48px;
   display: flex;
@@ -41,15 +48,6 @@
   text-align: center;
 }
 
-/* 👇 Move all specific child selectors BEFORE +p */
-.alreadylyca-wrapper .alreadylyca > div:nth-of-type(2) > div:first-of-type p,
-.alreadylyca-wrapper .alreadylyca > div:nth-of-type(2) > div:last-of-type p,
-.alreadylyca-wrapper .alreadylyca > div:nth-of-type(3) > div:first-of-type > p,
-.alreadylyca-wrapper .alreadylyca > div:nth-of-type(3) > div:last-of-type > p {
-  margin: 0;
-}
-
-/* Now the less specific selector */
 .alreadylyca-container #already-with-lyca + p {
   font-size: 1rem;
   line-height: 1.16rem;
@@ -135,7 +133,6 @@
   border-right: 1px solid #dfe0f8;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
-  margin: 0;
 }
 
 .alreadylyca-wrapper .alreadylyca > div:nth-of-type(2) > div:last-of-type {
@@ -152,7 +149,6 @@
   justify-content: space-around;
   align-items: center;
   padding: 4px 0 5px;
-  margin: 0;
   color: #667085;
   font-size: 16px;
   font-weight: 400;
@@ -189,7 +185,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
   text-align: center;
   font-size: 14.4px;
   font-weight: 400;
@@ -206,7 +201,6 @@
 }
 
 .alreadylyca-wrapper .alreadylyca > div:nth-of-type(3) > div:last-of-type > p {
-  margin: 0 0 0 5px;
   font-size: 18px;
   line-height: 21.008px;
   color: rgb(0 106 224);
@@ -214,6 +208,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 5px;
 }
 
 .alreadylyca-wrapper .alreadylyca > div:nth-of-type(3) > div:last-of-type > p img {
