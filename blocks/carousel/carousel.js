@@ -24,7 +24,7 @@ export default function decorate(block) {
   let currentSlide = 0;
   const totalSlides = slides.length;
 
-    // ----- ✅ Update slides and dots -----
+    // ✅ Update slides and dots
   const updateSlidePosition = () => {
     slides.forEach((slide) => {
       slide.style.transform = `translateX(${(-currentSlide) * 100}%)`;
