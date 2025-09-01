@@ -130,8 +130,8 @@
     }
 
     .rescentblogs-container .default-content-wrapper p {
-        font-size: 35px !important;
-        margin-bottom: 30px;
+        font-size: 25px !important;
+        margin-bottom: -3px;
     }
 }
 
@@ -154,6 +154,6 @@
 
     .rescentblogs-container .default-content-wrapper p {
         font-size: 27px !important;
-        margin-bottom: 30px;
+        margin-bottom: -3px;
     }
 }
