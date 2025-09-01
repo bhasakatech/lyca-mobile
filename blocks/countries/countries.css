@@ -148,7 +148,7 @@
 
 /* ✅ Tablet adjustments */
 @media (width <= 802px) {
-  .countries-container .default-content-wrapper p {
+  .countries-container .default-content-wrapper p:first-child {
     font-size: 38px;
   }
 
@@ -170,7 +170,7 @@
     padding: 0 6% 0 7% !important;
   }
 
-  .countries-container .default-content-wrapper p {
+  .countries-container .default-content-wrapper p:first-child {
     margin: 16.3px 0;
     font-size: 16.3px;
     text-align: left;
