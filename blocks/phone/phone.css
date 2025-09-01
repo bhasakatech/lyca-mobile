@@ -4,7 +4,7 @@
 }
 
 .phone-wrapper {
-    padding: 13px 1px !important;
+    padding: 13px 0 !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,7 +27,6 @@
     justify-content: center;
     gap: 20px;
     width: 100%;
-    margin: 0 auto;
 }
 
 .phone picture {
@@ -125,7 +124,7 @@
 
 @media (width <= 385px) {
         .phone-wrapper {
-        padding: 1px !important;
+        padding: 0 !important;
     }
 
     .phone > div {

@@ -1,14 +1,15 @@
 .section.joinlyca-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 20px;
   background-color: #21254f;
   color: white;
-  height: 100vh;
+  min-height:30.698rem;
 }
 
 .joinlyca-wrapper {
-  padding: 1px !important;
+  padding: 0 !important;
   width: 100%;
 }
 
@@ -103,6 +104,11 @@
 }
 
 @media (width <= 768px) {
+  .section.joinlyca-container{
+    min-height: 21.875rem;
+    padding: 30px 15px;
+  }
+
   .section.joinlyca-container .joinlyca.card.block > div {
     width: 30%;
     min-width: 150px;
@@ -117,6 +123,11 @@
 }
 
 @media (width <= 430px) {
+   .section.joinlyca-container{
+    height:auto;
+    min-height: 21.875rem;
+   }
+
   .section.joinlyca-container .joinlyca-wrapper {
     gap: 10px;
     padding: 0 10px;
@@ -142,8 +153,9 @@
 
 @media (width <= 385px) {
   .section.joinlyca-container {
-    padding: 1px;
-  }
+    height:auto;
+    min-height: 21.875rem;
+   }
 
   .section.joinlyca-container .joinlyca-wrapper {
     display: flex;
@@ -181,6 +193,7 @@
   }
 
   .section.joinlyca-container .default-content-wrapper p {
+    margin-top: 0;
     font-size: 13px;
     line-height: 1.16rem;
     color: #fff;

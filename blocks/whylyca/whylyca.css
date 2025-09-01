@@ -2,8 +2,8 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 1px;
-  margin: 1px 1px 30px;
+  padding: 0 !important;
+  margin: 1px 0 30px;
 }
 
 .whylyca-container {

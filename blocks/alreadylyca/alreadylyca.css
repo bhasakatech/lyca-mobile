@@ -1,14 +1,27 @@
-.alreadylyca-container {
+.alreadylyca-container{
+    background-color: #fff;
+    margin-bottom: 200px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+    height: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.alreadylyca-inner-wrapper {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   box-shadow: 0 10px 20px 0 rgb(0 0 0 / 15%);
-  position: relative;
-  top: -250px;
+  position: absolute;
+  top: -180px;
   width: 80%;
   max-width: 1078px;
-  margin: 0 auto;
+  margin: auto;
   z-index: 10;
   background-image: url("./assests/joinLycabackground.cbc78232.svg");
   background-repeat: no-repeat;
@@ -17,7 +30,7 @@
   background-color: #fff;
 }
 
-.alreadylyca-container .default-content-wrapper {
+.alreadylyca-inner-wrapper .default-content-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,7 +49,7 @@
   margin: 0;
 }
 
-.alreadylyca-container #already-with-lyca {
+.alreadylyca-inner-wrapper #already-with-lyca {
   font-size: 48px;
   display: flex;
   justify-content: center;
@@ -96,7 +109,7 @@
   margin-left: 5px;
 }
 
-.alreadylyca-container #already-with-lyca + p {
+.alreadylyca-inner-wrapper #already-with-lyca + p {
   font-size: 1rem;
   line-height: 1.16rem;
   margin-bottom: 1.2rem;
@@ -105,7 +118,7 @@
   margin-top: 0;
 }
 
-.alreadylyca-container .alreadylyca-wrapper,
+.alreadylyca-inner-wrapper .alreadylyca-wrapper,
 .alreadylyca {
   display: flex;
   justify-content: center;
@@ -222,14 +235,14 @@
 }
 
 @media screen and (width <= 768px) {
-  .alreadylyca-container {
+  .alreadylyca-inner-wrapper {
     width: 90%;
     background-image: none;
-    padding: 23px 10px 0;
-    top: -60px;
+    padding: 23px 10px 0 !important;
+    top: -35px;
   }
 
-  .alreadylyca-container .default-content-wrapper {
+  .alreadylyca-inner-wrapper .default-content-wrapper {
     background-image: url("./assests/joinedAlreadyMobileBackground.a8e6818b.svg");
     background-position: top;
     background-size: auto;
@@ -241,17 +254,17 @@
     gap: 10px;
   }
 
-  .alreadylyca-container #already-with-lyca {
+  .alreadylyca-inner-wrapper #already-with-lyca {
     font-size: 26px;
   }
 
-  .alreadylyca-container .default-content-wrapper p {
+  .alreadylyca-inner-wrapper .default-content-wrapper p {
     font-size: 14px;
     text-align: center;
     gap: 20px;
   }
 
-  .alreadylyca-container .alreadylyca-wrapper {
+  .alreadylyca-inner-wrapper .alreadylyca-wrapper {
     width: inherit;
   }
 
@@ -262,6 +275,7 @@
 
   .alreadylyca-wrapper .alreadylyca > div:first-of-type {
     gap: 4px;
+    flex-wrap: nowrap;
   }
 
   .alreadylyca-wrapper .alreadylyca > div:nth-of-type(2) {

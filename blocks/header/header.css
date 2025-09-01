@@ -18,6 +18,7 @@
   align-items: center;
   box-sizing: border-box;
   background-color: var(--background-color);
+  border-bottom: 1px solid rgb(202 202 202);
 }
 
 /* nav-wrapper */
@@ -365,7 +366,7 @@ header nav .nav-tools .default-content-wrapper picture img {
     display: block;
     margin: 0;
     padding: 12px;
-    margin-left: -12px;
+    margin-left: -11px;
     background: transparent;
   }
 

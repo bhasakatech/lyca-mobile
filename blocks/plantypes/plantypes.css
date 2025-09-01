@@ -108,7 +108,7 @@
   
 }
 
-@media (width <= 430px) {
+@media (width <= 600px) {
 .plantypes picture {
     max-width: 50px;
   }  
