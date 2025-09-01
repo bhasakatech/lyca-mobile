@@ -1,6 +1,7 @@
 .section.rescentblogs-container {
     display: flex;
     flex-direction: column;
+    padding: 63px 1px !important;
 }
 
 .rescentblogs-container {
@@ -49,8 +50,7 @@
     width: 100%;
     max-width: 320px;
     height: 400px;
-    overflow: hidden;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, .24) !important;
+    overflow: hidden;box-shadow: 0 3px 8px rgb(0 0 0 / 22%) !important;
 }
 
 .rescentblogs.blogs.block > div > div:last-child {
