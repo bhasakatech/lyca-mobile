@@ -14,6 +14,19 @@
   box-sizing: border-box;
 }
 
+/* ✅ FIXED ORDER: move this up to avoid descending specificity */
+.country-slide > div:last-child p {
+  font-family: GTEestiLCDisplayRegular, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #344054;
+  margin-top: 14px;
+  white-space: wrap;
+}
+
 .countries-container .default-content-wrapper p:first-child {
   margin: 44.4px 0;
   color: color(srgb 0.2039 0.251 0.3294); /* rgb(52, 64, 84) */
@@ -35,7 +48,7 @@
   margin: 0 !important;
 }
 
-/* ✅ Fixed scrollable container */
+/* ✅ MERGED SCROLLABLE CONTAINER + SCROLLBAR STYLES */
 .countries {
   width: 80%;
   margin: 0 auto;
@@ -48,16 +61,14 @@
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-}
 
-/* ✅ Optional: Hide scrollbar visually */
-.countries::-webkit-scrollbar {
-  display: none;
-}
-
-.countries {
+  /* scrollbar styles merged here */
   scrollbar-width: none;
   -ms-overflow-style: none;
+}
+
+.countries::-webkit-scrollbar {
+  display: none;
 }
 
 /* Navigation buttons */
@@ -97,7 +108,7 @@
   background-color: transparent;
 }
 
-/* ✅ Country slide: auto-grow/shrink, 5 per row */
+/* ✅ Country slide */
 .country-slide {
   flex: 0 0 calc(20%);
   scroll-snap-align: center;
@@ -133,18 +144,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.country-slide > div:last-child p {
-  font-family: GTEestiLCDisplayRegular, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19px;
-  letter-spacing: 0;
-  text-align: center;
-  color: #344054;
-  margin-top: 14px;
-  white-space: wrap;
 }
 
 /* ✅ Tablet adjustments */
