@@ -1,7 +1,6 @@
 export default function decorate(block) {
   const rows = [...block.children];
 
-  // Helper to create and replace buttons
   const createButton = (className, textContent) => {
     const button = document.createElement('button');
     button.classList.add('btn', className);
@@ -9,7 +8,6 @@ export default function decorate(block) {
     return button;
   };
 
-  // Replace first and last divs with buttons
   rows.forEach((row, index) => {
     if (index === 0) {
       row.replaceWith(createButton('btn-next', '→'));
@@ -20,46 +18,61 @@ export default function decorate(block) {
     }
   });
 
-  // Select only slides inside the current block
   const slides = block.querySelectorAll('.slide');
-
-  let currentSlide = 0;
-  const totalSlides = slides.length - 1;
-
-  // Select buttons from within block
   const nextBtn = block.querySelector('.btn-next');
   const prevBtn = block.querySelector('.btn-prev');
+  let currentSlide = 0;
+  const totalSlides = slides.length;
 
-  // Update slide position
+  // ----- ✅ Create Dots -----
+  const dotsContainer = document.createElement('div');
+  dotsContainer.className = 'carousel-dots';
+
+  slides.forEach((_, index) => {
+    const dot = document.createElement('button');
+    dot.classList.add('carousel-dot');
+    if (index === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => {
+      currentSlide = index;
+      updateSlidePosition();
+    });
+    dotsContainer.appendChild(dot);
+  });
+
+  block.appendChild(dotsContainer);
+
+  // ----- ✅ Update slides and dots -----
   const updateSlidePosition = () => {
     slides.forEach((slide) => {
-      slide.style.transform = `translateX(${-currentSlide * 100}%)`;
+      slide.style.transform = `translateX(${(- currentSlide) * 100}%)`;
+    });
+
+    const dots = block.querySelectorAll('.carousel-dot');
+    dots.forEach((dot, index) => {
+      dot.classList.toggle('active', index === currentSlide);
     });
   };
 
-  // Go to next slide
   const goToNextSlide = () => {
-    currentSlide = currentSlide < totalSlides ? currentSlide + 1 : 0;
+    currentSlide = currentSlide < totalSlides - 1 ? currentSlide + 1 : 0;
     updateSlidePosition();
   };
 
-  // Go to previous slide
   const goToPrevSlide = () => {
-    currentSlide = currentSlide > 0 ? currentSlide - 1 : totalSlides;
+    currentSlide = currentSlide > 0 ? currentSlide - 1 : totalSlides - 1;
     updateSlidePosition();
   };
 
-  // Event listeners for button clicks
   nextBtn?.addEventListener('click', goToNextSlide);
   prevBtn?.addEventListener('click', goToPrevSlide);
 
-  // Automatic slide transition
+  // Auto-slide every 2 seconds
   let autoSlideIndex = 1;
   setInterval(() => {
-    currentSlide = autoSlideIndex < slides.length ? autoSlideIndex : 0;
+    currentSlide = autoSlideIndex < totalSlides ? autoSlideIndex : 0;
     updateSlidePosition();
     autoSlideIndex = currentSlide + 1;
-  }, 2000);
+  }, 4000);
 
-  updateSlidePosition(); // Initialize slide position
+  updateSlidePosition(); // Initialize
 }

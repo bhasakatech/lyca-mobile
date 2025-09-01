@@ -76,6 +76,7 @@
 /* announcementbar picture */
 .announcementbar picture {
     background: transparent;
+    cursor: pointer;
 }
 
 /* announcementbar picture img */
