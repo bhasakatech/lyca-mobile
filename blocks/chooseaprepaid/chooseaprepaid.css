@@ -349,7 +349,7 @@
     }
 
     .chooseaprepaid.cards.block {
-        padding: 15px 15px !important;
+        padding: 15px !important;
         display: grid;
         grid-template-columns: 1fr;
         gap: 12px;
