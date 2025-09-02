@@ -70,14 +70,14 @@
 }
 
 .rescentblogs.blogs.block p:last-child {
-    font-size: 16px;
+    font-size: 18px;
     color: #87909f;
     line-height: 24px;
 }
 
 @media (width <= 1024px) {
     .rescentblogs.blogs.block {
-        padding: 2px 1px;
+        padding: 2px 106px;
     display: flex;
     flex-wrap: wrap;
     gap: 18px;
@@ -87,11 +87,12 @@
 
     .rescentblogs.blogs.block > div {
         flex: 1 1 20%;
+        height:auto;
     }
 
     .rescentblogs.blogs.block > div:first-child > div:first-child img {
         width: 500px;
-        height: 202px;
+        height: 180px;
     }
 
 }

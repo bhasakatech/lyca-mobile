@@ -162,7 +162,7 @@
     }
 }
 
-@media (width>= 300px) and (width<= 430px) {
+@media (width<= 600px) {
     .downloadapp-wrapper {
         width: 100%;
         padding: 1px !important;

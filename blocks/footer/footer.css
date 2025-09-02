@@ -243,6 +243,12 @@ footer .footer-child-wrapper .section {
     margin: 0;
   }
 
+  footer .footer {
+  width: auto;
+  margin :0 !important;
+  padding: 0 !important;
+}
+
   .footer-child-wrapper {
     padding: 0;
   }
@@ -253,7 +259,7 @@ footer .footer-child-wrapper .section {
 
   .list-wrapper {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center !important;
     row-gap: 24px;
   }
 
