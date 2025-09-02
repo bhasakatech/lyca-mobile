@@ -1,6 +1,6 @@
 .section.highlight.signup-container {
   background-color: #eff8ff;
-  padding: 30px 1px;  
+  padding: 30px 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -25,6 +25,10 @@
 .signup-wrapper {
   width: 70%;
   margin: 0 auto;
+}
+
+.signup.block {
+  width: 100%;
 }
 
 .signup.block div:first-child {
@@ -65,15 +69,44 @@
 }
 
 /* ✅ Mobile: up to 600px */
-@media (width <= 600px) {
+@media (width <=600px) {
+  .section.highlight.signup-container {
+    padding: 24px !important;
+  }
+
   .signup-wrapper {
-    padding: 1px !important;
-    width: 90%;
+    padding: 0 !important;
+    width: 100%;
+    margin: 0 !important;
+  }
+
+  .signup.block {
+    width: 100%;
   }
 
   .signup.block div:first-child {
+    width: 100%;
     flex-direction: column;
     align-items: stretch;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .signup.block div:first-child div:first-child {
+    margin-top: 16px;
+    padding: 0 3px 3px;
+    background-color: white;
+    border-radius: 3px;
+  }
+
+  .signup.block .button-container{
+    width:100%; 
+    margin: 0;
+  }
+
+  .signup.block .button-container p{
+    margin: 0;
   }
 
   .signup.block div:nth-child(1) div:nth-child(2) p a {
@@ -83,13 +116,25 @@
     margin-top: 10px;
   }
 
+  .signup-container .default-content-wrapper {
+    padding: 0 !important;
+  }
+
   .section.highlight.signup-container .default-content-wrapper p {
-    font-size: 24px;
+    padding: 0 !important;
+    margin: 0;
+    font-size: 18px;
+    line-height: 32px;
+    white-space: nowrap;
+  }
+
+  .signup.block div:nth-child(2) div:nth-child(1) p {
+    font-size: 14px;
   }
 }
 
 /*  Tablet: 601px to 1024px */
-@media (width >= 601px) and (width <= 1024px) {
+@media (width >=601px) and (width <=1024px) {
   .signup-wrapper {
     width: 85%;
   }
@@ -112,7 +157,7 @@
 }
 
 /* ✅ Desktop: 1025px and up */
-@media (width >= 1025px) {
+@media (width >=1025px) {
   .signup-wrapper {
     width: 70%;
   }
