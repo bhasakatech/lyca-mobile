@@ -124,6 +124,7 @@
 
   .whylyca picture img {
     width: 90px;
+    height: 90px;
   }
 }
 
@@ -143,6 +144,7 @@
 
   .whylyca picture img {
     width: 80px;
+    height: 80px;
   }
 
   .whylyca > div > div:nth-child(2) p:first-child {
@@ -170,6 +172,7 @@
 
   .whylyca picture img {
     width: 70px;
+    height: 70px;
   }
 
   .whylyca > div > div:nth-child(2) p:first-child {
