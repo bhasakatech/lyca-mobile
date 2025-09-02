@@ -32,11 +32,18 @@
 }
 
 .signup.block div:first-child {
-  justify-content: space-between;
+  /* justify-content: space-between; */
   display: flex;
   align-items: center;
   gap: 15px;
 }
+
+ .signup.block div:first-child div:first-child {
+    width:80%;
+   background-color: white;
+   padding-left: 8px;
+   border-radius: 5px;
+ }
 
 .signup.block div:nth-child(1) div:nth-child(1) p {
   font-family: GTEestiLCDisplayRegular, sans-serif;
@@ -95,7 +102,6 @@
   .signup.block div:first-child div:first-child {
     margin-top: 16px;
     padding: 0 3px 3px;
-    background-color: white;
     border-radius: 3px;
   }
 
@@ -143,6 +149,10 @@
     align-items: stretch;
     gap: 10px;
   }
+
+   .signup.block div:first-child div:first-child {
+    width:100%;
+   }
 
   .signup.block div:nth-child(1) div:nth-child(2) p a {
     width: 100%;

@@ -58,18 +58,21 @@
     border-radius: 12px;
     grid-row: 1 / span 2;
     position: relative;
+    cursor: pointer;
 }
 
 /* image 2 */
 .chooseaprepaid.cards.block>div:nth-of-type(2) {
     border-radius: 12px;
     position: relative;
+    cursor: pointer;
 }
 
 /* image 3 */
 .chooseaprepaid.cards.block>div:last-child {
     border-radius: 12px;
     position: relative;
+    cursor: pointer;
 }
 
 .chooseaprepaid.cards.block>div:nth-of-type(2) div:last-child {
@@ -88,6 +91,15 @@
     padding: 2px 8px 5px;
     top: -2%;
     height: 30%;
+}
+
+.chooseaprepaid.cards.block>div:first-child div:last-child {
+    width: fit-content;
+    margin: 50px 28px 0;
+    position: absolute;
+    padding: 2px 8px 15px;
+    top: -2%;
+    height: 12%;
 }
 
 .chooseaprepaid.cards.block>div:nth-of-type(2) div:last-child:hover{
@@ -146,15 +158,6 @@
     white-space: nowrap;
 }
 
-.chooseaprepaid.cards.block>div:first-child div:last-child {
-    width: fit-content;
-    margin: 50px 28px 0;
-    position: absolute;
-    padding: 2px 8px 15px;
-    top: -2%;
-    height: 12%;
-}
-
 .chooseaprepaid.cards.block>div:first-child div:last-child:hover{
      background-color: #c3c8cf80;
      border-radius: 5px;
@@ -178,7 +181,6 @@
     text-decoration: none;
     color: #fff;
     margin: 0;
-    display: flex;
     align-items: center;
     display: inline-block;
 }
