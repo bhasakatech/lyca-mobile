@@ -185,6 +185,7 @@ footer .footer-child-wrapper .section {
 
   .footer-child-wrapper .list-wrapper > div:last-of-type > div > ul {
     display: flex;
+    margin-left: 10%;
     flex-direction: row;
     justify-content: center;
     gap: 4px;
