@@ -50,6 +50,17 @@ footer .footer-child-wrapper .section {
   justify-content: space-between;
 }
 
+.footer-child-wrapper .list-wrapper > div > div > ul > li > a {
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.5px;
+}
+
+.footer-child-wrapper .list-wrapper ul li a:hover{
+  text-decoration: none;
+}
+
 .footer-child-wrapper .list-wrapper > div > div {
   display: flex;
   flex-direction: column;
@@ -77,13 +88,6 @@ footer .footer-child-wrapper .section {
   gap: 16px;
   justify-content: space-between;
   padding: 0;
-}
-
-.footer-child-wrapper .list-wrapper > div > div > ul > li > a {
-  color: #fff;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: -0.5px;
 }
 
 .footer-child-wrapper .list-wrapper > div:last-of-type > div > ul,

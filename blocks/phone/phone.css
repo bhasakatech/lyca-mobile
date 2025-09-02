@@ -110,7 +110,7 @@
     }
 
     .phone-wrapper {
-        padding: 1px;
+        padding: 0;
     }
 
     .phone.block div:first-child div:last-child {

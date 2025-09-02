@@ -18,7 +18,7 @@
 }
 
 .section.joinlyca-container .default-content-wrapper {
-  margin: 1px;
+  margin: 0 !important;
   text-align: center;
   padding: 10px 20px 20px;
 }
@@ -30,7 +30,7 @@
   justify-content: center;
   color: #000;
   border-radius: 8px;
-  padding: 15px 1px;
+  padding: 15px 0;
   width: 30%;
   min-width: 170px;
   box-sizing: border-box;
@@ -55,7 +55,7 @@
 }
 
 .section.joinlyca-container .joinlyca-wrapper {
-  margin: 1px;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -87,8 +87,7 @@
     font-size: 2rem;
     line-height: 3.48rem;
     color: #fff;
-    margin-top: 1px;
-    margin-bottom: 1px;
+    margin:0;
     font-family: GTEestiLCDisplayBold, sans-serif;
   }
 
@@ -162,7 +161,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 12px;
-    padding: 1px;
+    padding: 0;
     box-sizing: border-box;
   }
 
@@ -176,7 +175,7 @@
   .section.joinlyca-container .joinlyca.card.block > div:nth-child(3) {
     flex: 0 0 100%;
     max-width: 300px;
-    margin: 1px auto;
+    margin: 0 auto;
   }
 
   .joinlyca.card.block {

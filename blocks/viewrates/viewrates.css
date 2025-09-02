@@ -1,6 +1,6 @@
 .viewrates-wrapper {
   margin: 0 auto;
-  padding: 1px;
+  padding: 0 !important;
 }
 
 .section.viewrates-container {
