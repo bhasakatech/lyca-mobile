@@ -12,9 +12,9 @@
 
 /* announcementbar-wrapper */
 .announcementbar-wrapper {
-    margin: auto;
+    margin: 0 auto !important;
+    width:90%;
     max-width: 1200px;
-    width: 100%;
     height: 100%;
     padding: 0 40px !important;
     display: flex;
@@ -24,7 +24,9 @@
 
 /* announcementbar */
 .announcementbar {
-    width: 100%;
+    /* width: 100%; */
+    width: calc(100% + 16px);
+    flex-flow: wrap;
     height: 100%;
     display: flex;
     align-items: center;
@@ -74,6 +76,7 @@
 /* announcementbar picture */
 .announcementbar picture {
     background: transparent;
+    cursor: pointer;
 }
 
 /* announcementbar picture img */

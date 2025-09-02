@@ -1,72 +1,215 @@
 .section.joinlyca-container {
+  position: relative;
   display: flex;
   flex-direction: column;
-  background: #1a2253;
-  color: #fff;
-  text-align: center;
-  padding: 10px 20px;
+  padding: 20px;
+  background-color: #21254f;
+  color: white;
+  min-height:30.698rem;
 }
 
-.section.joinlyca-container .default-content-wrapper{
-  display: flex ;
-  flex-direction: column;
-}
-
-.section.joinlyca-container h1 {
-  font-size: 3rem;
-  line-height: 3.48rem;
-  color: #fff;
-  font-weight: bold;
-  margin-bottom: .25rem;
-  text-align: center;
-}
-
-.section.joinlyca-container p {
-  font-size: 1rem;
-  line-height: 1.16rem;
-  color: #fff;
-  margin-bottom: 1.2rem;
-  margin-top: 0;
-  text-align: center;
-}
-
-.joinlyca.card.block img {
-  width: 100px !important;
-  height: auto !important;
-  margin-bottom: 15px;
+.joinlyca-wrapper {
+  padding: 0 !important;
+  width: 100%;
 }
 
 .joinlyca.card.block {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 40px;
-  flex-wrap: wrap;
 }
 
-.joinlyca.card.block > div {
-  border-radius: 50%;
-  width: 180px;
-  height: 180px;
+.section.joinlyca-container .default-content-wrapper {
+  margin: 1px;
+  text-align: center;
+  padding: 10px 20px 20px;
+}
+
+.section.joinlyca-container .joinlyca.card.block > div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease;
-  color: #fff;
+  color: #000;
+  border-radius: 8px;
+  padding: 15px 1px;
+  width: 30%;
+  min-width: 170px;
+  box-sizing: border-box;
 }
 
-.joinlyca.card.block p {
-  font-size: 1rem;
+.section.joinlyca-container .default-content-wrapper h1 {
+  font-size: 3rem;
+  line-height: 3.48rem;
+  color: #fff;
+  margin-top: 5px;
+  margin-bottom: 0.25rem;
+  font-family: GTEestiLCDisplayBold, sans-serif;
+}
+
+.section.joinlyca-container .default-content-wrapper p {
+  font-size: 1.3rem;
   line-height: 1.16rem;
   color: #fff;
-  text-decoration: none;
+  margin-bottom: 1.2rem;
+  font-family: GTEestiLCDisplayRegular, sans-serif;
+  text-align: center;
 }
 
-/* Mobile */
-@media (width <= 768px) {
-  .joinlyca.card.block {
-    flex-direction: column;
-    align-items: center;
+.section.joinlyca-container .joinlyca-wrapper {
+  margin: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.section.joinlyca-container .joinlyca.card.block picture img {
+  width: auto;
+  max-width: 90px;
+  height: auto;
+  object-fit: contain;
+}
+
+.section.joinlyca-container .joinlyca.card.block > div > div:last-child p {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media (width <= 1024px) {
+  .section.joinlyca-container .joinlyca.card.block > div {
+    width: 30%;
+    min-width: 150px;
   }
+
+  .section.joinlyca-container .default-content-wrapper h1 {
+    font-size: 2rem;
+    line-height: 3.48rem;
+    color: #fff;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-family: GTEestiLCDisplayBold, sans-serif;
+  }
+
+  .section.joinlyca-container .joinlyca.card.block picture img {
+    max-width: 80px;
+  }
+
+  .section.joinlyca-container .default-content-wrapper p {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    font-family: GTEestiLCDisplayRegular, sans-serif;
+  }
+}
+
+@media (width <= 768px) {
+  .section.joinlyca-container{
+    min-height: 21.875rem;
+    padding: 30px 15px;
+  }
+
+  .section.joinlyca-container .joinlyca.card.block > div {
+    width: 30%;
+    min-width: 150px;
+  }
+
+      .section.joinlyca-container .default-content-wrapper p {
+        font-size: 15px;
+        margin-bottom: 1.2rem;
+        font-family: GTEestiLCDisplayRegular, sans-serif;
+    }
+
+}
+
+@media (width <= 430px) {
+   .section.joinlyca-container{
+    height:auto;
+    min-height: 21.875rem;
+   }
+
+  .section.joinlyca-container .joinlyca-wrapper {
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .section.joinlyca-container .joinlyca.card.block > div {
+    min-width: 120px;
+  }
+
+  .section.joinlyca-container .default-content-wrapper p {
+    font-size: 13px;
+    font-family: GTEestiLCDisplayRegular, sans-serif;
+  }
+
+  .section.joinlyca-container .joinlyca.card.block > div > div:last-child p {
+    font-size: 13px;
+  }
+
+  .section.joinlyca-container .joinlyca.card.block picture img {
+    max-width: 75px;
+  }
+}
+
+@media (width <= 385px) {
+  .section.joinlyca-container {
+    height:auto;
+    min-height: 21.875rem;
+   }
+
+  .section.joinlyca-container .joinlyca-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 1px;
+    box-sizing: border-box;
+  }
+
+  .section.joinlyca-container .joinlyca.card.block > div {
+    flex: 0 0 45%;
+    max-width: 45%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .section.joinlyca-container .joinlyca.card.block > div:nth-child(3) {
+    flex: 0 0 100%;
+    max-width: 300px;
+    margin: 1px auto;
+  }
+
+  .joinlyca.card.block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .section.joinlyca-container .joinlyca.card.block picture img {
+    max-width: 70px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .section.joinlyca-container .default-content-wrapper p {
+    margin-top: 0;
+    font-size: 13px;
+    line-height: 1.16rem;
+    color: #fff;
+    margin-bottom: 1.2rem;
+    font-family: GTEestiLCDisplayRegular, sans-serif;
+    text-align: center;
+  }
+
+  .section.joinlyca-container .joinlyca.card.block > div > div:last-child p {
+    font-size: 10px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px;
+  }
+
+  
 }

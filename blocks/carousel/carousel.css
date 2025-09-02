@@ -1,8 +1,8 @@
 /* Carousel container */
 .carousel-container {
   position: relative;
+  box-sizing: border-box;
   width: 100%;
-  max-width: 1265px;
   overflow-x: auto;
   padding: 0 !important;
   margin: 0 !important;
@@ -80,6 +80,38 @@
   width: 100% !important;
   height: auto !important;
   object-fit: cover;
+  cursor: pointer;
+}
+
+/* Carousel dots container */
+.carousel-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 5;
+}
+
+/* Each dot */
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  background-color:#bec5d5;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Active dot */
+.carousel-dot.active {
+  width: 47px;
+  border-radius: 30%;
+  background-color: rgb(53 63 87)
 }
 
 /* Left and right arrows hiding for tablet and mobile */
@@ -88,4 +120,11 @@
   .btn-prev {
     display: none;
   }
+
+  .slide picture,
+.slide picture img {
+  overflow: hidden;
+  height:37vw !important;
+}
+
 }
