@@ -8,7 +8,7 @@
 
 /* Text styling */
 .plantypes p {
-  margin: 1px;
+  margin: 0 !important;
   font-size: 16px;
   font-weight: 600;
   color: #2c3e50;
@@ -129,7 +129,7 @@
   }
 
   .plantypes-wrapper{
-    padding: 1px !important;
+    padding: 0 !important;
   }
 
   .plantypes.plans.block {

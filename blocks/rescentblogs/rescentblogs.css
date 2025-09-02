@@ -1,11 +1,11 @@
 .section.rescentblogs-container {
     display: flex;
     flex-direction: column;
-    padding: 6px 1px 60px 2px !important;
+    padding: 6px 0 60px 2px !important;
 }
 
 .rescentblogs-container {
-    margin: 1px auto;
+    margin: 0 auto;
     padding: 30px 15px !important;
 }
 
