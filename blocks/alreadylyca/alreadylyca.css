@@ -224,9 +224,9 @@
 }
 
 .alreadylyca-wrapper .alreadylyca > div:nth-of-type(3) > div:last-of-type > p img {
-  height: 14px;
-  width: 14px;
-  margin: 4px 0 0 5px;
+    width: 15px;
+    margin: 8px 0 0 4px;
+    max-width: 50px;
 }
 
 .alreadylyca-wrapper .alreadylyca > div:nth-of-type(2) > div:last-of-type img:hover {
@@ -236,7 +236,7 @@
 
 @media screen and (width <= 768px) {
   .alreadylyca-inner-wrapper {
-    width: 90%;
+    width: 80%;
     background-image: none;
     padding: 23px 10px 0 !important;
     top: -35px;
@@ -273,17 +273,41 @@
     padding: 0;
   }
 
+  .alreadylyca-wrapper .alreadylyca > div:first-of-type .button-container p a {
+       width: 100px;
+        padding: 8px 0;
+        height: auto;
+  }
+
   .alreadylyca-wrapper .alreadylyca > div:first-of-type {
     gap: 4px;
     flex-wrap: nowrap;
   }
 
   .alreadylyca-wrapper .alreadylyca > div:nth-of-type(2) {
-    width: 100%;
+    width: 120%;
+  }
+
+  .alreadylyca-wrapper .alreadylyca > div:nth-of-type(3) {
+    width:115%;
+    align-items: center;
+    justify-content: center;
+    margin-left: -22px;
   }
 
   .alreadylyca-wrapper .alreadylyca > div:nth-of-type(2) > div:last-of-type p {
+    font-size: 10px;
     justify-content: space-between;
     margin-left: 10px;
+  }
+
+  .alreadylyca-wrapper .alreadylyca > div:nth-of-type(3) > div:first-of-type > p,
+  .alreadylyca-wrapper .alreadylyca > div:nth-of-type(3) > div:last-of-type > p {
+      font-size: 11px;
+      text-align: left;
+  }
+
+  .alreadylyca-wrapper .alreadylyca > div:nth-of-type(3) > div:last-of-type > p {
+    white-space: nowrap;
   }
 }
