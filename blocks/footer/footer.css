@@ -6,7 +6,7 @@ footer {
 footer .footer > div {
   margin: auto;
   max-width: 1200px;
-  padding: 40px 24px 0 24px;
+  padding: 40px 24px 0;
 }
 
 footer .footer p {

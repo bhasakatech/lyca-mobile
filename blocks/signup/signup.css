@@ -38,11 +38,11 @@
   gap: 15px;
 }
 
- .signup.block div:first-child div:first-child {
-   width:80%;
-   background-color: white;
-   border-radius: 5px;
- }
+.signup.block div:first-child div:first-child {
+  width: 80%;
+  background-color: white;
+  border-radius: 5px;
+}
 
 .signup.block div:nth-child(1) div:nth-child(1) p {
   font-family: GTEestiLCDisplayRegular, sans-serif;
@@ -100,21 +100,29 @@
   }
 
   .signup.block div:first-child div:first-child {
-    width:100%;
-    margin-top: 16px; 
+    width: 100%;
+    margin-top: 16px;
     border-radius: 3px;
+  }
+
+  .signup.block .button-container p {
+    margin: 0;
+  }
+
+  .section.highlight.signup-container .default-content-wrapper p {
+    padding: 0 !important;
+    margin: 0;
+    font-size: 18px;
+    line-height: 32px;
+    white-space: nowrap;
   }
 
   .signup.block div:nth-child(1) div:nth-child(1) p {
     padding-left: 7px;
   }
 
-  .signup.block .button-container{
-    width:100%; 
-    margin: 0;
-  }
-
-  .signup.block .button-container p{
+  .signup.block .button-container {
+    width: 100%;
     margin: 0;
   }
 
@@ -127,14 +135,6 @@
 
   .signup-container .default-content-wrapper {
     padding: 0 !important;
-  }
-
-  .section.highlight.signup-container .default-content-wrapper p {
-    padding: 0 !important;
-    margin: 0;
-    font-size: 18px;
-    line-height: 32px;
-    white-space: nowrap;
   }
 
   .signup.block div:nth-child(2) div:nth-child(1) p {
@@ -154,9 +154,9 @@
     gap: 10px;
   }
 
-   .signup.block div:first-child div:first-child {
-    width:100%;
-   }
+  .signup.block div:first-child div:first-child {
+    width: 100%;
+  }
 
   .signup.block div:nth-child(1) div:nth-child(2) p a {
     width: 100%;

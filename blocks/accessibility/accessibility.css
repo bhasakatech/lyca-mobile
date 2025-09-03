@@ -10,7 +10,6 @@
     border-radius: 50%;
     background-color: #146ff8;
     cursor: pointer;
-    z-index: 2147483647;
     transition: all .15s ease;
     z-index: 15;
     color:white;
@@ -31,13 +30,11 @@
     position: absolute;
     max-width: 29.25px;
     max-height: 29.25px;
-    overflow: visible;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     margin: auto;
-    visibility: visible;
     opacity: 1;
     padding: 0 4px;
     display: flex;
