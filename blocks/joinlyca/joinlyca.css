@@ -6,6 +6,7 @@
   background-color: #21254f;
   color: white;
   min-height:30.698rem;
+  z-index: 10;
 }
 
 .joinlyca-wrapper {

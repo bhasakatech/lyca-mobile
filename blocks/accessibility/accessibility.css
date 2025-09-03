@@ -1,0 +1,71 @@
+.section.accessibility-container{
+    padding: 0;
+    position: fixed;
+    width:45px;
+    height:45px;
+    left:20px;
+    bottom:20px;
+    outline: 0;
+    border: 0;
+    border-radius: 50%;
+    background-color: #146ff8;
+    cursor: pointer;
+    z-index: 2147483647;
+    transition: all .15s ease;
+    z-index: 15;
+    color:white;
+}
+
+.section.accessibility-container:hover{
+    transform: scale(1.1);
+}
+
+.section .accessibility-wrapper,
+.section .accessibility-wrapper .accessibility {
+   width:100%;
+   height:100%;
+   padding: 0 !important;
+}
+
+.section .accessibility-wrapper .accessibility> div{
+    position: absolute;
+    max-width: 29.25px;
+    max-height: 29.25px;
+    overflow: visible;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    visibility: visible;
+    opacity: 1;
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section .accessibility-wrapper .accessibility picture,
+.section .accessibility-wrapper .accessibility picture img {
+    display: block;
+    width:100%;
+    height:29.25px;
+    color: white;
+}
+
+@media (width <= 1024px){
+    .section.accessibility-container{
+        width:30px;
+        height:30px;
+    }
+
+    .section .accessibility-wrapper .accessibility> div{
+         max-width: 19.5px;
+         max-height:19.5px;
+    }
+
+    .section .accessibility-wrapper .accessibility picture,
+    .section .accessibility-wrapper .accessibility picture img {
+   height:19.5px;  
+   }
+}

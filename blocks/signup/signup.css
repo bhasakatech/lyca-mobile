@@ -39,9 +39,8 @@
 }
 
  .signup.block div:first-child div:first-child {
-    width:80%;
+   width:80%;
    background-color: white;
-   padding-left: 8px;
    border-radius: 5px;
  }
 
@@ -49,6 +48,7 @@
   font-family: GTEestiLCDisplayRegular, sans-serif;
   color: #344054;
   font-size: 17px;
+  padding-left: 7px;
 }
 
 .signup.block div:nth-child(1) div:nth-child(2) p a {
@@ -101,8 +101,12 @@
 
   .signup.block div:first-child div:first-child {
     width:100%;
-    margin-top: 16px;
+    margin-top: 16px; 
     border-radius: 3px;
+  }
+
+  .signup.block div:nth-child(1) div:nth-child(1) p {
+    padding-left: 7px;
   }
 
   .signup.block .button-container{
