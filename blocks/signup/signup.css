@@ -32,7 +32,6 @@
 }
 
 .signup.block div:first-child {
-  /* justify-content: space-between; */
   display: flex;
   align-items: center;
   gap: 15px;

@@ -26,14 +26,11 @@
    padding: 0 !important;
 }
 
-.section .accessibility-wrapper .accessibility> div{
+.section .accessibility-wrapper .accessibility > div {
     position: absolute;
     max-width: 29.25px;
     max-height: 29.25px;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    inset: 0;
     margin: auto;
     opacity: 1;
     padding: 0 4px;
