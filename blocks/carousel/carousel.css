@@ -8,6 +8,7 @@
   margin: 0 !important;
   anchor-name: --carousel;
   scroll-snap-type: x mandatory;
+  z-index: 10;
 }
 
 /* Hide scrollbar */
